@@ -1,0 +1,2196 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Kelisto Styleguide</title>
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/modernizr.custom.js"></script>
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,700|Lato:700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="apple-touch-icon" sizes="57x57" href="apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="apple-touch-icon-152x152.png">
+    <link rel="icon" type="image/png" href="favicon-196x196.png" sizes="196x196">
+    <link rel="icon" type="image/png" href="favicon-160x160.png" sizes="160x160">
+    <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+  </head>
+  <body>
+  
+
+<!-- Begin Body -->
+<ul class="nav nav-stacked" id="sidebar">
+  <h1>SP IPaaS unified design practices</h1>
+          <a href="https://github.com/Robespra/sp_ipaas_unifieddesign/archive/gh-pages.zip">download .zip</a> (open index.html)
+
+  <li><a href="#sec0" class="current">Introduction</a></li>
+  <li><a href="#sec1">Basics</a></li>
+  <li class="has-tip"><a href="#sec4">Components</a>
+    <div class="tooltip">In progress...</div>
+  </li>
+  <li><a href="#sec2">Colors</a></li>
+  <li><a href="#sec3">Typography</a></li>
+  <li><a href="#sec5">Iconography</a></li>
+  <li><a href="#sec6">Layout</a></li>
+  <li><a href="#sec7">Forms</a></li>
+  <li><a href="#sec8">Mediaqueries</a></li>
+</ul>
+<div class="container">
+  <div class="row"> 
+          <div class="col-md-9">
+                <h2 id="sec0">Introduction</h2>
+                
+<h3>Benefits of a Style Guide</h3>
+
+<div class="table-responsive">
+<table class="table">
+  <thead>
+  <tr>
+    <th>End Users</td>
+    <th>Developers</td>
+    <th>Business Team</td>
+  </tr>
+</thead>
+  <tr>
+    <td>Reduced errors</td>
+    <td>Maintain control over look and feel</td>
+    <td>Produce usable systems that reduce dev costs and increase
+    user satisfaction</td>
+  </tr>
+  <tr>
+    <td>Less frustration</td>
+    <td>Minimize re-invention</td>
+    <td>Increase market awareness</td>
+  </tr>
+  <tr>
+    <td>Increased morale</td>
+    <td>Capitalize on learning</td>
+    <td>Increase product awareness</td>
+  </tr>
+  <tr>
+    <td>Improved efficiency</td>
+    <td>Enable production of reusable software</td>
+    <td>Reduce training costs</td>
+  </tr>
+  <tr>
+    <td>Increased confidence</td>
+    <td>Reduce development time</td>
+    <td>Improve staff retention</td>
+  </tr>
+  <tr>
+    <td>Reduced resistance to new technology</td>
+    <td>Reduce arbitrary design decisions</td>
+    <td>Increase user acceptance of new systems</td>
+  </tr>
+</table>
+</div>
+source : <a href="http://www.stcsig.org/usability/newsletter/0104-style.html" target="_blank">STC 
+Usability & User Experience Community</a> 
+
+<h3>Basic design principles</h3>
+
+<p> As a developer/business owner you may occasionally have to solve design problems. The following principles are relevant to the presentation of content and the user's experience : </p>
+<ul>
+  <li>Start with typography, make headings big</li>
+  <li>Use generous white space</li>
+  <li>Make the layout clear</li>
+  <li>Keep it simple</li>
+  <li>Modal for self-contained process : any process that requires a specific user task, decision, or acknowledgement</li>
+  <li>Provide immediate feedback on user's action</li>
+  <li>Always Keep an eye on performance and responsiveness</li>
+  
+</ul>
+More UX/UI design resources : <a href="Pixel_Perfect_Perfection.pdf" target="_blank">Pixel_Perfect_Perfection.pdf</a>, <a href="https://developers.google.com/web/fundamentals/principles/" target="_blank">Principles of Site Design</a>, <a href="http://www.google.com/design/spec/material-design/introduction.html" target="_blank">Google Material Design</a>, <a href="UX_therms_glossary.pdf" target="_blank">UX_therms_glossary.pdf (liquid design ?)</a>
+<h4>Free alternatives to Paint</h4>
+                <a href="http://www.pixlr.com" target="_blank">Pixlr Cloud</a> – Pixlr is like a free, online version of Photoshop.
+              </br>
+                <a href="https://cdn2.pixlr.com/win32/Autodesk_Pixlr_v1.0.2.0_Win32.exe" target="_blank">Pixlr for Windows</a> 
+              </br>
+                <a href="https://cdn2.pixlr.com/mac/Autodesk_Pixlr_ver1.0.1_26_Mac_Installer.dmg" target="_blank">Pixlr for Mac</a>
+
+              
+                <hr class="col-md-12">
+                <h2 id="sec1">Logos / Collaterals</h2>
+
+            
+                
+          
+                
+                <h3>Responsive notifications for inmediate feedback</h3>
+                <h5>Click on the button to show the notification:</h5>
+                <button id="notification-trigger-growl-scale" class="progress-button">
+                  <span class="content">Feature focus</span>
+                  <span class="progress"></span>
+                </button>
+
+                <button id="notification-trigger-growl-slide" class="progress-button">
+                  <span class="content">Growl-Slide</span>
+                  <span class="progress"></span>
+                </button>
+                <button id="notification-trigger-flip" class="progress-button">
+                  <span class="content">Flip</span>
+                  <span class="progress"></span>
+                </button>
+
+                <button id="notification-trigger-slidetop" class="progress-button">
+                  <span class="content">SliderTop</span>
+                  <span class="progress"></span>
+                </button>
+
+                <button id="notification-trigger-slidebottom" class="progress-button">
+                  <span class="content">SliderBottom</span>
+                  <span class="progress"></span>
+                </button>
+
+
+                <h2 id="sec2">Colors</h2>
+                <h4 id="sec2">Primary Colors</h4>
+                <div class="row">
+                  <div class="col-md-3">
+                      <div class="panel panel-default">
+                        <div class="panel-heading" style="background-color:#864587;color:#fff;"><h4>Main</h4></div>
+                        <div class="panel-body">
+                          <p>
+                            #864587
+                          </p>
+                          <p>
+                            $main
+                          </p>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="col-md-3">
+                      <div class="panel panel-default">
+                        <div class="panel-heading" style="background-color:#6d326e;color:#fff;"><h4>Main dark</h4></div>
+                        <div class="panel-body">
+                          <p>
+                            #6d326e
+                          </p>
+                          <p>
+                            $main_dark
+                          </p>
+                        </div>
+                      </div>
+                  </div>
+                  
+     
+                  <div class="col-md-3">
+                        <div class="panel panel-default">
+                          <div class="panel-heading" style="background-color:#f8f9fa;"><h4>Light grey</h4></div>
+                          <div class="panel-body">
+                            <p>
+                              #f8f9fa
+                            </p>
+                            <p>
+                              $light_grey
+                            </p>
+                          </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="panel panel-default">
+                          <div class="panel-heading" style="background-color:#ffffff;"><h4>White</h4></div>
+                          <div class="panel-body">
+                            <p>
+                              #ffffff
+                            </p>
+                            <p>
+                              $white
+                            </p>
+                          </div>
+                        </div>
+                    </div>
+   
+                </div>
+                <h4 id="sec2">Secondary Colors</h4>
+                <div class="row">
+                  <div class="col-md-3">
+                        <div class="panel panel-default">
+                          <div class="panel-heading" style="background-color:#fccd44;"><h4>Yellow</h4></div>
+                          <div class="panel-body">
+                            <p>
+                              #fccd44
+                            </p>
+                            <p>
+                              $yellow
+                            </p>
+                          </div>
+                        </div>
+                    </div>
+                  <div class="col-md-3">
+                        <div class="panel panel-default">
+                          <div class="panel-heading" style="background-color:#009de0;color:#fff;"><h4>Blue</h4></div>
+                          <div class="panel-body">
+                            <p>
+                              #009de0
+                            </p>
+                            <p>
+                              $blue
+                            </p>
+                          </div>
+                        </div>
+                    </div>
+                  <div class="col-md-3">
+                        <div class="panel panel-default">
+                          <div class="panel-heading" style="background-color:#5b4e60;color:#fff;"><h4>Text</h4></div>
+                          <div class="panel-body">
+                            <p>
+                              #5b4e60
+                            </p>
+                            <p>
+                              $text
+                            </p>
+                          </div>
+                        </div>
+                    </div> 
+                  <div class="col-md-3">
+                      <div class="panel panel-default">
+                        <div class="panel-heading" style="background-color:#f97e3b;color:#fff;"><h4>Orange</h4></div>
+                        <div class="panel-body">
+                          <p>
+                            #f97e3b
+                          </p>
+                          <p>
+                            $orange
+                          </p>
+                        </div>
+                      </div>
+                  </div>
+     
+                  
+                  <div class="col-md-3">
+                      <div class="panel panel-default">
+                        <div class="panel-heading" style="background-color:#6bc867;color:#fff;"><h4>Green</h4></div>
+                        <div class="panel-body">
+                          <p>
+                            #6bc867
+                          </p>
+                          <p>
+                            $green
+                          </p>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="col-md-3">
+                      <div class="panel panel-default">
+                        <div class="panel-heading" style="background-color:#C8132E;color:#fff;"><h4>Red campaigns</h4></div>
+                        <div class="panel-body">
+                          <p>
+                            #C8132E
+                          </p>
+                          <p>
+                            $redcampaign          
+                          </p>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="col-md-3">
+                      <div class="panel panel-default">
+                        <div class="panel-heading" style="background-color:#dd377f;color:#fff;"><h4>Highlight/Discount</h4></div>
+                        <div class="panel-body">
+                          <p>
+                            #dd377f
+                          </p>
+                          <p>
+                            $discount      
+                          </p>
+                        </div>
+                      </div>
+                  </div>
+
+
+
+                </div>
+
+               
+
+              <h4 id="sec2">Texts</h4>
+              <div class="row">
+               <div class="col-md-3">
+                        <div class="panel panel-default">
+                          <div class="panel-heading" style="background-color:#5b4e60;color:#fff;"><h4>Text</h4></div>
+                          <div class="panel-body">
+                            <p>
+                              #5b4e60
+                            </p>
+                            <p>
+                              $text
+                            </p>
+                          </div>
+                        </div>
+                    </div> 
+                     <div class="col-md-3">
+                        <div class="panel panel-default">
+                          <div class="panel-heading" style="background-color:#ccccc8;color:#fff;"><h4>Grey Text</h4></div>
+                          <div class="panel-body">
+                            <p>
+                              #ccccc8
+                            </p>
+                            <p>
+                              $grey_text
+                            </p>
+                          </div>
+                        </div>
+                    </div> 
+              </div>
+
+
+
+              <h4 id="sec2">Social</h4>
+              <div class="row">
+               <div class="col-md-3">
+                        <div class="panel panel-default">
+                          <div class="panel-heading" style="background-color:#41b7d8;color:#fff;"><h4>Twitter</h4></div>
+                          <div class="panel-body">
+                            <p>
+                              #41b7d8
+                            </p>
+                            <p>
+                              $twitter
+                            </p>
+                          </div>
+                        </div>
+                    </div> 
+                     <div class="col-md-3">
+                        <div class="panel panel-default">
+                          <div class="panel-heading" style="background-color:#3b5997;color:#fff;"><h4>Facebook</h4></div>
+                          <div class="panel-body">
+                            <p>
+                              #3b5997
+                            </p>
+                            <p>
+                              $facebook
+                            </p>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="panel panel-default">
+                          <div class="panel-heading" style="background-color:#d64937;color:#fff;"><h4>Google +</h4></div>
+                          <div class="panel-body">
+                            <p>
+                              #d64937
+                            </p>
+                            <p>
+                              $googleplus
+                            </p>
+                          </div>
+                        </div>
+                    </div> 
+                    <div class="col-md-3">
+                        <div class="panel panel-default">
+                          <div class="panel-heading" style="background-color:#e0812a;color:#fff;"><h4>RSS</h4></div>
+                          <div class="panel-body">
+                            <p>
+                              #e0812a
+                            </p>
+                            <p>
+                              $rss
+                            </p>
+                          </div>
+                        </div>
+                    </div>  
+              </div>
+               <h4 id="sec2">Combinations</h4>
+                <div class="row">
+                  <div class="col-md-5">
+                      <div class="panel panel-default">
+                        <h4 style="text-align:center;">Products</h5>
+                        <div class="panel-heading" style="background-color:#864587;text-align:left;color:#fff;"><h6>
+Dominant
+                          </br>
+                          Main saturated - #864587 - $main</h6></div>
+                        <div class="panel-heading" style="background-color:#ffffff;text-align:left;"><h6>White - #ffffff - $white</h6></div>
+                        <div class="panel-heading" style="background-color:#009de0;text-align:left;color:#fff;"><h6>Blue - #009de0 - $blue</h6></div>
+                        <div class="panel-heading" style="background-color:#6bc867;text-align:left;color:#fff;"><h6>Green - #6bc867 - $green</h6></div>
+                        <div class="panel-heading" style="background-color:#fccd44;text-align:left;"><h6>Yellow - #fccd44 - $yellow</h6></div>
+                        <div class="panel-heading" style="background-color:#f8f9fa;text-align:left;"><h6>Light grey - #f8f9fa - $light_grey</h6></div>
+                        
+                        <div class="panel-body">
+                          <p>
+                            Context : products.
+                          </p>
+                          <p>
+                            Details : corporate purple, blue as a trust/highlight secondary color, green for call-to-action buttons, specs text contrasts : yellow on blue/purple.
+                          </p>
+                         <p>
+                            Combined with <a href="whitebg">SVG white pattern</a> background on most pages
+                          </p>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="col-md-5">
+                      <div class="panel panel-default">
+                        <h4 style="text-align:center;">User info - help</h5>
+                          <div class="panel-heading" style="background-color:#009de0;text-align:left;color:#fff;"><h6>
+                            Dominant
+                          </br>
+                            Blue - #009de0 - $blue</h6></div>
+                        
+                        <div class="panel-heading" style="background-color:#ffffff;text-align:left;"><h6>White - #ffffff - $white</h6></div>
+                        <div class="panel-heading" style="background-color:#6bc867;text-align:left;color:#fff;"><h6>Green - #6bc867 - $green</h6></div>
+                        <div class="panel-heading" style="background-color:#f8f9fa;text-align:left;"><h6>Light grey - #f8f9fa - $light_grey</h6></div>
+                       
+                        <div class="panel-body">
+                          <p>
+                            Context : help - user info.
+                          </p>
+                          <p>
+                            Details : blue as a trust/highlight color for headers/buttons, white for backgrounds, grey and black for text, if necessary green call-to-action buttons.
+                          </p>
+                        </div>
+                      </div>
+                  </div>
+                 <div class="col-md-5" style="clear: both;">
+                      <div class="panel panel-default">
+                        <h4 style="text-align:center;">Foros - Concursos</h5>
+                        <div class="panel-heading" style="background-color:#fccd44;text-align:left;"><h6>
+                          Dominant
+                          </br>
+                          Yellow - #fccd44 - $yellow</h6></div>
+                        <div class="panel-heading" style="background-color:#864587;text-align:left;color:#fff;"><h6>Main saturated - #864587 - $main</h6></div>
+                        <div class="panel-heading" style="background-color:#009de0;text-align:left;color:#fff;"><h6>Blue - #009de0- $blue</h6></div>
+                        <div class="panel-heading" style="background-color:#f8f9fa;text-align:left;"><h6>Light grey - #f8f9fa - $light_grey</h6></div>
+                        <div class="panel-heading" style="background-color:#ffffff;text-align:left;"><h6>White - #ffffff - $white</h6></div>
+                        
+                        <div class="panel-body">
+                          <p>
+                            Context : foros - concursos.
+                          </p>
+                          <p>
+                            Details : dominant yellow, purple as a corporate secondary color.
+                          </p>
+                        </div>
+                      </div>
+                  </div>
+                </br>
+      
+                  <div class="col-md-5">
+                      <div class="panel panel-default">
+                        <h4 style="text-align:center;">Campaigns</h5>
+                        <div class="panel-heading" style="background-color:#a8c5d7;text-align:left;color:#fff;"><h6>
+Specific campaign dominant
+                          </br>
+                          Campaign dominant* - #a8c5d7 - n/a</h6></div>
+                        <div class="panel-heading" style="background-color:#C8132E;text-align:left;color:#fff;"><h6>
+                          Category dominant
+                          </br>Red campaigns - #C8132E - $redcampaign</h6></div>
+                        <div class="panel-heading" style="background-color:#ffffff;text-align:left;"><h6>White - #ffffff - $white</h6></div>
+                        <div class="panel-heading" style="background-color:#f8f9fa;text-align:left;"><h6>Light grey - #f8f9fa - $light_grey</h6></div>
+                       
+                        
+                        
+                        <div class="panel-body">
+                          <p>
+                            Context : campaigns.
+                          </p>
+                          <p>
+                            Details : *a dominant-saturated colors is selected for every specific campaing page (adapted to the illustration) - the color displayed here is the cash-machine blue campaign (see <a href="http://accion.kelisto.es/no-a-las-comisiones-de-los-cajeros" target="_blank">here</a> ). The red-campaign color must be displayed across all campaign-related pages
+                          </p>
+                         
+                        </div>
+                      </div>
+                  </div>
+             
+                  </div> 
+                <h4 id="sec2">Background and borders</h4>
+                <div class="row">
+                  <div class="col-md-4">
+                      <div class="panel panel-default">
+                        <div class="panel-heading" style="background-color:#f8f9fa;"><h4>Background color</h4></div>
+                        <div class="panel-body">
+                          <p>
+                            #f8f9fa
+                          </p>
+                          <p>
+                            $background-color
+                          </p>
+                          <p>
+                            Combined with <a href="img/bg-homepage.svg">SVG patterns</a> background on most pages
+                          </p>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="col-md-4">
+                      <div class="panel panel-default" style="border:solid 1px #ccccc8;">
+                        <div class="panel-heading" style="background-color:#ffffff;"><h4>Dark border</h4></div>
+                        <div class="panel-body">
+                          <p>
+                            #ccccc8 
+                          </p>
+                          <p>
+                            $dark_border 
+                          </p>
+                          <p>
+                            border:solid 1px $dark_border
+                           </p>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="col-md-4">
+                      <div class="panel panel-default" style="border:solid 1px #e5e5e1;">
+                        <div class="panel-heading" style="background-color:#ffffff;"><h4>Light border</h4></div>
+                        <div class="panel-body">
+                          <p>
+                            #e5e5e1 
+                          </p>
+                          <p>
+                            $light_border 
+                          </p>
+                          <p>
+                            border:solid 1px $light_border
+                          </p>
+                        </div>
+                      </div>
+                  </div>
+     
+                  </div>
+                <h4 id="sec2">Context/button colors</h4>
+                <div class="row">
+                  <div class="col-md-3">
+                      <div class="panel panel-default">
+                        <div class="panel-heading" style="background-color:#6bc867;color:#fff;"><h4>CTA comparators - success action</h4></div>
+                        <div class="panel-body">
+                          <p>
+                            #6bc867
+                          </p>
+                          <p>
+                            $green
+                          </p>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="col-md-3">
+                      <div class="panel panel-default">
+                        <div class="panel-heading" style="background-color:#009de0;color:#fff;"><h4>User info - help</h4></div>
+                        <div class="panel-body">
+                          <p>
+                            #009de0
+                          </p>
+                          <p>
+                            $blue
+                          </p>
+                        </div>
+                      </div>
+                  </div>
+     
+                  <div class="col-md-3">
+                        <div class="panel panel-default">
+                          <div class="panel-heading" style="background-color:#fccd44;color:#681769;"><h4>Foro - Concursos</h4></div>
+                          <div class="panel-body">
+                            <p>
+                              #fccd44
+                            </p>
+                            <p>
+                              $yellow
+                            </p>
+                          </div>
+                        </div>
+                    </div>
+                  <div class="col-md-3">
+                        <div class="panel panel-default">
+                          <div class="panel-heading" style="background-color:#ea5958;color:#fff;"><h4>Red error</h4></div>
+                          <div class="panel-body">
+                            <p>
+                              #ea5958
+                            </p>
+                            <p>
+                              $red_light
+                            </p>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                
+              
+             
+                <hr class="col-md-12">
+                <h2 id="sec3">Typography</h2>
+          <h4>Current fonts<h4/>
+             <pre><code>&lt;link&gt; href='http://fonts.googleapis.com/css?family=Lato:400,700,900|Open+Sans:400,700' rel='stylesheet' type='text/css'&gt;</code></pre>
+          
+                </br>
+           <h4>Titles</h4>
+              <h1>Hi there I'm a Lato headline</h1>
+              <pre><code>
+                font-family: 'Lato', sans-serif;
+                font-weight:700;
+              </code></pre>
+              <a href="http://www.fontsquirrel.com/fonts/Lato?q%5Bterm%5D=Lato&q%5Bsearch_check%5D=Y" target="_blank">Download Lato font</a>
+            </br>
+              Style : Bold
+            </br></br>
+                <h4>Body text</h4>
+                Body/Main text is Open-Sans
+              <pre><code>
+                font-family: 'Open Sans', sans-serif;
+                font-weight:400;
+              </code></pre>
+              <a href="http://www.fontsquirrel.com/fonts/open-sans?q%5Bterm%5D=Open+sans&q%5Bsearch_check%5D=Y" target="_blank">Download Open Sans font</a>
+              </br>
+              Style : Regular
+              </br></br>
+            <h4>Aditional font</h4>
+            <img src="img/tagline-only.jpg" class="img-responsive" width="40%;">
+                <p style="font-family:'Open Sans';">The tagline font and tv ads font. For aditional info purpose only and/or consurso stuff. Not available for web.</p>
+                <a href="http://www.azfonts.net/load_font/mvboli.html" target="_blank">Download MV Boli font</a>
+              <hr class="col-md-12">
+              <h2 id="sec5">Icons</h2>
+              <div class="row">
+                <div class="col-md-8">
+                    <div class="panel panel-default">
+                    <div class="panel-heading"><h5 id="#whitebg">PNG Icons</h5></div>
+                    <div class="panel-body"><img src="img/Icons.png" class="img-responsive img-thumbnail img-center">
+                      <div class="row">
+                             <div class="col-md-2">
+                            <a href="img/Icons.pdf" target="_blank">Download PDF</a>
+                          </div> 
+                          <div class="col-md-5">
+                            <a href="img/Icons.png" target="_blank"> Download PNG (transparent background)</a>
+                          </div> 
+                          
+                          <div class="col-md-5">
+                            <a href="img/Icons.ai" target="_blank">Download ai</a>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <h2>Icon Fonts</h2>
+              <h3>Why Icon Fonts?</h3>
+              <ol>
+      <li>
+        Changing the size of your icons is as easy as changing the font size.
+      </li>
+
+      <li>
+        Because you can easily change the color. The Web is optimized for displaying text.</li>
+
+      <li>
+        Because you can easily shadow their shape</li>
+
+      <li>Because they can have transparent knockouts, which work in IE6 unlike alpha transparent pngs.</li>
+
+      <li>Because you can do all the other stuff image based icons can do, like change opacity or rotate or whatever.</li>
+
+      <li>Vector: Font icons are vector and resolution independent. They look good on both high and low PPI displays, on both mobile and desktop devices.
+    </li>
+    <li>
+    Accessible: When done right, icon fonts are 100% accessible and compatible with screen readers.
+    </li>
+
+    </ol>
+
+
+
+<h3>FYI : How it works</h3>
+<ol>
+      <li>
+        Icons are previously designed as vectors, then uploaded to <a href="http://www.icomoon.io" target="blank">icomoon</a> (online font-icons generator)
+      </li>
+
+      <li>
+        _font-icons.scss file embeds the icon font via @font-face, and has a unique class for each icon, telling it which character in the font to use. This is also where unique styling can be added to each icon.
+      </li>
+
+      <li>
+        font-icons are hosted in assets/fonts/font-icons. These files and the css must be updated in each project when an icon is added/removed. 
+      </li>
+</ol>
+<h3>Using an Icon Font</h3>
+
+<h4>How To Use To Enhance a Word</h4>
+
+    <h5>
+      <span class="icon-megaphone"></span>
+      Megaphone Icon
+    </h5>
+
+    <pre><code>%h5
+  %span.icon-megaphone
+  Megaphone Icon
+</code></pre>
+
+    <style>[data-icon]:before {
+  font-family: icons; /* BYO icon font, mapped smartly */
+  content: attr(data-icon);
+  speak: none; /* Not to be trusted, but hey. */
+}</style>
+</br> 
+    <h4>How To Use for Stand Alone Icons</h4>
+    <span class="icon-megaphone"></span>
+     
+<div class="highlight"><pre><code class="html"><span class="nt">%i.icon-megaphone</span>
+</code></pre></div>
+ <p>
+        You can place icons just about anywhere using the CSS Prefix <code>icon-</code> and the icon's
+        name. Font Icons are designed to be used with inline elements (we like the <code>%i</code> tag for
+        brevity, but using a <code>%span</code> is more semantically correct).
+      </p>
+      <div class="alert alert-success">
+            <i class="icon-info"></i>
+            If you change the font-size of the icon's container, the icon gets bigger. Same things goes for color,
+            drop shadow, and anything else that gets inherited using CSS.
+   
+      </div>
+</br> 
+      <h4>Can't use span or i tag?</h4>
+      This works beautifully in most cases but what if you don't want to inject <code>%i</code>/<code>%span</code> or simply can't?  If you run into this case, you can still use font icons.  All you need to do is use the :before pseudo-element of the element you want to use and set its content and font-family:
+
+ <pre><code> div.github:before {
+  content: "\f09b"; (see _font-icons.scss for specific icon content)
+  font-family: general;
+}</code></pre>
+
+
+</br> 
+<h4>Kelisto Icon Fonts - have fun</h4>
+
+
+    
+              <div class="clearfix mhl ptl">
+    <div class="glyph fs1">
+      <div class="clearfix bshadow0 pbs">
+        <span class="icon-avion"></span><span class="mls"> icon-avion</span>
+      </div>
+      
+      <div class="fs0 bshadow0 clearfix hidden-true">
+        <span class="unit pvs fgc1">liga: </span>
+        <input type="text" readonly value="" class="liga unitRight" />
+      </div>
+    </div>
+
+    <div class="glyph fs1">
+      <div class="clearfix bshadow0 pbs">
+        <span class="icon-campana"></span><span class="mls"> icon-campana</span>
+      </div>
+      
+      <div class="fs0 bshadow0 clearfix hidden-true">
+        <span class="unit pvs fgc1">liga: </span>
+        <input type="text" readonly value="" class="liga unitRight" />
+      </div>
+    </div>
+
+    <div class="glyph fs1">
+      <div class="clearfix bshadow0 pbs">
+        <span class="icon-escritura"></span><span class="mls"> icon-escritura</span>
+      </div>
+      
+      <div class="fs0 bshadow0 clearfix hidden-true">
+        <span class="unit pvs fgc1">liga: </span>
+        <input type="text" readonly value="" class="liga unitRight" />
+      </div>
+    </div>
+
+     <div class="glyph fs1">
+      <div class="clearfix bshadow0 pbs">
+        <span class="icon-wallet"></span><span class="mls"> icon-wallet</span>
+      </div>
+      
+      <div class="fs0 bshadow0 clearfix hidden-true">
+        <span class="unit pvs fgc1">liga: </span>
+        <input type="text" readonly value="" class="liga unitRight" />
+      </div>
+    </div>
+
+
+
+     <div class="glyph fs1">
+      <div class="clearfix bshadow0 pbs">
+        <span class="icon-moneycard"></span><span class="mls"> icon-moneycard</span>
+      </div>
+      
+      <div class="fs0 bshadow0 clearfix hidden-true">
+        <span class="unit pvs fgc1">liga: </span>
+        <input type="text" readonly value="" class="liga unitRight" />
+      </div>
+    </div>
+
+
+
+     <div class="glyph fs1">
+      <div class="clearfix bshadow0 pbs">
+        <span class="icon-prestamosinterpersona"></span><span class="mls"> icon-prestamosinterpersona</span>
+      </div>
+      
+      <div class="fs0 bshadow0 clearfix hidden-true">
+        <span class="unit pvs fgc1">liga: </span>
+        <input type="text" readonly value="" class="liga unitRight" />
+      </div>
+    </div>
+
+
+
+
+     <div class="glyph fs1">
+      <div class="clearfix bshadow0 pbs">
+        <span class="icon-PrestamosRapidos"></span><span class="mls"> icon-PrestamosRapidos</span>
+      </div>
+      
+      <div class="fs0 bshadow0 clearfix hidden-true">
+        <span class="unit pvs fgc1">liga: </span>
+        <input type="text" readonly value="" class="liga unitRight" />
+      </div>
+    </div>
+
+
+
+
+     <div class="glyph fs1">
+      <div class="clearfix bshadow0 pbs">
+        <span class="icon-prestamos"></span><span class="mls"> icon-prestamos</span>
+      </div>
+      
+      <div class="fs0 bshadow0 clearfix hidden-true">
+        <span class="unit pvs fgc1">liga: </span>
+        <input type="text" readonly value="" class="liga unitRight" />
+      </div>
+    </div>
+
+
+     <div class="glyph fs1">
+      <div class="clearfix bshadow0 pbs">
+        <span class="icon-microprestamos"></span><span class="mls"> icon-microprestamos</span>
+      </div>
+      
+      <div class="fs0 bshadow0 clearfix hidden-true">
+        <span class="unit pvs fgc1">liga: </span>
+        <input type="text" readonly value="" class="liga unitRight" />
+      </div>
+    </div>
+
+
+
+     <div class="glyph fs1">
+      <div class="clearfix bshadow0 pbs">
+        <span class="icon-nomina"></span><span class="mls"> icon-nomina</span>
+      </div>
+      
+      <div class="fs0 bshadow0 clearfix hidden-true">
+        <span class="unit pvs fgc1">liga: </span>
+        <input type="text" readonly value="" class="liga unitRight" />
+      </div>
+    </div>
+
+    
+     <div class="glyph fs1">
+      <div class="clearfix bshadow0 pbs">
+        <span class="icon-debitcard"></span><span class="mls"> icon-debitcard</span>
+      </div>
+      
+      <div class="fs0 bshadow0 clearfix hidden-true">
+        <span class="unit pvs fgc1">liga: </span>
+        <input type="text" readonly value="" class="liga unitRight" />
+      </div>
+    </div>
+
+
+
+
+
+
+     <div class="glyph fs1">
+      <div class="clearfix bshadow0 pbs">
+        <span class="icon-fidelitycard"></span><span class="mls"> icon-fidelitycard</span>
+      </div>
+      
+      <div class="fs0 bshadow0 clearfix hidden-true">
+        <span class="unit pvs fgc1">liga: </span>
+        <input type="text" readonly value="" class="liga unitRight" />
+      </div>
+    </div>
+    
+
+
+     <div class="glyph fs1">
+      <div class="clearfix bshadow0 pbs">
+        <span class="icon-empresas"></span><span class="mls"> icon-empresas</span>
+      </div>
+      
+      <div class="fs0 bshadow0 clearfix hidden-true">
+        <span class="unit pvs fgc1">liga: </span>
+        <input type="text" readonly value="" class="liga unitRight" />
+      </div>
+    </div>
+    <div class="glyph fs1">
+      <div class="clearfix bshadow0 pbs">
+        <span class="icon-creditcard"></span><span class="mls"> icon-creditcard</span>
+      </div>
+      
+      <div class="fs0 bshadow0 clearfix hidden-true">
+        <span class="unit pvs fgc1">liga: </span>
+        <input type="text" readonly value="" class="liga unitRight" />
+      </div>
+    </div>
+
+
+    <div class="glyph fs1">
+      <div class="clearfix bshadow0 pbs">
+        <span class="icon-guides"></span><span class="mls"> icon-guides</span>
+      </div>
+      
+      <div class="fs0 bshadow0 clearfix hidden-true">
+        <span class="unit pvs fgc1">liga: </span>
+        <input type="text" readonly value="" class="liga unitRight" />
+      </div>
+    </div>
+    <div class="glyph fs1">
+      <div class="clearfix bshadow0 pbs">
+        <span class="icon-vida"></span><span class="mls"> icon-vida</span>
+      </div>
+      
+      <div class="fs0 bshadow0 clearfix hidden-true">
+        <span class="unit pvs fgc1">liga: </span>
+        <input type="text" readonly value="" class="liga unitRight" />
+      </div>
+    </div>
+    <div class="glyph fs1">
+      <div class="clearfix bshadow0 pbs">
+        <span class="icon-megaphone"></span><span class="mls"> icon-megaphone</span>
+      </div>
+      
+      <div class="fs0 bshadow0 clearfix hidden-true">
+        <span class="unit pvs fgc1">liga: </span>
+        <input type="text" readonly value="" class="liga unitRight" />
+      </div>
+    </div>
+    <div class="glyph fs1">
+      <div class="clearfix bshadow0 pbs">
+        <span class="icon-simcard"></span><span class="mls"> icon-simcard</span>
+      </div>
+      
+      <div class="fs0 bshadow0 clearfix hidden-true">
+        <span class="unit pvs fgc1">liga: </span>
+        <input type="text" readonly value="" class="liga unitRight" />
+      </div>
+    </div>
+    <div class="glyph fs1">
+      <div class="clearfix bshadow0 pbs">
+        <span class="icon-plusaccordeon"></span><span class="mls"> icon-plusaccordeon</span>
+      </div>
+      
+      <div class="fs0 bshadow0 clearfix hidden-true">
+        <span class="unit pvs fgc1">liga: </span>
+        <input type="text" readonly value="" class="liga unitRight" />
+      </div>
+    </div>
+    <div class="glyph fs1">
+      <div class="clearfix bshadow0 pbs">
+        <span class="icon-user"></span><span class="mls"> icon-user</span>
+      </div>
+      
+      <div class="fs0 bshadow0 clearfix hidden-true">
+        <span class="unit pvs fgc1">liga: </span>
+        <input type="text" readonly value="" class="liga unitRight" />
+      </div>
+    </div>
+    <div class="glyph fs1">
+      <div class="clearfix bshadow0 pbs">
+        <span class="icon-simple-arrow2"></span><span class="mls"> icon-simple-arrow2</span>
+      </div>
+      
+      <div class="fs0 bshadow0 clearfix hidden-true">
+        <span class="unit pvs fgc1">liga: </span>
+        <input type="text" readonly value="" class="liga unitRight" />
+      </div>
+    </div>
+    <div class="glyph fs1">
+      <div class="clearfix bshadow0 pbs">
+        <span class="icon-unchecked"></span><span class="mls"> icon-unchecked</span>
+      </div>
+      
+      <div class="fs0 bshadow0 clearfix hidden-true">
+        <span class="unit pvs fgc1">liga: </span>
+        <input type="text" readonly value="" class="liga unitRight" />
+      </div>
+    </div>
+    <div class="glyph fs1">
+      <div class="clearfix bshadow0 pbs">
+        <span class="icon-twitter"></span><span class="mls"> icon-twitter</span>
+      </div>
+      
+      <div class="fs0 bshadow0 clearfix hidden-true">
+        <span class="unit pvs fgc1">liga: </span>
+        <input type="text" readonly value="" class="liga unitRight" />
+      </div>
+    </div>
+    <div class="glyph fs1">
+      <div class="clearfix bshadow0 pbs">
+        <span class="icon-tres-pers"></span><span class="mls"> icon-tres-pers</span>
+      </div>
+      
+      <div class="fs0 bshadow0 clearfix hidden-true">
+        <span class="unit pvs fgc1">liga: </span>
+        <input type="text" readonly value="" class="liga unitRight" />
+      </div>
+    </div>
+    <div class="glyph fs1">
+      <div class="clearfix bshadow0 pbs">
+        <span class="icon-trash"></span><span class="mls"> icon-trash</span>
+      </div>
+      
+      <div class="fs0 bshadow0 clearfix hidden-true">
+        <span class="unit pvs fgc1">liga: </span>
+        <input type="text" readonly value="" class="liga unitRight" />
+      </div>
+    </div>
+    <div class="glyph fs1">
+      <div class="clearfix bshadow0 pbs">
+        <span class="icon-thumb-down"></span><span class="mls"> icon-thumb-down</span>
+      </div>
+      
+      <div class="fs0 bshadow0 clearfix hidden-true">
+        <span class="unit pvs fgc1">liga: </span>
+        <input type="text" readonly value="" class="liga unitRight" />
+      </div>
+    </div>
+    <div class="glyph fs1">
+      <div class="clearfix bshadow0 pbs">
+        <span class="icon-speedtest"></span><span class="mls"> icon-speedtest</span>
+      </div>
+      
+      <div class="fs0 bshadow0 clearfix hidden-true">
+        <span class="unit pvs fgc1">liga: </span>
+        <input type="text" readonly value="" class="liga unitRight" />
+      </div>
+    </div>
+    <div class="glyph fs1">
+      <div class="clearfix bshadow0 pbs">
+        <span class="icon-small-arrow"></span><span class="mls"> icon-small-arrow</span>
+      </div>
+      
+      <div class="fs0 bshadow0 clearfix hidden-true">
+        <span class="unit pvs fgc1">liga: </span>
+        <input type="text" readonly value="" class="liga unitRight" />
+      </div>
+    </div>
+    <div class="glyph fs1">
+      <div class="clearfix bshadow0 pbs">
+        <span class="icon-shield"></span><span class="mls"> icon-shield</span>
+      </div>
+      
+      <div class="fs0 bshadow0 clearfix hidden-true">
+        <span class="unit pvs fgc1">liga: </span>
+        <input type="text" readonly value="" class="liga unitRight" />
+      </div>
+    </div>
+    <div class="glyph fs1">
+      <div class="clearfix bshadow0 pbs">
+        <span class="icon-share"></span><span class="mls"> icon-share</span>
+      </div>
+      
+      <div class="fs0 bshadow0 clearfix hidden-true">
+        <span class="unit pvs fgc1">liga: </span>
+        <input type="text" readonly value="" class="liga unitRight" />
+      </div>
+    </div>
+    <div class="glyph fs1">
+      <div class="clearfix bshadow0 pbs">
+        <span class="icon-share-out"></span><span class="mls"> icon-share-out</span>
+      </div>
+      
+      <div class="fs0 bshadow0 clearfix hidden-true">
+        <span class="unit pvs fgc1">liga: </span>
+        <input type="text" readonly value="" class="liga unitRight" />
+      </div>
+    </div>
+    <div class="glyph fs1">
+      <div class="clearfix bshadow0 pbs">
+        <span class="icon-settings"></span><span class="mls"> icon-settings</span>
+      </div>
+      
+
+     
+      <div class="fs0 bshadow0 clearfix hidden-true">
+        <span class="unit pvs fgc1">liga: </span>
+        <input type="text" readonly value="" class="liga unitRight" />
+      </div>
+    </div>
+    <div class="glyph fs1">
+      <div class="clearfix bshadow0 pbs">
+        <span class="icon-seguros"></span><span class="mls"> icon-seguros</span>
+      </div>
+      
+      
+      <div class="fs0 bshadow0 clearfix hidden-true">
+        <span class="unit pvs fgc1">liga: </span>
+        <input type="text" readonly value="" class="liga unitRight" />
+      </div>
+    </div>
+    <div class="glyph fs1">
+      <div class="clearfix bshadow0 pbs">
+        <span class="icon-save"></span><span class="mls"> icon-save</span>
+      </div>
+      
+      <div class="fs0 bshadow0 clearfix hidden-true">
+        <span class="unit pvs fgc1">liga: </span>
+        <input type="text" readonly value="" class="liga unitRight" />
+      </div>
+    </div>
+    <div class="glyph fs1">
+      <div class="clearfix bshadow0 pbs">
+        <span class="icon-salud"></span><span class="mls"> icon-salud</span>
+      </div>
+     
+      <div class="fs0 bshadow0 clearfix hidden-true">
+        <span class="unit pvs fgc1">liga: </span>
+        <input type="text" readonly value="" class="liga unitRight" />
+      </div>
+    </div>
+    <div class="glyph fs1">
+      <div class="clearfix bshadow0 pbs">
+        <span class="icon-rss"></span><span class="mls"> icon-rss</span>
+      </div>
+      
+      <div class="fs0 bshadow0 clearfix hidden-true">
+        <span class="unit pvs fgc1">liga: </span>
+        <input type="text" readonly value="" class="liga unitRight" />
+      </div>
+    </div>
+    <div class="glyph fs1">
+      <div class="clearfix bshadow0 pbs">
+        <span class="icon-reportajes"></span><span class="mls"> icon-reportajes</span>
+      </div>
+      
+      <div class="fs0 bshadow0 clearfix hidden-true">
+        <span class="unit pvs fgc1">liga: </span>
+        <input type="text" readonly value="" class="liga unitRight" />
+      </div>
+    </div>
+    <div class="glyph fs1">
+      <div class="clearfix bshadow0 pbs">
+        <span class="icon-refresh"></span><span class="mls"> icon-refresh</span>
+      </div>
+      
+      <div class="fs0 bshadow0 clearfix hidden-true">
+        <span class="unit pvs fgc1">liga: </span>
+        <input type="text" readonly value="" class="liga unitRight" />
+      </div>
+    </div>
+    <div class="glyph fs1">
+      <div class="clearfix bshadow0 pbs">
+        <span class="icon-print"></span><span class="mls"> icon-print</span>
+      </div>
+      
+      <div class="fs0 bshadow0 clearfix hidden-true">
+        <span class="unit pvs fgc1">liga: </span>
+        <input type="text" readonly value="" class="liga unitRight" />
+      </div>
+    </div>
+    <div class="glyph fs1">
+      <div class="clearfix bshadow0 pbs">
+        <span class="icon-precios-variables"></span><span class="mls"> icon-precios-variables</span>
+      </div>
+      
+      <div class="fs0 bshadow0 clearfix hidden-true">
+        <span class="unit pvs fgc1">liga: </span>
+        <input type="text" readonly value="" class="liga unitRight" />
+      </div>
+    </div>
+    <div class="glyph fs1">
+      <div class="clearfix bshadow0 pbs">
+        <span class="icon-pin"></span><span class="mls"> icon-pin</span>
+      </div>
+     
+      <div class="fs0 bshadow0 clearfix hidden-true">
+        <span class="unit pvs fgc1">liga: </span>
+        <input type="text" readonly value="" class="liga unitRight" />
+      </div>
+    </div>
+    <div class="glyph fs1">
+      <div class="clearfix bshadow0 pbs">
+        <span class="icon-phone"></span><span class="mls"> icon-phone</span>
+      </div>
+      
+      <div class="fs0 bshadow0 clearfix hidden-true">
+        <span class="unit pvs fgc1">liga: </span>
+        <input type="text" readonly value="" class="liga unitRight" />
+      </div>
+    </div>
+    <div class="glyph fs1">
+      <div class="clearfix bshadow0 pbs">
+        <span class="icon-permalink"></span><span class="mls"> icon-permalink</span>
+      </div>
+      
+      <div class="fs0 bshadow0 clearfix hidden-true">
+        <span class="unit pvs fgc1">liga: </span>
+        <input type="text" readonly value="" class="liga unitRight" />
+      </div>
+    </div>
+    <div class="glyph fs1">
+      <div class="clearfix bshadow0 pbs">
+        <span class="icon-pen"></span><span class="mls"> icon-pen</span>
+      </div>
+      
+      <div class="fs0 bshadow0 clearfix hidden-true">
+        <span class="unit pvs fgc1">liga: </span>
+        <input type="text" readonly value="" class="liga unitRight" />
+      </div>
+    </div>
+    <div class="glyph fs1">
+      <div class="clearfix bshadow0 pbs">
+        <span class="icon-packs"></span><span class="mls"> icon-packs</span>
+      </div>
+      
+      <div class="fs0 bshadow0 clearfix hidden-true">
+        <span class="unit pvs fgc1">liga: </span>
+        <input type="text" readonly value="" class="liga unitRight" />
+      </div>
+    </div>
+    <div class="glyph fs1">
+      <div class="clearfix bshadow0 pbs">
+        <span class="icon-noticias"></span><span class="mls"> icon-noticias</span>
+      </div>
+     
+      <div class="fs0 bshadow0 clearfix hidden-true">
+        <span class="unit pvs fgc1">liga: </span>
+        <input type="text" readonly value="" class="liga unitRight" />
+      </div>
+    </div>
+    <div class="glyph fs1">
+      <div class="clearfix bshadow0 pbs">
+        <span class="icon-movil"></span><span class="mls"> icon-movil</span>
+      </div>
+
+       <div class="fs0 bshadow0 clearfix hidden-true">
+        <span class="unit pvs fgc1">liga: </span>
+        <input type="text" readonly value="" class="liga unitRight" />
+      </div>
+    </div>
+    <div class="glyph fs1">
+      <div class="clearfix bshadow0 pbs">
+        <span class="icon-packs"></span><span class="mls">icon-packs</span>
+      </div>
+      
+      <div class="fs0 bshadow0 clearfix hidden-true">
+        <span class="unit pvs fgc1">liga: </span>
+        <input type="text" readonly value="" class="liga unitRight" />
+      </div>
+    </div>
+    <div class="glyph fs1">
+      <div class="clearfix bshadow0 pbs">
+        <span class="icon-moto"></span><span class="mls"> icon-moto</span>
+      </div>
+     
+      <div class="fs0 bshadow0 clearfix hidden-true">
+        <span class="unit pvs fgc1">liga: </span>
+        <input type="text" readonly value="" class="liga unitRight" />
+      </div>
+    </div>
+    <div class="glyph fs1">
+      <div class="clearfix bshadow0 pbs">
+        <span class="icon-menu"></span><span class="mls"> icon-menu</span>
+      </div>
+      
+      <div class="fs0 bshadow0 clearfix hidden-true">
+        <span class="unit pvs fgc1">liga: </span>
+        <input type="text" readonly value="" class="liga unitRight" />
+      </div>
+    </div>
+    <div class="glyph fs1">
+      <div class="clearfix bshadow0 pbs">
+        <span class="icon-meneame"></span><span class="mls"> icon-meneame</span>
+      </div>
+     
+      <div class="fs0 bshadow0 clearfix hidden-true">
+        <span class="unit pvs fgc1">liga: </span>
+        <input type="text" readonly value="" class="liga unitRight" />
+      </div>
+    </div>
+    <div class="glyph fs1">
+      <div class="clearfix bshadow0 pbs">
+        <span class="icon-mejorcompra"></span><span class="mls"> icon-mejorcompra</span>
+      </div>
+     
+      <div class="fs0 bshadow0 clearfix hidden-true">
+        <span class="unit pvs fgc1">liga: </span>
+        <input type="text" readonly value="" class="liga unitRight" />
+      </div>
+    </div>
+    <div class="glyph fs1">
+      <div class="clearfix bshadow0 pbs">
+        <span class="icon-magnifier"></span><span class="mls"> icon-magnifier</span>
+      </div>
+      
+      <div class="fs0 bshadow0 clearfix hidden-true">
+        <span class="unit pvs fgc1">liga: </span>
+        <input type="text" readonly value="" class="liga unitRight" />
+      </div>
+    </div>
+    <div class="glyph fs1">
+      <div class="clearfix bshadow0 pbs">
+        <span class="icon-link"></span><span class="mls"> icon-link</span>
+      </div>
+     
+      <div class="fs0 bshadow0 clearfix hidden-true">
+        <span class="unit pvs fgc1">liga: </span>
+        <input type="text" readonly value="" class="liga unitRight" />
+      </div>
+    </div>
+    <div class="glyph fs1">
+      <div class="clearfix bshadow0 pbs">
+        <span class="icon-kelisto-circle"></span><span class="mls"> icon-kelisto-circle</span>
+      </div>
+      
+      <div class="fs0 bshadow0 clearfix hidden-true">
+        <span class="unit pvs fgc1">liga: </span>
+        <input type="text" readonly value="" class="liga unitRight" />
+      </div>
+    </div>
+    <div class="glyph fs1">
+      <div class="clearfix bshadow0 pbs">
+        <span class="icon-info"></span><span class="mls"> icon-info</span>
+      </div>
+     
+      <div class="fs0 bshadow0 clearfix hidden-true">
+        <span class="unit pvs fgc1">liga: </span>
+        <input type="text" readonly value="" class="liga unitRight" />
+      </div>
+    </div>
+    <div class="glyph fs1">
+      <div class="clearfix bshadow0 pbs">
+        <span class="icon-icon-pdf"></span><span class="mls"> icon-icon-pdf</span>
+      </div>
+      
+      <div class="fs0 bshadow0 clearfix hidden-true">
+        <span class="unit pvs fgc1">liga: </span>
+        <input type="text" readonly value="" class="liga unitRight" />
+      </div>
+    </div>
+    <div class="glyph fs1">
+      <div class="clearfix bshadow0 pbs">
+        <span class="icon-hogar"></span><span class="mls"> icon-hogar</span>
+      </div>
+      
+      <div class="fs0 bshadow0 clearfix hidden-true">
+        <span class="unit pvs fgc1">liga: </span>
+        <input type="text" readonly value="" class="liga unitRight" />
+      </div>
+    </div>
+    <div class="glyph fs1">
+      <div class="clearfix bshadow0 pbs">
+        <span class="icon-hipotecas"></span><span class="mls"> icon-hipotecas</span>
+      </div>
+     
+      <div class="fs0 bshadow0 clearfix hidden-true">
+        <span class="unit pvs fgc1">liga: </span>
+        <input type="text" readonly value="" class="liga unitRight" />
+      </div>
+    </div>
+    <div class="glyph fs1">
+      <div class="clearfix bshadow0 pbs">
+        <span class="icon-help"></span><span class="mls"> icon-help</span>
+      </div>
+      
+      <div class="fs0 bshadow0 clearfix hidden-true">
+        <span class="unit pvs fgc1">liga: </span>
+        <input type="text" readonly value="" class="liga unitRight" />
+      </div>
+    </div>
+    <div class="glyph fs1">
+      <div class="clearfix bshadow0 pbs">
+        <span class="icon-happy"></span><span class="mls"> icon-happy</span>
+      </div>
+     
+      <div class="fs0 bshadow0 clearfix hidden-true">
+        <span class="unit pvs fgc1">liga: </span>
+        <input type="text" readonly value="" class="liga unitRight" />
+      </div>
+    </div>
+    <div class="glyph fs1">
+      <div class="clearfix bshadow0 pbs">
+        <span class="icon-googleplus"></span><span class="mls"> icon-googleplus</span>
+      </div>
+      
+      <div class="fs0 bshadow0 clearfix hidden-true">
+        <span class="unit pvs fgc1">liga: </span>
+        <input type="text" readonly value="" class="liga unitRight" />
+      </div>
+    </div>
+    <div class="glyph fs1">
+      <div class="clearfix bshadow0 pbs">
+        <span class="icon-gift"></span><span class="mls"> icon-gift</span>
+      </div>
+      
+      <div class="fs0 bshadow0 clearfix hidden-true">
+        <span class="unit pvs fgc1">liga: </span>
+        <input type="text" readonly value="" class="liga unitRight" />
+      </div>
+    </div>
+    <div class="glyph fs1">
+      <div class="clearfix bshadow0 pbs">
+        <span class="icon-general"></span><span class="mls"> icon-general</span>
+      </div>
+     
+      <div class="fs0 bshadow0 clearfix hidden-true">
+        <span class="unit pvs fgc1">liga: </span>
+        <input type="text" readonly value="" class="liga unitRight" />
+      </div>
+    </div>
+    <div class="glyph fs1">
+      <div class="clearfix bshadow0 pbs">
+        <span class="icon-gas"></span><span class="mls"> icon-gas</span>
+      </div>
+     
+      <div class="fs0 bshadow0 clearfix hidden-true">
+        <span class="unit pvs fgc1">liga: </span>
+        <input type="text" readonly value="" class="liga unitRight" />
+      </div>
+    </div>
+    <div class="glyph fs1">
+      <div class="clearfix bshadow0 pbs">
+        <span class="icon-finanzas"></span><span class="mls"> icon-finanzas</span>
+      </div>
+     
+      <div class="fs0 bshadow0 clearfix hidden-true">
+        <span class="unit pvs fgc1">liga: </span>
+        <input type="text" readonly value="" class="liga unitRight" />
+      </div>
+    </div>
+    <div class="glyph fs1">
+      <div class="clearfix bshadow0 pbs">
+        <span class="icon-favorite"></span><span class="mls"> icon-favorite</span>
+      </div>
+     
+      <div class="fs0 bshadow0 clearfix hidden-true">
+        <span class="unit pvs fgc1">liga: </span>
+        <input type="text" readonly value="" class="liga unitRight" />
+      </div>
+    </div>
+    <div class="glyph fs1">
+      <div class="clearfix bshadow0 pbs">
+        <span class="icon-favorite-notselected"></span><span class="mls"> icon-favorite-notselected</span>
+      </div>
+     
+      <div class="fs0 bshadow0 clearfix hidden-true">
+        <span class="unit pvs fgc1">liga: </span>
+        <input type="text" readonly value="" class="liga unitRight" />
+      </div>
+    </div>
+    <div class="glyph fs1">
+      <div class="clearfix bshadow0 pbs">
+        <span class="icon-famaydinero"></span><span class="mls"> icon-famaydinero</span>
+      </div>
+     
+      <div class="fs0 bshadow0 clearfix hidden-true">
+        <span class="unit pvs fgc1">liga: </span>
+        <input type="text" readonly value="" class="liga unitRight" />
+      </div>
+    </div>
+    <div class="glyph fs1">
+      <div class="clearfix bshadow0 pbs">
+        <span class="icon-facebook"></span><span class="mls"> icon-facebook</span>
+      </div>
+     
+      <div class="fs0 bshadow0 clearfix hidden-true">
+        <span class="unit pvs fgc1">liga: </span>
+        <input type="text" readonly value="" class="liga unitRight" />
+      </div>
+    </div>
+    <div class="glyph fs1">
+      <div class="clearfix bshadow0 pbs">
+        <span class="icon-eye"></span><span class="mls"> icon-eye</span>
+      </div>
+      
+      <div class="fs0 bshadow0 clearfix hidden-true">
+        <span class="unit pvs fgc1">liga: </span>
+        <input type="text" readonly value="" class="liga unitRight" />
+      </div>
+    </div>
+    <div class="glyph fs1">
+      <div class="clearfix bshadow0 pbs">
+        <span class="icon-exit"></span><span class="mls"> icon-exit</span>
+      </div>
+     
+      <div class="fs0 bshadow0 clearfix hidden-true">
+        <span class="unit pvs fgc1">liga: </span>
+        <input type="text" readonly value="" class="liga unitRight" />
+      </div>
+    </div>
+    <div class="glyph fs1">
+      <div class="clearfix bshadow0 pbs">
+        <span class="icon-error"></span><span class="mls"> icon-error</span>
+      </div>
+     
+      <div class="fs0 bshadow0 clearfix hidden-true">
+        <span class="unit pvs fgc1">liga: </span>
+        <input type="text" readonly value="" class="liga unitRight" />
+      </div>
+    </div>
+    <div class="glyph fs1">
+      <div class="clearfix bshadow0 pbs">
+        <span class="icon-email"></span><span class="mls"> icon-email</span>
+      </div>
+      
+      <div class="fs0 bshadow0 clearfix hidden-true">
+        <span class="unit pvs fgc1">liga: </span>
+        <input type="text" readonly value="" class="liga unitRight" />
+      </div>
+    </div>
+    <div class="glyph fs1">
+      <div class="clearfix bshadow0 pbs">
+        <span class="icon-electricidad"></span><span class="mls"> icon-electricidad</span>
+      </div>
+     
+      <div class="fs0 bshadow0 clearfix hidden-true">
+        <span class="unit pvs fgc1">liga: </span>
+        <input type="text" readonly value="" class="liga unitRight" />
+      </div>
+    </div>
+    <div class="glyph fs1">
+      <div class="clearfix bshadow0 pbs">
+        <span class="icon-duracion-contrato"></span><span class="mls"> icon-duracion-contrato</span>
+      </div>
+     
+      <div class="fs0 bshadow0 clearfix hidden-true">
+        <span class="unit pvs fgc1">liga: </span>
+        <input type="text" readonly value="" class="liga unitRight" />
+      </div>
+    </div>
+    <div class="glyph fs1">
+      <div class="clearfix bshadow0 pbs">
+        <span class="icon-download"></span><span class="mls"> icon-download</span>
+      </div>
+     
+      <div class="fs0 bshadow0 clearfix hidden-true">
+        <span class="unit pvs fgc1">liga: </span>
+        <input type="text" readonly value="" class="liga unitRight" />
+      </div>
+    </div>
+    <div class="glyph fs1">
+      <div class="clearfix bshadow0 pbs">
+        <span class="icon-dos-pers"></span><span class="mls"> icon-dos-pers</span>
+      </div>
+     
+      <div class="fs0 bshadow0 clearfix hidden-true">
+        <span class="unit pvs fgc1">liga: </span>
+        <input type="text" readonly value="" class="liga unitRight" />
+      </div>
+    </div>
+    <div class="glyph fs1">
+      <div class="clearfix bshadow0 pbs">
+        <span class="icon-datos"></span><span class="mls"> icon-datos</span>
+      </div>
+     
+      <div class="fs0 bshadow0 clearfix hidden-true">
+        <span class="unit pvs fgc1">liga: </span>
+        <input type="text" readonly value="" class="liga unitRight" />
+      </div>
+    </div>
+    <div class="glyph fs1">
+      <div class="clearfix bshadow0 pbs">
+        <span class="icon-cursor"></span><span class="mls"> icon-cursor</span>
+      </div>
+     
+      <div class="fs0 bshadow0 clearfix hidden-true">
+        <span class="unit pvs fgc1">liga: </span>
+        <input type="text" readonly value="" class="liga unitRight" />
+      </div>
+    </div>
+    <div class="glyph fs1">
+      <div class="clearfix bshadow0 pbs">
+        <span class="icon-cuatromas-pers"></span><span class="mls"> icon-cuatromas-pers</span>
+      </div>
+     
+      <div class="fs0 bshadow0 clearfix hidden-true">
+        <span class="unit pvs fgc1">liga: </span>
+        <input type="text" readonly value="" class="liga unitRight" />
+      </div>
+    </div>
+    <div class="glyph fs1">
+      <div class="clearfix bshadow0 pbs">
+        <span class="icon-con-factura"></span><span class="mls"> icon-con-factura</span>
+      </div>
+     
+      <div class="fs0 bshadow0 clearfix hidden-true">
+        <span class="unit pvs fgc1">liga: </span>
+        <input type="text" readonly value="" class="liga unitRight" />
+      </div>
+    </div>
+    <div class="glyph fs1">
+      <div class="clearfix bshadow0 pbs">
+        <span class="icon-comunidad"></span><span class="mls"> icon-comunidad</span>
+      </div>
+      
+      <div class="fs0 bshadow0 clearfix hidden-true">
+        <span class="unit pvs fgc1">liga: </span>
+        <input type="text" readonly value="" class="liga unitRight" />
+      </div>
+    </div>
+    <div class="glyph fs1">
+      <div class="clearfix bshadow0 pbs">
+        <span class="icon-comms"></span><span class="mls"> icon-comms</span>
+      </div>
+     
+      <div class="fs0 bshadow0 clearfix hidden-true">
+        <span class="unit pvs fgc1">liga: </span>
+        <input type="text" readonly value="" class="liga unitRight" />
+      </div>
+    </div>
+    <div class="glyph fs1">
+      <div class="clearfix bshadow0 pbs">
+        <span class="icon-clock"></span><span class="mls"> icon-clock</span>
+      </div>
+      
+      <div class="fs0 bshadow0 clearfix hidden-true">
+        <span class="unit pvs fgc1">liga: </span>
+        <input type="text" readonly value="" class="liga unitRight" />
+      </div>
+    </div>
+    <div class="glyph fs1">
+      <div class="clearfix bshadow0 pbs">
+        <span class="icon-checked"></span><span class="mls"> icon-checked</span>
+      </div>
+      
+      <div class="fs0 bshadow0 clearfix hidden-true">
+        <span class="unit pvs fgc1">liga: </span>
+        <input type="text" readonly value="" class="liga unitRight" />
+      </div>
+    </div>
+    <div class="glyph fs1">
+      <div class="clearfix bshadow0 pbs">
+        <span class="icon-check-verde"></span><span class="mls"> icon-check-verde</span>
+      </div>
+     
+      <div class="fs0 bshadow0 clearfix hidden-true">
+        <span class="unit pvs fgc1">liga: </span>
+        <input type="text" readonly value="" class="liga unitRight" />
+      </div>
+    </div>
+    <div class="glyph fs1">
+      <div class="clearfix bshadow0 pbs">
+        <span class="icon-chat"></span><span class="mls"> icon-chat</span>
+      </div>
+      
+      <div class="fs0 bshadow0 clearfix hidden-true">
+        <span class="unit pvs fgc1">liga: </span>
+        <input type="text" readonly value="" class="liga unitRight" />
+      </div>
+    </div>
+    <div class="glyph fs1">
+      <div class="clearfix bshadow0 pbs">
+        <span class="icon-broadband"></span><span class="mls"> icon-broadband</span>
+      </div>
+     
+      <div class="fs0 bshadow0 clearfix hidden-true">
+        <span class="unit pvs fgc1">liga: </span>
+        <input type="text" readonly value="" class="liga unitRight" />
+      </div>
+    </div>
+    <div class="glyph fs1">
+      <div class="clearfix bshadow0 pbs">
+        <span class="icon-bookmark-percent"></span><span class="mls"> icon-bookmark-percent</span>
+      </div>
+      
+      <div class="fs0 bshadow0 clearfix hidden-true">
+        <span class="unit pvs fgc1">liga: </span>
+        <input type="text" readonly value="" class="liga unitRight" />
+      </div>
+    </div>
+    <div class="glyph fs1">
+      <div class="clearfix bshadow0 pbs">
+        <span class="icon-bookmark-kelisto"></span><span class="mls"> icon-bookmark-kelisto</span>
+      </div>
+      
+      <div class="fs0 bshadow0 clearfix hidden-true">
+        <span class="unit pvs fgc1">liga: </span>
+        <input type="text" readonly value="" class="liga unitRight" />
+      </div>
+    </div>
+    <div class="glyph fs1">
+      <div class="clearfix bshadow0 pbs">
+        <span class="icon-bookmark-euro"></span><span class="mls"> icon-bookmark-euro</span>
+      </div>
+     
+      <div class="fs0 bshadow0 clearfix hidden-true">
+        <span class="unit pvs fgc1">liga: </span>
+        <input type="text" readonly value="" class="liga unitRight" />
+      </div>
+    </div>
+    <div class="glyph fs1">
+      <div class="clearfix bshadow0 pbs">
+        <span class="icon-blankfile"></span><span class="mls"> icon-blankfile</span>
+      </div>
+     
+      <div class="fs0 bshadow0 clearfix hidden-true">
+        <span class="unit pvs fgc1">liga: </span>
+        <input type="text" readonly value="" class="liga unitRight" />
+      </div>
+    </div>
+    <div class="glyph fs1">
+      <div class="clearfix bshadow0 pbs">
+        <span class="icon-assist"></span><span class="mls"> icon-assist</span>
+      </div>
+     
+      <div class="fs0 bshadow0 clearfix hidden-true">
+        <span class="unit pvs fgc1">liga: </span>
+        <input type="text" readonly value="" class="liga unitRight" />
+      </div>
+    </div>
+    <div class="glyph fs1">
+      <div class="clearfix bshadow0 pbs">
+        <span class="icon-approved"></span><span class="mls"> icon-approved</span>
+      </div>
+     
+      <div class="fs0 bshadow0 clearfix hidden-true">
+        <span class="unit pvs fgc1">liga: </span>
+        <input type="text" readonly value="" class="liga unitRight" />
+      </div>
+    </div>
+    <div class="glyph fs1">
+      <div class="clearfix bshadow0 pbs">
+        <span class="icon-account-lock"></span><span class="mls"> icon-account-lock</span>
+      </div>
+      
+      <div class="fs0 bshadow0 clearfix hidden-true">
+        <span class="unit pvs fgc1">liga: </span>
+        <input type="text" readonly value="" class="liga unitRight" />
+      </div>
+    </div>
+    <div class="glyph fs1">
+      <div class="clearfix bshadow0 pbs">
+        <span class="icon-logo-top"></span><span class="mls"> icon-logo-top</span>
+      </div>
+    
+      <div class="fs0 bshadow0 clearfix hidden-true">
+        <span class="unit pvs fgc1">liga: </span>
+        <input type="text" readonly value="" class="liga unitRight" />
+      </div>
+    </div>
+    <div class="glyph fs1">
+      <div class="clearfix bshadow0 pbs">
+        <span class="icon-sort-inactive"></span><span class="mls"> icon-sort-inactive</span>
+      </div>
+      
+      <div class="fs0 bshadow0 clearfix hidden-true">
+        <span class="unit pvs fgc1">liga: </span>
+        <input type="text" readonly value="" class="liga unitRight" />
+      </div>
+    </div>
+    <div class="glyph fs1">
+      <div class="clearfix bshadow0 pbs">
+        <span class="icon-sort-up"></span><span class="mls"> icon-sort-up</span>
+      </div>
+     
+      <div class="fs0 bshadow0 clearfix hidden-true">
+        <span class="unit pvs fgc1">liga: </span>
+        <input type="text" readonly value="" class="liga unitRight" />
+      </div>
+    </div>
+    <div class="glyph fs1">
+      <div class="clearfix bshadow0 pbs">
+        <span class="icon-sort-down"></span><span class="mls"> icon-sort-down</span>
+      </div>
+     
+      <div class="fs0 bshadow0 clearfix hidden-true">
+        <span class="unit pvs fgc1">liga: </span>
+        <input type="text" readonly value="" class="liga unitRight" />
+      </div>
+    </div>
+    <div class="glyph fs1">
+      <div class="clearfix bshadow0 pbs">
+        <span class="icon-simple-arrow22"></span><span class="mls"> icon-simple-arrow22</span>
+      </div>
+      
+      <div class="fs0 bshadow0 clearfix hidden-true">
+        <span class="unit pvs fgc1">liga: </span>
+        <input type="text" readonly value="" class="liga unitRight" />
+      </div>
+    </div>
+    <div class="glyph fs1">
+      <div class="clearfix bshadow0 pbs">
+        <span class="icon-CI-todoriesgo"></span><span class="mls"> icon-CI-todoriesgo</span>
+      </div>
+
+      <div class="fs0 bshadow0 clearfix hidden-true">
+        <span class="unit pvs fgc1">liga: </span>
+        <input type="text" readonly value="" class="liga unitRight" />
+      </div>
+    </div>
+    <div class="glyph fs1">
+      <div class="clearfix bshadow0 pbs">
+        <span class="icon-CI-todoriesgofranquicia"></span><span class="mls"> icon-CI-todoriesgofranquicia</span>
+      </div>
+      
+      <div class="fs0 bshadow0 clearfix hidden-true">
+        <span class="unit pvs fgc1">liga: </span>
+        <input type="text" readonly value="" class="liga unitRight" />
+      </div>
+    </div>
+    <div class="glyph fs1">
+      <div class="clearfix bshadow0 pbs">
+        <span class="icon-CI-tercerosampliados"></span><span class="mls"> icon-CI-tercerosampliados</span>
+      </div>
+     
+      <div class="fs0 bshadow0 clearfix hidden-true">
+        <span class="unit pvs fgc1">liga: </span>
+        <input type="text" readonly value="" class="liga unitRight" />
+      </div>
+    </div>
+    <div class="glyph fs1">
+      <div class="clearfix bshadow0 pbs">
+        <span class="icon-auto"></span><span class="mls"> icon-auto</span>
+      </div>
+     
+      <div class="fs0 bshadow0 clearfix hidden-true">
+        <span class="unit pvs fgc1">liga: </span>
+        <input type="text" readonly value="" class="liga unitRight" />
+      </div>
+    </div>
+    <div class="glyph fs1">
+      <div class="clearfix bshadow0 pbs">
+        <span class="icon-arrow"></span><span class="mls"> icon-arrow</span>
+      </div>
+     
+      <div class="fs0 bshadow0 clearfix hidden-true">
+        <span class="unit pvs fgc1">liga: </span>
+        <input type="text" readonly value="" class="liga unitRight" />
+      </div>
+    </div>
+  </div>
+  <hr class="col-md-12">
+              <h2 id="sec6">Buttons</h2>
+              <h3 id="sec6">PSD - PNG</h3>
+              <div class="row">
+                <div class="col-md-12" style="clear:both;">
+                  <div class="panel panel-default">
+                  <div class="panel-heading"><h5>Buttons</h5></div>
+                  <div class="panel-body"><img src="img/UI_elements_btns.jpg" class="img-responsive img-thumbnail img-center">
+                    <div class="row">
+                      <div class="col-md-2">
+                            <a href="img/UI_elements_btns.pdf" target="_blank">download PDF</a>
+                          </div> 
+                          <div class="col-md-2">
+                            <a href="img/UI_elements_btns.psd" target="_blank">download PSD</a>
+                          </div> 
+                          <div class="col-md-5">
+                            <a href="img/UI_elements_btns.png" target="_blank">PNG (transparent background)</a>
+                          </div> 
+                          
+                    </div>
+                  </div>
+                </div>
+              </div> 
+              </div>
+              <h3 id="sec6">Haml - CSS</h3>
+              (soon)
+              <hr class="col-md-12">
+              <h2 id="sec7">Forms</h2>
+              <h3>Checkboxes</h3>
+
+              <label>
+                <input type="checkbox">Confirmo que he leído y acepto la
+                <a href: "http://www.kelisto.es/terminos-de-uso", target: '_blank'> política de privacidad</a>
+              </label>
+              <h4>Haml</h4>
+                      <pre>
+                      %label{for: "subscriber_accept_terms"}
+                        = check_box :subscriber, :accept_terms
+                        %span
+                          Confirmo que he leído y acepto la
+                        = link_to "política de privacidad", "#{kelisto_root_url}politica-de-privacidad"
+ 
+                      </pre>
+              <h4>Scss</h4>
+              <pre>
+                input[type="radio"], input[type="checkbox"] {
+                  -webkit-appearance: none;
+                  position: relative;
+                  border-radius: 3em;
+                  display: inline-block;
+                  vertical-align: middle;
+                  margin: -0.3em 0.25em 0 0;
+                  padding: 0;
+                  width: 1.3em;
+                  height: 1.3em;
+                  background: white;
+                  border-radius: 50%;
+                  font-size: 0.9em;
+                  cursor: pointer;
+                  box-shadow: inset 0 1px 1px #999999;
+                  -webkit-transition: box-shadow 200ms, border-color 200ms, background 300ms;
+                  -moz-transition: box-shadow 200ms, border-color 200ms, background 300ms;
+                  transition: box-shadow 200ms, border-color 200ms, background 300ms;
+
+                  &:focus {
+                    outline: none;
+                  }
+                  &:hover{
+                    border:solid 2px $blue;
+                  }
+                  &:checked{
+                    background: $blue;
+                    box-shadow: inset 0 1px 3px #666666, inset 0 0 0 0.4em white;
+                  }
+                  &:checked:hover{
+                    box-shadow: inset 0 1px 0px $blue, inset 0 0 0 0.3em white, 0 0 1px 3px $blue;
+                    border:solid 1px $blue;
+                  }
+                  &:checked:active{
+                    background: $blue;
+                    border:solid 1px $blue;
+                    box-shadow:none;
+                  }
+                }
+              </pre>
+              <hr class="col-md-12">
+              <h2 id="sec8">Mediaqueries</h2>
+              We start designing common style and then we add the mediaqueries
+              <pre>
+              .main-content{
+                 //Mobile first style!
+                 width: 100%;
+                 position: relative;
+
+                 //2nd add changes to all devices bigger than "mobile-landscape"
+                 @include mobile-landscape-and-up{
+                   width:90%;
+                 }
+                 @include tablet-landscape-and-up{
+                   width:50%;
+                 }
+                 //Now define .main-content's children
+                 .news{
+                  }
+                 .call-to-action{
+                 }
+              }
+              </pre>
+              
+              <h3>Available mediaqueries</h3>
+              <pre>
+              @mixin mobile-portrait-and-up {
+                  // content here
+                }
+
+              @mixin mobile-landscape-and-up {
+                // content here
+              }
+
+
+              @mixin tablet-portrait-and-up {
+                // content here
+              }
+
+              // Everything larger than portrait tablet
+              @mixin tablet-landscape-and-up {
+                // content here
+              }
+
+              // Everything larger than a landscape tablet
+              @mixin desktop-and-up {
+                // content here
+              }
+</pre>
+              Please check the <a href="https://github.com/kelkoo-services/kelisto/wiki/Front-end-guide" target="_blank">Front-end-guide</a> for good practices
+                <hr>
+              <h4><a href="http://www.kelisto.es">Kelisto.es</a></h4>
+                <hr>
+                
+                
+          </div> 
+
+    </div>
+
+</div>
+
+<script>
+$('#sidebar li a').on('click', function(){
+$('li a.current').removeClass('current');
+$(this).addClass('current');
+});
+</script>
+<script src="js/classie.js"></script>
+    <script src="js/notificationFx.js"></script>
+    <script>
+      (function() {
+        var bttn = document.getElementById( 'notification-trigger-growl-scale' );
+
+        // make sure..
+        bttn.disabled = false;
+        
+        bttn.addEventListener( 'click', function() {
+          // simulate loading (for demo purposes only)
+          classie.add( bttn, 'active' );
+          setTimeout( function() {
+
+            classie.remove( bttn, 'active' );
+            
+            // create the notification
+            var notification = new NotificationFx({
+              message : '<p>This is just a simple notice for a new feature. And this is a <a href="#">simple link</a>.</p>',
+              layout : 'growl',
+              effect : 'scale',
+              type : 'notice', // notice, warning, error or success
+              onClose : function() {
+                bttn.disabled = false;
+              }
+            });
+
+            // show the notification
+            notification.show();
+
+          }, 1200 );
+          
+          // disable the button (for demo purposes only)
+          this.disabled = true;
+        } );
+      })();
+    </script>
+    <script>
+      (function() {
+        var bttn = document.getElementById( 'notification-trigger-growl-slide' );
+
+        // make sure..
+        bttn.disabled = false;
+
+        bttn.addEventListener( 'click', function() {
+          // simulate loading (for demo purposes only)
+          classie.add( bttn, 'active' );
+          setTimeout( function() {
+
+            classie.remove( bttn, 'active' );
+            
+            // create the notification
+            var notification = new NotificationFx({
+              message : '<p>This notification can be use to catch attention on new content/feature/offer. It has slight elasticity to it thanks to <a href="http://bouncejs.com/">bounce.js</a>.</p>',
+              layout : 'growl',
+              effect : 'slide',
+              type : 'notice', // notice, warning or error
+              onClose : function() {
+                bttn.disabled = false;
+              }
+            });
+
+            // show the notification
+            notification.show();
+
+          }, 1200 );
+          
+          // disable the button (for demo purposes only)
+          this.disabled = true;
+        } );
+      })();
+    </script>
+    <script>
+      (function() {
+        var bttn = document.getElementById( 'notification-trigger-flip' );
+
+        // make sure..
+        bttn.disabled = false;
+
+        bttn.addEventListener( 'click', function() {
+          // simulate loading (for demo purposes only)
+          classie.add( bttn, 'active' );
+          setTimeout( function() {
+
+            classie.remove( bttn, 'active' );
+            
+            // create the notification
+            var notification = new NotificationFx({
+              message : '<p>Your preferences have been saved successfully. See all your settings in your <a href="#">profile overview</a>.</p>',
+              layout : 'attached',
+              effect : 'flip',
+              type : 'notice', // notice, warning or error
+              onClose : function() {
+                bttn.disabled = false;
+              }
+            });
+
+            // show the notification
+            notification.show();
+
+          }, 1200 );
+          
+          // disable the button (for demo purposes only)
+          this.disabled = true;
+        } );
+      })();
+    </script>
+    <script>
+      (function() {
+        var bttn = document.getElementById( 'notification-trigger-slidetop' );
+
+        // make sure..
+        bttn.disabled = false;
+
+        bttn.addEventListener( 'click', function() {
+          // simulate loading (for demo purposes only)
+          classie.add( bttn, 'active' );
+          setTimeout( function() {
+
+            classie.remove( bttn, 'active' );
+            
+            // create the notification
+            var notification = new NotificationFx({
+              message : '<span class="icon ??"></span><p>We have some interesting news/features/offer for you. Go <a href="#">check it out</a> now.</p>',
+              layout : 'bar',
+              effect : 'slidetop',
+              type : 'notice', // notice, warning or error
+              onClose : function() {
+                bttn.disabled = false;
+              }
+            });
+
+            // show the notification
+            notification.show();
+
+          }, 1200 );
+          
+          // disable the button (for demo purposes only)
+          this.disabled = true;
+        } );
+      })();
+    </script>
+    <script>
+      (function() {
+        var bttn = document.getElementById( 'notification-trigger-slidebottom' );
+
+        // make sure..
+        bttn.disabled = false;
+
+        bttn.addEventListener( 'click', function() {
+          // simulate loading (for demo purposes only)
+          classie.add( bttn, 'active' );
+          setTimeout( function() {
+
+            classie.remove( bttn, 'active' );
+            
+            // create the notification
+            var notification = new NotificationFx({
+              message : '<span class="icon ??"></span><p>We have some interesting news/features/offer for you. Go <a href="#">check it out</a> now.</p>',
+              layout : 'bar-bottom',
+              effect : 'slidebottom',
+              type : 'notice', // notice, warning or error
+              onClose : function() {
+                bttn.disabled = false;
+              }
+            });
+
+            // show the notification
+            notification.show();
+
+          }, 1200 );
+          
+          // disable the button (for demo purposes only)
+          this.disabled = true;
+        } );
+      })();
+    </script>
+    
+  </body>
+</html>

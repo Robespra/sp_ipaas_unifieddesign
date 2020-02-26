@@ -1,0 +1,7 @@
+/* sp_ipaas_unifieddesign Style Guide */
+/* humanstxt.org */
+
+/* SITE */
+  Standards: HTML5, CSS3
+  Components: jQuery, Orbit, Reveal
+  Software: Sublime, Git, Sass
