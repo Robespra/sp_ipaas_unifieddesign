@@ -374,13 +374,10 @@ p {
 /*******************************
 * MODAL AS LEFT/RIGHT SIDEBAR
 * Add "left" or "right" in modal parent div, after class="modal".
-* Get free snippets on bootpen.com
 *******************************/
-.modal.left .modal-dialog,
 .modal.right .modal-dialog {
   position: fixed;
   margin: auto;
-  width: 320px;
   height: 100%;
   -webkit-transform: translate3d(0%, 0, 0);
       -ms-transform: translate3d(0%, 0, 0);
@@ -388,7 +385,6 @@ p {
           transform: translate3d(0%, 0, 0);
 }
 
-.modal.left .modal-content,
 .modal.right .modal-content {
   height: 100%;
   overflow-y: auto;
@@ -399,20 +395,7 @@ p {
   padding: 15px 15px 80px;
 }
 
-/*Left*/
-.modal.left.fade .modal-dialog{
-  left: -320px;
-  -webkit-transition: opacity 0.3s linear, left 0.3s ease-out;
-     -moz-transition: opacity 0.3s linear, left 0.3s ease-out;
-       -o-transition: opacity 0.3s linear, left 0.3s ease-out;
-          transition: opacity 0.3s linear, left 0.3s ease-out;
-}
-
-.modal.left.fade.in .modal-dialog{
-  left: 0;
-}
-      
-/*Right*/
+    
 .modal.right.fade .modal-dialog {
   right: -320px;
   -webkit-transition: opacity 0.3s linear, right 0.3s ease-out;
@@ -432,8 +415,7 @@ p {
 }
 
 .modal-header {
-  border-bottom-color: #EEEEEE;
-  background-color: #FAFAFA;
+  border: none;
 }
 
 
@@ -443,17 +425,6 @@ padding-top: 60px;
 padding-bottom: 110px;
 }
 
-.btn-demo {
-margin: 15px;
-padding: 10px 15px;
-border-radius: 0;
-font-size: 16px;
-background-color: #FFFFFF;
-}
-
-.btn-demo:focus {
-outline: 0;
-}
 
 .demo-footer {
 position: fixed;
@@ -481,3 +452,36 @@ color: #fff;
   max-width:390px;
   height:auto;
 }
+/* ----- BTN STYLE ----- */
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;       /* Remove default arrow */
+  background-image: url(...);   /* Add custom arrow */
+}
+select::-ms-expand {
+  display: none; /* Hide the default arrow in Internet Explorer 10 and Internet Explorer 11 */
+}
+/* Target Internet Explorer 9 to undo the custom arrow */
+@media screen and (min-width:0\0) {
+  select {
+      background-image:none\9;
+      padding: 5px\9;
+  }
+}
+.cta {
+  background-color:#20C2AE
+}
+.rounded-pill {
+  border-radius: 50rem;
+  padding: 15px 30px;
+  outline: none; 
+}
+
+
+
+
+
+
+

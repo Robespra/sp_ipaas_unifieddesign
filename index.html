@@ -21,6 +21,12 @@
 
   <div class="row"> 
     <div class="col-sm-12 col-md-2">
+      
+
+
+
+
+
       <ul class="mtxl nav nav-stacked" id="sidebar">
         <h1>SP IPaaS unified design practices</h1>
                 <a href="https://github.com/Robespra/sp_ipaas_unifieddesign/archive/gh-pages.zip">download .zip</a>
@@ -31,12 +37,12 @@
         <li><a href="#sec3">Layout</a></li>
         <li><a href="#sec4">Iconography</a></li>
         <li><a href="#sec5">Typography</a></li>
-        <li><a href="#sec6">Components</a></li>
+        <li><a href="#sec6">Buttons</a></li>
         <li><a href="#sec7">Forms</a></li>
         <li><a href="#sec8">Mediaqueries</a></li>
       </ul>
     </div>
-          <div class="mtxl col-sm-12 col-md-8 ">
+          <div class="mtxl col-sm-12 col-md-9 ">
                 <h2 id="sec0">Introduction</h2>
                 
 <h3>Benefits of an unified design practices approach</h3>
@@ -391,7 +397,7 @@ Usability & User Experience Community</a>
                         </div>
                     </div> 
                     
-              </div>
+     
 
                 <h4 id="sec2">Background and borders</h4>
                 <div class="row">
@@ -447,7 +453,7 @@ Usability & User Experience Community</a>
                   </div>
                
    
-                  <div class="col-md-12 mtxl">
+                  <div class="col-md-9 mtxl">
                     <h2 id="sec2">Layout</h2>
                     <div style="--aspect-ratio: 16/9;">
                       <iframe 
@@ -470,7 +476,7 @@ Usability & User Experience Community</a>
                     </div>
                   </div>
 
-                <div class="col-md-12 mtxl">
+                <div class="col-md-9 mtxl">
                 <h2 id="sec3">Typography</h2>
           <h4>We will be using a combinaison of Lato + Open Sans<h4/>
              <pre><code>&lt;link&gt; href='http://fonts.googleapis.com/css?family=Lato:400,700,900|Open+Sans:400' rel='stylesheet' type='text/css'&gt;</code></pre>
@@ -492,14 +498,62 @@ Usability & User Experience Community</a>
               </code></pre>
             </br>
               <h4>Vertical rythm</h4>
-              <img class="img-max-500 src="img/typography_vertical_rythm.png" alt="vertical rythm">
+              <img class="img-max-500" src="img/typography_vertical_rythm.png" alt="vertical rythm">
               <p>Use Bootstrap margin and padding spacing utilities to control how elements and components are spaced and sized. Bootstrap 4 includes a five-level scale for spacing utilities, based on a 1rem value default $spacer variable. Choose values for all viewports (e.g., .mt-3 for margin-right: 1rem), or pick responsive variants to target specific viewports (e.g., .mt-md-3 for margin-right: 1rem starting at the md breakpoint). Please try to use multiples to define your spacing. </p>
               </br>
             </iframe>
           </div>
-          <div class="col-md-12 mtxl">
+         
+      <div class="col-md-9 mtxl">
+        <h2 id="sec4" class="mtxl">Buttons</h2>
+        <h4 class="mtxl">We will use customized bootstrap buttons</h4>
+        <p>Class rounded-pill to be applied to all buttons</p>
+        <pre><code>
+          .rounded-pill {
+            border-radius: 50rem;
+            padding: 15px 30px;
+            outline: none; 
+          }
+        </code></pre>
+        
+        <h4 class="mtxl">Call to primary action</h4>
+        <button type="button" class="btn btn-primary cta rounded-pill">Call to action</button>
+        <pre><code>
+          <xmp>
+            <button type="button" class="btn btn-outline-secondary rounded-pill">Call to action</button>
+          </xmp>
+        </code></pre>
+        <p>extra CSS class for call to primary action button</p>
+        <pre><code>
+          .cta {
+            background-color:$cta_green
+          }
+        </code></pre>
+        <h4 class="mtxl">Call to secondary action</h4>
+  
+          <button type="button" class="btn btn-outline-secondary rounded-pill">
+            Secondary
+          </button>
+          <pre><code>
+            <xmp>
+              <button type="button" class="btn btn-outline-secondary rounded-pill">Secondary</button>
+            </xmp>
+          </code></pre>
+          <h4 class="mtxl">Bootstrap buttons classes</h4>
+        <div style="--aspect-ratio: 16/9;" class="mtl">
+          <iframe 
+            src="https://getbootstrap.com/docs/4.0/components/buttons/"
+            width="1600"
+            height="900"
+            frameborder="0"
+          >
+          </iframe>
+        </div>
+      </div> 
+          
+          <div class="col-md-9 mtxl">
             <h2 id="sec3">Form</h2>
-            <h3>We will be using UIkit form utilities, please keep in mind the following practices when designing forms</h3>
+            <h4>We will be using UIkit form utilities, please keep in mind the following practices when designing forms</h4>
             <h4 class="mtxl">1. Placeholders</h4>
             <p>A placeholder is supposed to help users understand what's required from them. Disappearing placeholder text strains users' short-term memory. Please avoid placeholder text as a label and place it above the input, but below the label. 
               This approach: * Can be translated, * Won’t look like pre-filled information, * Can be seen in low vision circumstances, * Won’t disappear when content is entered into the input, * Can include semantic markup and be styled via CSS.
@@ -533,9 +587,10 @@ Usability & User Experience Community</a>
                   >
                   </iframe>
                 </div>
-
-    <div class="col-md-12 mtxl">
-      <h2 id="sec3">Iconography</h2>
+              </div>
+    <div class="col-md-9 mtxl">
+      <h2 id="sec4" class="mtxl">Iconography</h2>
+      <h4 class="mtxl">UIKit SVG icons</h4>
       <div style="--aspect-ratio: 16/9;">
         <iframe 
           src="https://getuikit.com/docs/icon"
@@ -546,41 +601,97 @@ Usability & User Experience Community</a>
         </iframe>
       </div>
     </div> 
-    <div class="col-md-12 mtxl">
+    <div class="col-md-9 mtxl">
 
-      <h2 id="sec1">Modal</h2>
+      <h2 id="sec1" class="mtxl">Modal</h2>
       <p>We will be using bootstrap customized modal window</p>
+      <pre><code>
+       
+      .modal.right .modal-dialog {
+        position: fixed;
+        margin: auto;
+        height: 100%;
+        -webkit-transform: translate3d(0%, 0, 0);
+            -ms-transform: translate3d(0%, 0, 0);
+             -o-transform: translate3d(0%, 0, 0);
+                transform: translate3d(0%, 0, 0);
+      }
       
-      <h3>Style</h3>
-      <h4>Success</h4>
-      <h4>Info</h4>
-      <h4>error-warning-danger</h4>
+      .modal.right .modal-content {
+        height: 100%;
+        overflow-y: auto;
+      }
+      
+      .modal.left .modal-body,
+      .modal.right .modal-body {
+        padding: 15px 15px 80px;
+      }
+      
+          
+      .modal.right.fade .modal-dialog {
+        right: -320px;
+        -webkit-transition: opacity 0.3s linear, right 0.3s ease-out;
+           -moz-transition: opacity 0.3s linear, right 0.3s ease-out;
+             -o-transition: opacity 0.3s linear, right 0.3s ease-out;
+                transition: opacity 0.3s linear, right 0.3s ease-out;
+      }
+      
+      .modal.right.fade.in .modal-dialog {
+        right: 0;
+      }
+      
+      /* ----- MODAL STYLE ----- */
+      .modal-content {
+        border-radius: 0;
+        border: none;
+      }
+      .modal-header {
+        border: none;
+      }
+      
+    </code></pre>
+      
+
+    <pre><code>
+      <xmp>
+        <button type="button" class="btn btn-primary cta rounded-pill" data-toggle="modal" data-target="#myModal2">
+          Right Sidebar Modal
+        </button>
+      </xmp>
+    </code></pre>
 
 
 
-      <button type="button" class="btn btn-demo" data-toggle="modal" data-target="#myModal2">
+      <button type="button" class="btn btn-primary cta rounded-pill mtxl mbxl" data-toggle="modal" data-target="#myModal2">
         Right Sidebar Modal
       </button>
+
+      <pre><code>
+        <xmp>
+          <!-- Modal -->
+      <div class="modal right fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+  
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel2">Right Sidebar</h4>
+            </div>
+  
+            <div class="modal-body">
+              <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+              </p>
+            </div>
+  
+          </div><!-- modal-content -->
+        </div><!-- modal-dialog -->
+        </div><!-- modal -->
+        </xmp>
+      </code></pre>
       </div>
 
       <!-- Modal -->
-      <div class="modal left fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title" id="myModalLabel">Left Sidebar</h4>
-          </div>
-
-          <div class="modal-body">
-            <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-            </p>
-          </div>
-
-        </div><!-- modal-content -->
-      </div><!-- modal-dialog -->
-      </div><!-- modal -->
+     
 
       <!-- Modal -->
       <div class="modal right fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
@@ -600,10 +711,11 @@ Usability & User Experience Community</a>
         </div><!-- modal-content -->
       </div><!-- modal-dialog -->
       </div><!-- modal -->
-  </div>          
-    <div class="col-md-12 mtxl">
+     
 
-        <h2 id="sec1">Notifications</h2>
+    <div class="col-md-9 mtxl mbxl">
+
+        <h2 id="sec1" class="mtxl">Notifications</h2>
         <h3>Responsive notifications for inmediate feedback</h3>
         <p>We will be using bootstrap customized modal window</p>
         
@@ -614,8 +726,20 @@ Usability & User Experience Community</a>
 
 
     </div>
+
   </div>
 </div>
+</div>
+
+
+
+  <div class="footer col-md-12 mtxl">
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3 mtxl">version 0.1</div>
+    <!-- Copyright -->
+  </div>
+  <!-- Footer -->
+
 
 
 <script>
