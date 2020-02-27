@@ -473,6 +473,11 @@ select::-ms-expand {
 .cta {
   background-color:#20C2AE
 }
+
+.secondary {
+  border-color:#3D6FC5;
+  color:#3D6FC5;
+}
 .rounded-pill {
   border-radius: 50rem;
   padding: 15px 30px;
