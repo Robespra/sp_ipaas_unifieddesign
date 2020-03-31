@@ -39,7 +39,7 @@
         <li><a href="#sec6">Forms</a></li>
         <li><a href="#sec7">Iconography</a></li>
         <li><a href="#sec8">Modal</a></li>
-        <li><a href="#sec9">Notifications</a></li>
+        <li><a href="#sec9">React components</a></li>
         <li><a href="#sec10">Micro-interactions</a></li>
       </ul>
     </div>
@@ -736,14 +736,3623 @@ Usability & User Experience Community</a>
 
     <div class="col-md-9 mtxl mbxl">
 
-        <h2 id="sec9" class="mtxl">Notifications / IN PROGRESS</h2>
-        <h3>Responsive notifications for inmediate feedback</h3>
-        <p>We will be using bootstrap customized modal window</p>
+        <h2 id="sec9" class="mtxl">React components</h2>
+        <h3>Notifications : success, info, error</h3>
+        <p>Responsive notifications for inmediate feedback</p>
+        Please add the extracted component folder in your project and import the component folder.
+          (Eg import Component from [folder path])
+          <a href="https://github.com/Robespra/sp_ipaas_unifieddesign/react_component_notification.zip">download react_component_notification.zip</a>
+        <h4>Screen</h4>
+        <pre><code>
+          import React, { Component } from "react";
+          import styled, { css } from "styled-components";
+          import TaskNotificationError from "../components/TaskNotificationError";
+          import TaskNotificationInfo from "../components/TaskNotificationInfo";
+          import TaskNotificationSuccess from "../components/TaskNotificationSuccess";
+          
+          function Untitled(props) {
+            return (
+              &lt;&gt;
+                &lt;TaskNotificationError
+                  style={{
+                    width: 416,
+                    height: 106,
+                    marginTop: 414,
+                    marginLeft: 92
+                  }}
+                &gt;&lt;/TaskNotificationError&gt;
+                &lt;TaskNotificationInfo
+                  style={{
+                    width: 416,
+                    height: 106,
+                    marginTop: -242,
+                    alignSelf: "center"
+                  }}
+                &gt;&lt;/TaskNotificationInfo&gt;
+                &lt;TaskNotificationSuccess
+                  style={{
+                    width: 416,
+                    height: 106,
+                    marginTop: -243,
+                    marginLeft: 92
+                  }}
+                &gt;&lt;/TaskNotificationSuccess&gt;
+              &lt;/&gt;
+            );
+          }
+          
+          export default Untitled;
+          
+          
+        </code></pre>
+
+        <h4>Success notification</h4>
+
+
+      <h5 class="mtl" >rendered design</h5>
+      <img class="img-max-500" src="img/task_notification _success.svg" alt="notif success">
+
+      <div class='showHide mtl'>
+        <input type="checkbox" id="toggleContextNotifInfo" />
+    
+        <label for="toggleContextNotifInfo">
+            <span class='expand'>
+                Context
+                <span class="changeArrow arrow-upContextNotifInfo">▼</span>
+                <span class="changeArrow arrow-dnContextNotifInfo">►</span>
+            </span>
+        </label>
+        <div class="fieldsetContainerContextNotifInfo">
+            <fieldset id="fdstLorem">
+              Informational success notification after a process is completed.
+              Notification is displayed 5 seconds, disapears automatically 
+              if user doesn’t  click on close.
+            </fieldset>
+        </div>
+    </div>
+    <div class='showHide mtl mbxl'>
+      <input type="checkbox" id="toggleCodeNotifInfo" />
+  
+      <label for="toggleCodeNotifInfo">
+          <span class='expand'>
+            Component code
+              <span class="changeArrow arrow-upCodeNotifInfo">▼</span>
+              <span class="changeArrow arrow-dnCodeNotifInfo">►</span>
+          </span>
+      </label>
+      <div class="fieldsetContainerCodeNotifInfo">
+          <fieldset id="fdstLorem">
+              <pre>
+                <code>
+            import React, { Component } from "react";
+            import styled, { css } from "styled-components";
+            
+            function TaskNotificationSuccess(props) {
+              return (
+                &lt;Root {...props}&gt;
+                  &lt;Rect3&gt;
+                    &lt;Rect2&gt;
+                      &lt;RectStack&gt;
+                        &lt;Rect&gt;
+                          &lt;Rectangle1Row&gt;
+                            &lt;Rectangle1&gt;&lt;/Rectangle1&gt;
+                            &lt;IconNotifSuccess&gt;
+                              &lt;svg
+                                viewBox="-0 -0 26.00415346191207 22.62837094080568"
+                                style={{
+                                  width: 26,
+                                  height: 23,
+                                  backgroundColor: "transparent",
+                                  borderColor: "transparent",
+                                  marginTop: 18,
+                                  marginLeft: 18
+                                }}
+                              &gt;
+                                &lt;path
+                                  strokeWidth={0}
+                                  fill="rgba(106,213,202,1)"
+                                  fillOpacity={1}
+                                  strokeOpacity={1}
+                                  d="M9.06 22.63 C8.37 22.63 7.71 22.35 7.23 21.84 L0.70 14.98 C-0.26 13.97 -0.23 12.38 0.78 11.42 C1.79 10.46 3.38 10.50 4.35 11.51 L8.92 16.31 L21.53 0.92 C22.42 -0.15 24.01 -0.31 25.08 0.57 C26.16 1.46 26.31 3.04 25.43 4.12 L11.01 21.71 C10.55 22.27 9.87 22.60 9.15 22.63 C9.12 22.63 9.09 22.63 9.06 22.63 "
+                                &gt;&lt;/path&gt;
+                              &lt;/svg&gt;
+                            &lt;/IconNotifSuccess&gt;
+                            &lt;SuccessMessageHereRowColumn&gt;
+                              &lt;SuccessMessageHereRow&gt;
+                                &lt;SuccessMessageHere&gt;
+                                  SUCCESS MESSAGE HERE
+                                &lt;/SuccessMessageHere&gt;
+                                &lt;IconRespMenuCloseRespMenu&gt;
+                                  &lt;Group3Stack&gt;
+                                    &lt;Group3&gt;
+                                      &lt;Clip2Stack&gt;
+                                        &lt;svg
+                                          viewBox="-0 -0 14.67353887549998 14.67269887556435"
+                                          style={{
+                                            top: 0,
+                                            left: 0,
+                                            width: 15,
+                                            height: 15,
+                                            backgroundColor: "transparent",
+                                            position: "absolute",
+                                            borderColor: "transparent"
+                                          }}
+                                        &gt;
+                                          &lt;path
+                                            strokeWidth={0}
+                                            fill="transparent"
+                                            fillOpacity={1}
+                                            strokeOpacity={1}
+                                            d="M0.00 0.00 L14.67 0.00 L14.67 14.67 L0.00 14.67 Z"
+                                          &gt;&lt;/path&gt;
+                                        &lt;/svg&gt;
+                                        &lt;svg
+                                          viewBox="-0 -0 14.67353887549998 14.67269887556435"
+                                          style={{
+                                            top: 0,
+                                            left: 0,
+                                            width: 15,
+                                            height: 15,
+                                            backgroundColor: "transparent",
+                                            position: "absolute",
+                                            borderColor: "transparent"
+                                          }}
+                                        &gt;
+                                          &lt;defs&gt;
+                                            &lt;mask
+                                              id="LH42mR"
+                                              x={0}
+                                              y={0}
+                                              width={14}
+                                              height={14}
+                                            &gt;
+                                              &lt;path
+                                                d="M0.00 0.00 L14.67 0.00 L14.67 14.67 L0.00 14.67 Z"
+                                                fill="white"
+                                              /&gt;
+                                            &lt;/mask&gt;
+                                          &lt;/defs&gt;
+                                          &lt;path
+                                            strokeWidth={0}
+                                            fill="rgba(242,243,246,1)"
+                                            fillOpacity={1}
+                                            strokeOpacity={1}
+                                            d="M0.25 14.43 C-0.08 14.10 -0.08 13.57 0.25 13.24 L13.24 0.25 C13.57 -0.08 14.10 -0.08 14.43 0.25 C14.76 0.57 14.76 1.11 14.43 1.43 L1.43 14.43 C1.27 14.59 1.05 14.67 0.84 14.67 C0.63 14.67 0.41 14.59 0.25 14.43 Z"
+                                            mask="url(#LH42mR)"
+                                          &gt;&lt;/path&gt;
+                                        &lt;/svg&gt;
+                                      &lt;/Clip2Stack&gt;
+                                    &lt;/Group3&gt;
+                                    &lt;Group6&gt;
+                                      &lt;Clip5Stack&gt;
+                                        &lt;svg
+                                          viewBox="-0 -0 14.6737068754871 14.67269887556435"
+                                          style={{
+                                            top: 0,
+                                            left: 0,
+                                            width: 15,
+                                            height: 15,
+                                            backgroundColor: "transparent",
+                                            position: "absolute",
+                                            borderColor: "transparent"
+                                          }}
+                                        &gt;
+                                          &lt;path
+                                            strokeWidth={0}
+                                            fill="transparent"
+                                            fillOpacity={1}
+                                            strokeOpacity={1}
+                                            d="M0.00 0.00 L14.67 0.00 L14.67 14.67 L0.00 14.67 Z"
+                                          &gt;&lt;/path&gt;
+                                        &lt;/svg&gt;
+                                        &lt;svg
+                                          viewBox="-0 -0 14.6737068754871 14.67269887556435"
+                                          style={{
+                                            top: 0,
+                                            left: 0,
+                                            width: 15,
+                                            height: 15,
+                                            backgroundColor: "transparent",
+                                            position: "absolute",
+                                            borderColor: "transparent"
+                                          }}
+                                        &gt;
+                                          &lt;defs&gt;
+                                            &lt;mask
+                                              id="qMsiSB"
+                                              x={0}
+                                              y={0}
+                                              width={14}
+                                              height={14}
+                                            &gt;
+                                              &lt;path
+                                                d="M0.00 0.00 L14.67 0.00 L14.67 14.67 L0.00 14.67 Z"
+                                                fill="white"
+                                              /&gt;
+                                            &lt;/mask&gt;
+                                          &lt;/defs&gt;
+                                          &lt;path
+                                            strokeWidth={0}
+                                            fill="rgba(242,243,246,1)"
+                                            fillOpacity={1}
+                                            strokeOpacity={1}
+                                            d="M13.24 14.43 L0.25 1.43 C-0.08 1.11 -0.08 0.57 0.25 0.25 C0.57 -0.08 1.11 -0.08 1.43 0.25 L14.43 13.24 C14.76 13.57 14.76 14.10 14.43 14.43 C14.26 14.59 14.05 14.67 13.83 14.67 C13.62 14.67 13.40 14.59 13.24 14.43 Z"
+                                            mask="url(#qMsiSB)"
+                                          &gt;&lt;/path&gt;
+                                        &lt;/svg&gt;
+                                      &lt;/Clip5Stack&gt;
+                                    &lt;/Group6&gt;
+                                  &lt;/Group3Stack&gt;
+                                &lt;/IconRespMenuCloseRespMenu&gt;
+                              &lt;/SuccessMessageHereRow&gt;
+                              &lt;DescriptionOfSucce&gt;
+                                Description of successfuly excecuted task here. this{"\n"}
+                                notification is displayed 5 seconds, disapears automatically{" "}
+                                {"\n"}if user doesn’t click on close
+                              &lt;/DescriptionOfSucce&gt;
+                            &lt;/SuccessMessageHereRowColumn&gt;
+                          &lt;/Rectangle1Row&gt;
+                        &lt;/Rect&gt;
+                        &lt;Text&gt;&lt;/Text&gt;
+                      &lt;/RectStack&gt;
+                    &lt;/Rect2&gt;
+                  &lt;/Rect3&gt;
+                &lt;/Root&gt;
+              );
+            }
+            
+            const Root = styled.div`
+              display: flex;
+              flex-direction: column;
+            `;
+            
+            const Rect3 = styled.div`
+              width: 416px;
+              height: 106px;
+              background-color: rgba(255,255,255,1);
+              flex-direction: column;
+              display: flex;
+            `;
+            
+            const Rect2 = styled.div`
+              width: 416px;
+              height: 106px;
+              background-color: rgba(255,255,255,1);
+              flex-direction: column;
+              display: flex;
+            `;
+            
+            const Rect = styled.div`
+              width: 416px;
+              height: 106px;
+              position: absolute;
+              opacity: 1;
+              left: 0px;
+              top: 0px;
+              flex-direction: column;
+              display: flex;
+            `;
+            
+            const Rectangle1 = styled.div`
+              width: 16px;
+              height: 105px;
+              background-color: rgba(106,213,202,1);
+              opacity: 1;
+            `;
+            
+            const IconNotifSuccess = styled.div`
+              width: 60px;
+              height: 61px;
+              opacity: 0.3;
+              flex-direction: column;
+              display: flex;
+              margin-left: 15px;
+              margin-top: 23px;
+            `;
+            
+            const SuccessMessageHere = styled.span`
+              font-family: Raleway;
+              background-color: transparent;
+              color: rgba(106,213,202,1);
+              opacity: 1;
+              font-size: 18px;
+              font-weight: 700;
+              font-style: normal;
+              letter-spacing: 0.45px;
+              margin-top: 14px;
+            `;
+            
+            const IconRespMenuCloseRespMenu = styled.div`
+              width: 15px;
+              height: 16px;
+              opacity: 1;
+              flex-direction: column;
+              display: flex;
+              margin-left: 41px;
+            `;
+            
+            const Group3 = styled.div`
+              top: 0px;
+              left: 0px;
+              width: 15px;
+              height: 15px;
+              position: absolute;
+              opacity: 1;
+              flex-direction: column;
+              display: flex;
+            `;
+            
+            const Clip2Stack = styled.div`
+              width: 15px;
+              height: 15px;
+              position: relative;
+            `;
+            
+            const Group6 = styled.div`
+              top: 0px;
+              left: 0px;
+              width: 15px;
+              height: 15px;
+              position: absolute;
+              opacity: 1;
+              flex-direction: column;
+              display: flex;
+            `;
+            
+            const Clip5Stack = styled.div`
+              width: 15px;
+              height: 15px;
+              position: relative;
+            `;
+            
+            const Group3Stack = styled.div`
+              width: 15px;
+              height: 15px;
+              position: relative;
+            `;
+            
+            const SuccessMessageHereRow = styled.div`
+              height: 32px;
+              flex-direction: row;
+              display: flex;
+              margin-right: 8px;
+            `;
+            
+            const DescriptionOfSucce = styled.span`
+              font-family: Raleway;
+              background-color: transparent;
+              color: rgba(216,216,216,1);
+              opacity: 1;
+              font-size: 10px;
+              font-weight: 400;
+              font-style: normal;
+              letter-spacing: 0.25px;
+              margin-top: 7px;
+              margin-left: 2px;
+            `;
+            
+            const SuccessMessageHereRowColumn = styled.div`
+              width: 294px;
+              flex-direction: column;
+              display: flex;
+              margin-left: 26px;
+              margin-top: 10px;
+              margin-bottom: 26px;
+            `;
+            
+            const Rectangle1Row = styled.div`
+              height: 105px;
+              flex-direction: row;
+              display: flex;
+              margin-right: 5px;
+            `;
+            
+            const Text = styled.span`
+              font-family: Roboto;
+              top: 53px;
+              left: 208px;
+              color: #121212;
+              position: absolute;
+              font-weight: regular;
+              font-style: normal;
+            `;
+            
+            const RectStack = styled.div`
+              width: 416px;
+              height: 106px;
+              position: relative;
+            `;
+            
+            export default TaskNotificationSuccess;
+            
+
+          </code>
+
+
+        </pre>
+    </fieldset>
+</div>
+Please add the extracted component folder in your project and import the component folder.
+          (Eg import Component from [folder path])
+          <a href="https://github.com/Robespra/sp_ipaas_unifieddesign/react_component_notification.zip">download react_component_notification.zip</a>
+</div>
+      <h4 class="mtxl" >Info notification</h4>
+      <h5 class="mtl" >rendered design</h5>
+      <img class="img-max-500" src="img/task_notification _info.svg" alt="notif info">
+
+      <div class='showHide mtl'>
+        <input type="checkbox" id="toggleContextNotifInfo1" />
+    
+        <label for="toggleContextNotifInfo1">
+            <span class='expand'>
+                Context
+                <span class="changeArrow arrow-upContextNotifInfo1">▼</span>
+                <span class="changeArrow arrow-dnContextNotifInfo1">►</span>
+            </span>
+        </label>
+        <div class="fieldsetContainerContextNotifInfo1">
+            <fieldset id="fdstLorem">
+              Informational notification after a process running in background is completed and does not requires any action from user (eg : workflow)
+              Notification is displayed 5 seconds, disapears automatically 
+              if user doesn’t  click on close.
+            </fieldset>
+        </div>
+    </div>
+    <div class='showHide mtl mbxl'>
+      <input type="checkbox" id="toggleCodeNotifInfo1" />
+  
+      <label for="toggleCodeNotifInfo1">
+          <span class='expand'>
+            Component code
+              <span class="changeArrow arrow-upCodeNotifInfo1">▼</span>
+              <span class="changeArrow arrow-dnCodeNotifInfo1">►</span>
+          </span>
+      </label>
+      <div class="fieldsetContainerCodeNotifInfo1">
+          <fieldset id="fdstLorem">
+              <pre>
+                <code>
+                  import React, { Component } from "react";
+                  import styled, { css } from "styled-components";
+                  
+                  function TaskNotificationInfo(props) {
+                    return (
+                      &lt;Root {...props}&gt;
+                        &lt;Rect4&gt;
+                          &lt;Rect&gt;
+                            &lt;Rectangle3Row&gt;
+                              &lt;Rectangle3&gt;&lt;/Rectangle3&gt;
+                              &lt;IconInfoIncon&gt;
+                                &lt;svg
+                                  viewBox="-0 -0 5.300910029053689 29.21112016010284"
+                                  style={{
+                                    width: 5,
+                                    height: 29,
+                                    backgroundColor: "transparent",
+                                    borderColor: "transparent",
+                                    marginTop: 17,
+                                    marginLeft: 28
+                                  }}
+                                &gt;
+                                  &lt;path
+                                    strokeWidth={0}
+                                    fill="rgba(61,111,197,1)"
+                                    fillOpacity={1}
+                                    strokeOpacity={1}
+                                    d="M5.30 10.66 L5.30 25.99 C5.30 25.99 5.05 27.85 4.55 28.39 C4.04 28.94 3.40 29.21 2.62 29.21 C1.85 29.21 1.21 28.93 0.73 28.38 C0.25 27.82 0.00 25.99 0.00 25.99 L0.00 10.82 C0.00 10.82 0.25 8.98 0.73 8.45 C1.21 7.92 1.85 7.65 2.62 7.65 C3.40 7.65 4.04 7.92 4.55 8.45 M2.68 5.18 C1.94 5.18 1.31 4.96 0.79 4.50 C0.26 4.05 0.00 3.41 0.00 2.58 C0.00 1.83 0.27 1.21 0.80 0.73 C1.34 0.24 1.97 0.00 2.68 0.00 C3.37 0.00 3.98 0.22 4.50 0.66 C5.03 1.10 5.30 1.74 5.30 2.58 C5.30 3.40 5.04 4.04 4.53 4.49 "
+                                  &gt;&lt;/path&gt;
+                                &lt;/svg&gt;
+                              &lt;/IconInfoIncon&gt;
+                              &lt;InfoMessageHereRowColumn&gt;
+                                &lt;InfoMessageHereRow&gt;
+                                  &lt;InfoMessageHere&gt;INFO MESSAGE HERE&lt;/InfoMessageHere&gt;
+                                  &lt;IconRespMenuCloseRespMenu1&gt;
+                                    &lt;Group31Stack&gt;
+                                      &lt;Group31&gt;
+                                        &lt;Clip21Stack&gt;
+                                          &lt;svg
+                                            viewBox="-0 -0 14.67353887549998 14.67269887556435"
+                                            style={{
+                                              top: 0,
+                                              left: 0,
+                                              width: 15,
+                                              height: 15,
+                                              backgroundColor: "transparent",
+                                              position: "absolute",
+                                              borderColor: "transparent"
+                                            }}
+                                          &gt;
+                                            &lt;path
+                                              strokeWidth={0}
+                                              fill="transparent"
+                                              fillOpacity={1}
+                                              strokeOpacity={1}
+                                              d="M0.00 0.00 L14.67 0.00 L14.67 14.67 L0.00 14.67 Z"
+                                            &gt;&lt;/path&gt;
+                                          &lt;/svg&gt;
+                                          &lt;svg
+                                            viewBox="-0 -0 14.67353887549998 14.67269887556435"
+                                            style={{
+                                              top: 0,
+                                              left: 0,
+                                              width: 15,
+                                              height: 15,
+                                              backgroundColor: "transparent",
+                                              position: "absolute",
+                                              borderColor: "transparent"
+                                            }}
+                                          &gt;
+                                            &lt;defs&gt;
+                                              &lt;mask
+                                                id="TlMKzJ"
+                                                x={0}
+                                                y={0}
+                                                width={14}
+                                                height={14}
+                                              &gt;
+                                                &lt;path
+                                                  d="M0.00 0.00 L14.67 0.00 L14.67 14.67 L0.00 14.67 Z"
+                                                  fill="white"
+                                                /&gt;
+                                              &lt;/mask&gt;
+                                            &lt;/defs&gt;
+                                            &lt;path
+                                              strokeWidth={0}
+                                              fill="rgba(242,243,246,1)"
+                                              fillOpacity={1}
+                                              strokeOpacity={1}
+                                              d="M0.25 14.43 C-0.08 14.10 -0.08 13.57 0.25 13.24 L13.24 0.25 C13.57 -0.08 14.10 -0.08 14.43 0.25 C14.76 0.57 14.76 1.11 14.43 1.43 L1.43 14.43 C1.27 14.59 1.05 14.67 0.84 14.67 C0.63 14.67 0.41 14.59 0.25 14.43 Z"
+                                              mask="url(#TlMKzJ)"
+                                            &gt;&lt;/path&gt;
+                                          &lt;/svg&gt;
+                                        &lt;/Clip21Stack&gt;
+                                      &lt;/Group31&gt;
+                                      &lt;Group61&gt;
+                                        &lt;Clip51Stack&gt;
+                                          &lt;svg
+                                            viewBox="-0 -0 14.6737068754871 14.67269887556435"
+                                            style={{
+                                              top: 0,
+                                              left: 0,
+                                              width: 15,
+                                              height: 15,
+                                              backgroundColor: "transparent",
+                                              position: "absolute",
+                                              borderColor: "transparent"
+                                            }}
+                                          &gt;
+                                            &lt;path
+                                              strokeWidth={0}
+                                              fill="transparent"
+                                              fillOpacity={1}
+                                              strokeOpacity={1}
+                                              d="M0.00 0.00 L14.67 0.00 L14.67 14.67 L0.00 14.67 Z"
+                                            &gt;&lt;/path&gt;
+                                          &lt;/svg&gt;
+                                          &lt;svg
+                                            viewBox="-0 -0 14.6737068754871 14.67269887556435"
+                                            style={{
+                                              top: 0,
+                                              left: 0,
+                                              width: 15,
+                                              height: 15,
+                                              backgroundColor: "transparent",
+                                              position: "absolute",
+                                              borderColor: "transparent"
+                                            }}
+                                          &gt;
+                                            &lt;defs&gt;
+                                              &lt;mask
+                                                id="NJRSdB"
+                                                x={0}
+                                                y={0}
+                                                width={14}
+                                                height={14}
+                                              &gt;
+                                                &lt;path
+                                                  d="M0.00 0.00 L14.67 0.00 L14.67 14.67 L0.00 14.67 Z"
+                                                  fill="white"
+                                                /&gt;
+                                              &lt;/mask&gt;
+                                            &lt;/defs&gt;
+                                            &lt;path
+                                              strokeWidth={0}
+                                              fill="rgba(242,243,246,1)"
+                                              fillOpacity={1}
+                                              strokeOpacity={1}
+                                              d="M13.24 14.43 L0.25 1.43 C-0.08 1.11 -0.08 0.57 0.25 0.25 C0.57 -0.08 1.11 -0.08 1.43 0.25 L14.43 13.24 C14.76 13.57 14.76 14.10 14.43 14.43 C14.26 14.59 14.05 14.67 13.83 14.67 C13.62 14.67 13.40 14.59 13.24 14.43 Z"
+                                              mask="url(#NJRSdB)"
+                                            &gt;&lt;/path&gt;
+                                          &lt;/svg&gt;
+                                        &lt;/Clip51Stack&gt;
+                                      &lt;/Group61&gt;
+                                    &lt;/Group31Stack&gt;
+                                  &lt;/IconRespMenuCloseRespMenu1&gt;
+                                &lt;/InfoMessageHereRow&gt;
+                                &lt;DescriptionOfInfo&gt;
+                                  Description of info message here. this{"\n"}notification is
+                                  displayed 5 seconds, disapears automatically {"\n"}if user
+                                  doesn’t click on close
+                                &lt;/DescriptionOfInfo&gt;
+                              &lt;/InfoMessageHereRowColumn&gt;
+                            &lt;/Rectangle3Row&gt;
+                          &lt;/Rect&gt;
+                        &lt;/Rect4&gt;
+                      &lt;/Root&gt;
+                    );
+                  }
+                  
+                  const Root = styled.div`
+                    display: flex;
+                    flex-direction: column;
+                  `;
+                  
+                  const Rect4 = styled.div`
+                    width: 416px;
+                    height: 106px;
+                    background-color: rgba(255,255,255,1);
+                    flex-direction: column;
+                    display: flex;
+                  `;
+                  
+                  const Rect = styled.div`
+                    width: 416px;
+                    height: 106px;
+                    opacity: 1;
+                    flex-direction: column;
+                    display: flex;
+                  `;
+                  
+                  const Rectangle3 = styled.div`
+                    width: 16px;
+                    height: 105px;
+                    background-color: rgba(61,111,197,1);
+                    opacity: 1;
+                  `;
+                  
+                  const IconInfoIncon = styled.div`
+                    width: 62px;
+                    height: 63px;
+                    opacity: 0.3;
+                    flex-direction: column;
+                    display: flex;
+                    margin-left: 14px;
+                    margin-top: 22px;
+                  `;
+                  
+                  const InfoMessageHere = styled.span`
+                    font-family: Raleway;
+                    background-color: transparent;
+                    color: rgba(61,111,197,1);
+                    opacity: 1;
+                    font-size: 18px;
+                    font-weight: 700;
+                    font-style: normal;
+                    letter-spacing: 0.45px;
+                    margin-top: 14px;
+                  `;
+                  
+                  const IconRespMenuCloseRespMenu1 = styled.div`
+                    width: 15px;
+                    height: 16px;
+                    opacity: 1;
+                    flex-direction: column;
+                    display: flex;
+                    margin-left: 82px;
+                  `;
+                  
+                  const Group31 = styled.div`
+                    top: 0px;
+                    left: 0px;
+                    width: 15px;
+                    height: 15px;
+                    position: absolute;
+                    opacity: 1;
+                    flex-direction: column;
+                    display: flex;
+                  `;
+                  
+                  const Clip21Stack = styled.div`
+                    width: 15px;
+                    height: 15px;
+                    position: relative;
+                  `;
+                  
+                  const Group61 = styled.div`
+                    top: 0px;
+                    left: 0px;
+                    width: 15px;
+                    height: 15px;
+                    position: absolute;
+                    opacity: 1;
+                    flex-direction: column;
+                    display: flex;
+                  `;
+                  
+                  const Clip51Stack = styled.div`
+                    width: 15px;
+                    height: 15px;
+                    position: relative;
+                  `;
+                  
+                  const Group31Stack = styled.div`
+                    width: 15px;
+                    height: 15px;
+                    position: relative;
+                  `;
+                  
+                  const InfoMessageHereRow = styled.div`
+                    height: 32px;
+                    flex-direction: row;
+                    display: flex;
+                    margin-right: 8px;
+                  `;
+                  
+                  const DescriptionOfInfo = styled.span`
+                    font-family: Raleway;
+                    background-color: transparent;
+                    color: rgba(216,216,216,1);
+                    opacity: 1;
+                    font-size: 10px;
+                    font-weight: 400;
+                    font-style: normal;
+                    letter-spacing: 0.25px;
+                    margin-top: 7px;
+                    margin-left: 2px;
+                  `;
+                  
+                  const InfoMessageHereRowColumn = styled.div`
+                    width: 294px;
+                    flex-direction: column;
+                    display: flex;
+                    margin-left: 25px;
+                    margin-top: 10px;
+                    margin-bottom: 26px;
+                  `;
+                  
+                  const Rectangle3Row = styled.div`
+                    height: 105px;
+                    flex-direction: row;
+                    display: flex;
+                    margin-right: 5px;
+                  `;
+                  
+                  export default TaskNotificationInfo;
+                  
+
+
+                </code>
+
+
+              </pre>
+          </fieldset>
+      </div>
+      Please add the extracted component folder in your project and import the component folder.
+          (Eg import Component from [folder path])
+          <a href="https://github.com/Robespra/sp_ipaas_unifieddesign/react_component_notification.zip">download react_component_notification.zip</a>
+  </div>
         
-        <h3>Style</h3>
-        <h4>Success</h4>
-        <h4>Info</h4>
-        <h4>error-warning-danger</h4>
+        
+
+        
+        
+        
+        <h4>Error notification</h4>
+        <h5 class="mtl" >rendered design</h5>
+        <img class="img-max-500" src="img/task_notification _error.svg" alt="notif error">
+  
+        <div class='showHide mtl'>
+          <input type="checkbox" id="toggleContextNotifInfo2" />
+      
+          <label for="toggleContextNotifInfo2">
+              <span class='expand'>
+                  Context
+                  <span class="changeArrow arrow-upContextNotifInfo2">▼</span>
+                  <span class="changeArrow arrow-dnContextNotifInfo2">►</span>
+              </span>
+          </label>
+          <div class="fieldsetContainerContextNotifInfo2">
+              <fieldset id="fdstLorem">
+                Informational error notification after an action or a process running in background failed.
+              Notification is displayed 5 seconds, disapears automatically 
+              if user doesn’t  click on close.
+              </fieldset>
+          </div>
+      </div>
+      <div class='showHide mtl mbxl'>
+        <input type="checkbox" id="toggleCodeNotifInfo2" />
+    
+        <label for="toggleCodeNotifInfo2">
+            <span class='expand'>
+              Component code
+                <span class="changeArrow arrow-upCodeNotifInfo2">▼</span>
+                <span class="changeArrow arrow-dnCodeNotifInfo2">►</span>
+            </span>
+        </label>
+        <div class="fieldsetContainerCodeNotifInfo2">
+            <fieldset id="fdstLorem">
+                <pre>
+                  <code>
+          import React, { Component } from "react";
+import styled, { css } from "styled-components";
+
+function TaskNotificationError(props) {
+  return (
+    &lt;Root {...props}&gt;
+      &lt;Rect6&gt;
+        &lt;Rect&gt;
+          &lt;Rectangle5Row&gt;
+            &lt;Rectangle5&gt;&lt;/Rectangle5&gt;
+            &lt;IconNotifError&gt;
+              &lt;svg
+                viewBox="-0 -0 4.592399926185608 23.02874962985515"
+                style={{
+                  width: 7,
+                  height: 37,
+                  backgroundColor: "transparent",
+                  borderColor: "transparent",
+                  marginTop: 32,
+                  marginLeft: 44
+                }}
+              &gt;
+                &lt;path
+                  strokeWidth={0}
+                  fill="rgba(242,238,232,1)"
+                  fillOpacity={1}
+                  strokeOpacity={1}
+                  d="M3.91 22.42 C4.37 22.01 4.59 21.46 4.59 20.75 C4.59 20.12 4.37 19.58 3.92 19.14 C3.47 18.70 2.92 18.48 2.28 18.48 C1.64 18.48 1.10 18.70 0.66 19.14 C0.22 19.58 0.00 20.12 0.00 20.75 C0.00 21.47 0.23 22.03 0.69 22.43 C1.15 22.83 1.70 23.03 2.31 23.03 M1.08 15.13 C1.29 15.59 1.67 15.82 2.22 15.82 C2.76 15.82 3.15 15.58 3.38 15.10 C3.61 14.63 3.83 13.05 3.83 13.05 L4.49 5.55 C4.49 5.55 4.59 4.18 4.59 3.51 C4.59 2.38 4.45 1.51 4.15 0.91 C3.86 0.30 3.28 0.00 2.40 0.00 C1.69 0.00 1.10 0.24 0.66 0.71 C0.22 1.18 0.00 1.84 0.00 2.68 C0.00 3.30 0.14 5.74 0.14 5.74 L0.63 13.02 "
+                &gt;&lt;/path&gt;
+              &lt;/svg&gt;
+            &lt;/IconNotifError&gt;
+            &lt;ErrorMessageHereRowColumn&gt;
+              &lt;ErrorMessageHereRow&gt;
+                &lt;ErrorMessageHere&gt;ERROR MESSAGE HERE&lt;/ErrorMessageHere&gt;
+                &lt;IconRespMenuCloseRespMenu2&gt;
+                  &lt;Group32Stack&gt;
+                    &lt;Group32&gt;
+                      &lt;Clip22Stack&gt;
+                        &lt;svg
+                          viewBox="-0 -0 14.67353887549998 14.67269887556435"
+                          style={{
+                            top: 0,
+                            left: 0,
+                            width: 15,
+                            height: 15,
+                            backgroundColor: "transparent",
+                            position: "absolute",
+                            borderColor: "transparent"
+                          }}
+                        &gt;
+                          &lt;path
+                            strokeWidth={0}
+                            fill="transparent"
+                            fillOpacity={1}
+                            strokeOpacity={1}
+                            d="M0.00 0.00 L14.67 0.00 L14.67 14.67 L0.00 14.67 Z"
+                          &gt;&lt;/path&gt;
+                        &lt;/svg&gt;
+                        &lt;svg
+                          viewBox="-0 -0 14.67353887549998 14.67269887556435"
+                          style={{
+                            top: 0,
+                            left: 0,
+                            width: 15,
+                            height: 15,
+                            backgroundColor: "transparent",
+                            position: "absolute",
+                            borderColor: "transparent"
+                          }}
+                        &gt;
+                          &lt;defs&gt;
+                            &lt;mask
+                              id="v7cyEM"
+                              x={0}
+                              y={0}
+                              width={14}
+                              height={14}
+                            &gt;
+                              &lt;path
+                                d="M0.00 0.00 L14.67 0.00 L14.67 14.67 L0.00 14.67 Z"
+                                fill="white"
+                              /&gt;
+                            &lt;/mask&gt;
+                          &lt;/defs&gt;
+                          &lt;path
+                            strokeWidth={0}
+                            fill="rgba(242,243,246,1)"
+                            fillOpacity={1}
+                            strokeOpacity={1}
+                            d="M0.25 14.43 C-0.08 14.10 -0.08 13.57 0.25 13.24 L13.24 0.25 C13.57 -0.08 14.10 -0.08 14.43 0.25 C14.76 0.57 14.76 1.11 14.43 1.43 L1.43 14.43 C1.27 14.59 1.05 14.67 0.84 14.67 C0.63 14.67 0.41 14.59 0.25 14.43 Z"
+                            mask="url(#v7cyEM)"
+                          &gt;&lt;/path&gt;
+                        &lt;/svg&gt;
+                      &lt;/Clip22Stack&gt;
+                    &lt;/Group32&gt;
+                    &lt;Group62&gt;
+                      &lt;Clip52Stack&gt;
+                        &lt;svg
+                          viewBox="-0 -0 14.6737068754871 14.67269887556435"
+                          style={{
+                            top: 0,
+                            left: 0,
+                            width: 15,
+                            height: 15,
+                            backgroundColor: "transparent",
+                            position: "absolute",
+                            borderColor: "transparent"
+                          }}
+                        &gt;
+                          &lt;path
+                            strokeWidth={0}
+                            fill="transparent"
+                            fillOpacity={1}
+                            strokeOpacity={1}
+                            d="M0.00 0.00 L14.67 0.00 L14.67 14.67 L0.00 14.67 Z"
+                          &gt;&lt;/path&gt;
+                        &lt;/svg&gt;
+                        &lt;svg
+                          viewBox="-0 -0 14.6737068754871 14.67269887556435"
+                          style={{
+                            top: 0,
+                            left: 0,
+                            width: 15,
+                            height: 15,
+                            backgroundColor: "transparent",
+                            position: "absolute",
+                            borderColor: "transparent"
+                          }}
+                        &gt;
+                          &lt;defs&gt;
+                            &lt;mask
+                              id="A9tbus"
+                              x={0}
+                              y={0}
+                              width={14}
+                              height={14}
+                            &gt;
+                              &lt;path
+                                d="M0.00 0.00 L14.67 0.00 L14.67 14.67 L0.00 14.67 Z"
+                                fill="white"
+                              /&gt;
+                            &lt;/mask&gt;
+                          &lt;/defs&gt;
+                          &lt;path
+                            strokeWidth={0}
+                            fill="rgba(242,243,246,1)"
+                            fillOpacity={1}
+                            strokeOpacity={1}
+                            d="M13.24 14.43 L0.25 1.43 C-0.08 1.11 -0.08 0.57 0.25 0.25 C0.57 -0.08 1.11 -0.08 1.43 0.25 L14.43 13.24 C14.76 13.57 14.76 14.10 14.43 14.43 C14.26 14.59 14.05 14.67 13.83 14.67 C13.62 14.67 13.40 14.59 13.24 14.43 Z"
+                            mask="url(#A9tbus)"
+                          &gt;&lt;/path&gt;
+                        &lt;/svg&gt;
+                      &lt;/Clip52Stack&gt;
+                    &lt;/Group62&gt;
+                  &lt;/Group32Stack&gt;
+                &lt;/IconRespMenuCloseRespMenu2&gt;
+              &lt;/ErrorMessageHereRow&gt;
+              &lt;DescriptionOfError&gt;
+                Description of error in task execution here. this{"\n"}
+                notification is displayed 5 seconds, disapears automatically{" "}
+                {"\n"}if user doesn’t click on close
+              &lt;/DescriptionOfError&gt;
+            &lt;/ErrorMessageHereRowColumn&gt;
+          &lt;/Rectangle5Row&gt;
+        &lt;/Rect&gt;
+      &lt;/Rect6&gt;
+    &lt;/Root&gt;
+  );
+}
+
+const Root = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
+const Rect6 = styled.div`
+  width: 416px;
+  height: 106px;
+  background-color: rgba(255,255,255,1);
+  flex-direction: column;
+  display: flex;
+`;
+
+const Rect = styled.div`
+  width: 416px;
+  height: 106px;
+  opacity: 1;
+  flex-direction: column;
+  display: flex;
+`;
+
+const Rectangle5 = styled.div`
+  width: 16px;
+  height: 105px;
+  background-color: rgba(250,178,132,1);
+  opacity: 1;
+`;
+
+const IconNotifError = styled.div`
+  width: 97px;
+  height: 87px;
+  opacity: 1;
+  flex-direction: column;
+  display: flex;
+`;
+
+const ErrorMessageHere = styled.span`
+  font-family: Raleway;
+  background-color: transparent;
+  color: rgba(250,178,132,1);
+  opacity: 1;
+  font-size: 18px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: 0.45px;
+  margin-top: 14px;
+`;
+
+const IconRespMenuCloseRespMenu2 = styled.div`
+  width: 15px;
+  height: 16px;
+  opacity: 1;
+  flex-direction: column;
+  display: flex;
+  margin-left: 63px;
+`;
+
+const Group32 = styled.div`
+  top: 0px;
+  left: 0px;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  opacity: 1;
+  flex-direction: column;
+  display: flex;
+`;
+
+const Clip22Stack = styled.div`
+  width: 15px;
+  height: 15px;
+  position: relative;
+`;
+
+const Group62 = styled.div`
+  top: 0px;
+  left: 0px;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  opacity: 1;
+  flex-direction: column;
+  display: flex;
+`;
+
+const Clip52Stack = styled.div`
+  width: 15px;
+  height: 15px;
+  position: relative;
+`;
+
+const Group32Stack = styled.div`
+  width: 15px;
+  height: 15px;
+  position: relative;
+`;
+
+const ErrorMessageHereRow = styled.div`
+  height: 32px;
+  flex-direction: row;
+  display: flex;
+  margin-right: 8px;
+`;
+
+const DescriptionOfError = styled.span`
+  font-family: Raleway;
+  background-color: transparent;
+  color: rgba(216,216,216,1);
+  opacity: 1;
+  font-size: 10px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0.25px;
+  margin-top: 7px;
+  margin-left: 2px;
+`;
+
+const ErrorMessageHereRowColumn = styled.div`
+  width: 294px;
+  flex-direction: column;
+  display: flex;
+  margin-left: 4px;
+  margin-top: 10px;
+  margin-bottom: 26px;
+`;
+
+const Rectangle5Row = styled.div`
+  height: 105px;
+  flex-direction: row;
+  display: flex;
+  margin-right: 5px;
+`;
+
+export default TaskNotificationError;
+
+          
+</code>
+
+
+</pre>
+</fieldset>
+</div>
+Please add the extracted component folder in your project and import the component folder.
+          (Eg import Component from [folder path])
+          <a href="https://github.com/Robespra/sp_ipaas_unifieddesign/react_component_notification.zip">download react_component_notification.zip</a>
+</div>
+
+<h3>Transformation engine action menu</h3>
+Please add the extracted component folder in your project and import the component folder.
+(Eg import Component from [folder path])
+<a href="https://github.com/Robespra/sp_ipaas_unifieddesign/react_component_transformation_engine_action_menu.zip">download react_component_transformation_engine_action_menu.zip</a>
+
+<h5 class="mtl" >rendered design</h5>
+<img class="img-max-500" src="img/transformation_engine_action_menu.svg" alt="notif error">
+<h5 class="mtl" >Screen</h5>
+<pre>
+  <code>
+    import React, { Component } from "react";
+    import styled, { css } from "styled-components";
+    import IntegrationLogicOnClickTaskCondition from "../components/IntegrationLogicOnClickTaskCondition";
+    
+    function Untitled(props) {
+      return (
+        &lt;Container&gt;
+          &lt;IntegrationLogicOnClickTaskCondition
+            style={{
+              width: 168,
+              height: 321,
+              alignSelf: "center"
+            }}
+          &gt;&lt;/IntegrationLogicOnClickTaskCondition&gt;
+        &lt;/Container&gt;
+      );
+    }
+    
+    const Container = styled.div`
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100vh;
+      width: 100vw;
+    `;
+    
+    export default Untitled;
+    
+
+
+</code>
+
+
+</pre>
+
+
+<div class='showHide mtl'>
+  <input type="checkbox" id="toggleContextNotifInfo3" />
+
+  <label for="toggleContextNotifInfo3">
+      <span class='expand'>
+          Context
+          <span class="changeArrow arrow-upContextNotifInfo3">▼</span>
+          <span class="changeArrow arrow-dnContextNotifInfo3">►</span>
+      </span>
+  </label>
+  <div class="fieldsetContainerContextNotifInfo3">
+      <fieldset id="fdstLorem">
+          Action menu component for transformation engine. Direct buttons + collapse categories.
+      </fieldset>
+  </div>
+</div>
+<div class='showHide mtl mbxl'>
+<input type="checkbox" id="toggleCodeNotifInfo3" />
+
+<label for="toggleCodeNotifInfo3">
+    <span class='expand'>
+        Component code
+        <span class="changeArrow arrow-upCodeNotifInfo3">▼</span>
+        <span class="changeArrow arrow-dnCodeNotifInfo3">►</span>
+    </span>
+</label>
+<div class="fieldsetContainerCodeNotifInfo3">
+    <fieldset id="fdstLorem">
+        <pre>
+          <code>
+            import React, { Component } from "react";
+import styled, { css } from "styled-components";
+
+function IntegrationLogicOnClickTaskCondition(props) {
+  return (
+    &lt;Root {...props}&gt;
+      &lt;RectStack&gt;
+        &lt;Rect&gt;
+          &lt;IntegrationLogicOnClickTaskCondition1&gt;
+            &lt;RectangleStack&gt;
+              &lt;Rectangle&gt;
+                &lt;Rectangle3&gt;
+                  &lt;AddObject&gt;ADD OBJECT&lt;/AddObject&gt;
+                &lt;/Rectangle3&gt;
+                &lt;Process&gt;
+                  &lt;IconProcessRow&gt;
+                    &lt;IconProcess&gt;
+                      &lt;Clip26Stack&gt;
+                        &lt;svg
+                          viewBox="-0 -0 14.856875 15.74172185430466"
+                          style={{
+                            top: 0,
+                            left: 0,
+                            width: 15,
+                            height: 16,
+                            backgroundColor: "transparent",
+                            position: "absolute",
+                            borderColor: "transparent"
+                          }}
+                        &gt;
+                          &lt;path
+                            strokeWidth={0}
+                            fill="transparent"
+                            fillOpacity={1}
+                            strokeOpacity={1}
+                            d="M0.00 0.00 L14.86 0.00 L14.86 15.74 L0.00 15.74 Z"
+                          &gt;&lt;/path&gt;
+                        &lt;/svg&gt;
+                        &lt;svg
+                          viewBox="-0 -0 14.856875 15.74172185430466"
+                          style={{
+                            top: 0,
+                            left: 0,
+                            width: 15,
+                            height: 16,
+                            backgroundColor: "transparent",
+                            position: "absolute",
+                            borderColor: "transparent"
+                          }}
+                        &gt;
+                          &lt;defs&gt;
+                            &lt;mask
+                              id="OaiFKP"
+                              x={0}
+                              y={0}
+                              width={14}
+                              height={15}
+                            &gt;
+                              &lt;path
+                                d="M0.00 0.00 L14.86 0.00 L14.86 15.74 L0.00 15.74 Z"
+                                fill="white"
+                              /&gt;
+                            &lt;/mask&gt;
+                          &lt;/defs&gt;
+                          &lt;path
+                            strokeWidth={0}
+                            fill="rgba(20,39,71,1)"
+                            fillOpacity={1}
+                            strokeOpacity={1}
+                            d="M1.25 1.32 L13.61 1.32 L13.61 14.42 L1.25 14.42 Z M14.86 15.08 L14.86 0.66 L14.23 0.00 L0.63 0.00 L0.00 0.66 L0.00 15.08 L0.63 15.74 L14.23 15.74 L14.86 15.08 Z"
+                            mask="url(#OaiFKP)"
+                          &gt;&lt;/path&gt;
+                        &lt;/svg&gt;
+                        &lt;svg
+                          viewBox="-0 -0 14.856875 15.74172185430466"
+                          style={{
+                            top: 0,
+                            left: 0,
+                            width: 15,
+                            height: 16,
+                            backgroundColor: "transparent",
+                            position: "absolute",
+                            borderColor: "transparent"
+                          }}
+                        &gt;
+                          &lt;defs&gt;
+                            &lt;mask
+                              id="cyJ5wR"
+                              x={0}
+                              y={0}
+                              width={14}
+                              height={15}
+                            &gt;
+                              &lt;path
+                                d="M0.00 0.00 L14.86 0.00 L14.86 15.74 L0.00 15.74 Z"
+                                fill="white"
+                              /&gt;
+                            &lt;/mask&gt;
+                          &lt;/defs&gt;
+                          &lt;path
+                            strokeWidth={0}
+                            fill="rgba(20,39,71,1)"
+                            fillOpacity={1}
+                            strokeOpacity={1}
+                            d="M14.01 4.85 L0.85 4.85 C0.68 4.85 0.54 4.70 0.54 4.52 C0.54 4.34 0.68 4.19 0.85 4.19 L14.01 4.19 C14.18 4.19 14.32 4.34 14.32 4.52 C14.32 4.70 14.18 4.85 14.01 4.85 "
+                            mask="url(#cyJ5wR)"
+                          &gt;&lt;/path&gt;
+                        &lt;/svg&gt;
+                        &lt;svg
+                          viewBox="-0 -0 14.856875 15.74172185430466"
+                          style={{
+                            top: 0,
+                            left: 0,
+                            width: 15,
+                            height: 16,
+                            backgroundColor: "transparent",
+                            position: "absolute",
+                            borderColor: "transparent"
+                          }}
+                        &gt;
+                          &lt;defs&gt;
+                            &lt;mask
+                              id="rtNBqi"
+                              x={0}
+                              y={0}
+                              width={14}
+                              height={15}
+                            &gt;
+                              &lt;path
+                                d="M0.00 0.00 L14.86 0.00 L14.86 15.74 L0.00 15.74 Z"
+                                fill="white"
+                              /&gt;
+                            &lt;/mask&gt;
+                          &lt;/defs&gt;
+                          &lt;path
+                            strokeWidth={0}
+                            fill="rgba(20,39,71,1)"
+                            fillOpacity={1}
+                            strokeOpacity={1}
+                            d="M2.84 1.94 C2.41 1.94 2.05 2.32 2.05 2.78 C2.05 3.24 2.41 3.61 2.84 3.61 C3.27 3.61 3.63 3.24 3.63 2.78 C3.63 2.32 3.27 1.94 2.84 1.94 "
+                            mask="url(#rtNBqi)"
+                          &gt;&lt;/path&gt;
+                        &lt;/svg&gt;
+                        &lt;svg
+                          viewBox="-0 -0 14.856875 15.74172185430466"
+                          style={{
+                            top: 0,
+                            left: 0,
+                            width: 15,
+                            height: 16,
+                            backgroundColor: "transparent",
+                            position: "absolute",
+                            borderColor: "transparent"
+                          }}
+                        &gt;
+                          &lt;defs&gt;
+                            &lt;mask
+                              id="F3kSbx"
+                              x={0}
+                              y={0}
+                              width={14}
+                              height={15}
+                            &gt;
+                              &lt;path
+                                d="M0.00 0.00 L14.86 0.00 L14.86 15.74 L0.00 15.74 Z"
+                                fill="white"
+                              /&gt;
+                            &lt;/mask&gt;
+                          &lt;/defs&gt;
+                          &lt;path
+                            strokeWidth={0}
+                            fill="rgba(20,39,71,1)"
+                            fillOpacity={1}
+                            strokeOpacity={1}
+                            d="M4.97 1.94 C4.54 1.94 4.19 2.32 4.19 2.78 C4.19 3.24 4.54 3.61 4.97 3.61 C5.41 3.61 5.76 3.24 5.76 2.78 C5.76 2.32 5.41 1.94 4.97 1.94 "
+                            mask="url(#F3kSbx)"
+                          &gt;&lt;/path&gt;
+                        &lt;/svg&gt;
+                        &lt;svg
+                          viewBox="-0 -0 14.856875 15.74172185430466"
+                          style={{
+                            top: 0,
+                            left: 0,
+                            width: 15,
+                            height: 16,
+                            backgroundColor: "transparent",
+                            position: "absolute",
+                            borderColor: "transparent"
+                          }}
+                        &gt;
+                          &lt;defs&gt;
+                            &lt;mask
+                              id="phyi3q"
+                              x={0}
+                              y={0}
+                              width={14}
+                              height={15}
+                            &gt;
+                              &lt;path
+                                d="M0.00 0.00 L14.86 0.00 L14.86 15.74 L0.00 15.74 Z"
+                                fill="white"
+                              /&gt;
+                            &lt;/mask&gt;
+                          &lt;/defs&gt;
+                          &lt;path
+                            strokeWidth={0}
+                            fill="rgba(20,39,71,1)"
+                            fillOpacity={1}
+                            strokeOpacity={1}
+                            d="M7.11 1.94 C6.67 1.94 6.32 2.32 6.32 2.78 C6.32 3.24 6.67 3.61 7.11 3.61 C7.54 3.61 7.89 3.24 7.89 2.78 C7.89 2.32 7.54 1.94 7.11 1.94 "
+                            mask="url(#phyi3q)"
+                          &gt;&lt;/path&gt;
+                        &lt;/svg&gt;
+                        &lt;svg
+                          viewBox="-0 -0 14.856875 15.74172185430466"
+                          style={{
+                            top: 0,
+                            left: 0,
+                            width: 15,
+                            height: 16,
+                            backgroundColor: "transparent",
+                            position: "absolute",
+                            borderColor: "transparent"
+                          }}
+                        &gt;
+                          &lt;defs&gt;
+                            &lt;mask
+                              id="NXTjdQ"
+                              x={0}
+                              y={0}
+                              width={14}
+                              height={15}
+                            &gt;
+                              &lt;path
+                                d="M0.00 0.00 L14.86 0.00 L14.86 15.74 L0.00 15.74 Z"
+                                fill="white"
+                              /&gt;
+                            &lt;/mask&gt;
+                          &lt;/defs&gt;
+                          &lt;path
+                            strokeWidth={0}
+                            fill="rgba(20,39,71,1)"
+                            fillOpacity={1}
+                            strokeOpacity={1}
+                            d="M9.42 10.23 L5.44 10.23 C5.09 10.23 4.81 9.94 4.81 9.57 C4.81 9.21 5.09 8.91 5.44 8.91 L9.42 8.91 C9.77 8.91 10.05 9.21 10.05 9.57 C10.05 9.94 9.77 10.23 9.42 10.23 "
+                            mask="url(#NXTjdQ)"
+                          &gt;&lt;/path&gt;
+                        &lt;/svg&gt;
+                        &lt;svg
+                          viewBox="-0 -0 14.856875 15.74172185430466"
+                          style={{
+                            top: 0,
+                            left: 0,
+                            width: 15,
+                            height: 16,
+                            backgroundColor: "transparent",
+                            position: "absolute",
+                            borderColor: "transparent"
+                          }}
+                        &gt;
+                          &lt;defs&gt;
+                            &lt;mask
+                              id="MR1dr1"
+                              x={0}
+                              y={0}
+                              width={14}
+                              height={15}
+                            &gt;
+                              &lt;path
+                                d="M0.00 0.00 L14.86 0.00 L14.86 15.74 L0.00 15.74 Z"
+                                fill="white"
+                              /&gt;
+                            &lt;/mask&gt;
+                          &lt;/defs&gt;
+                          &lt;path
+                            strokeWidth={0}
+                            fill="rgba(20,39,71,1)"
+                            fillOpacity={1}
+                            strokeOpacity={1}
+                            d="M7.43 12.34 C7.08 12.34 6.80 12.05 6.80 11.68 L6.80 7.46 C6.80 7.09 7.08 6.80 7.43 6.80 C7.77 6.80 8.05 7.09 8.05 7.46 L8.05 11.68 C8.05 12.05 7.77 12.34 7.43 12.34 "
+                            mask="url(#MR1dr1)"
+                          &gt;&lt;/path&gt;
+                        &lt;/svg&gt;
+                      &lt;/Clip26Stack&gt;
+                    &lt;/IconProcess&gt;
+                    &lt;Process1&gt;PROCESS&lt;/Process1&gt;
+                    &lt;IconCarretClosed1&gt;
+                      &lt;Clip27Stack&gt;
+                        &lt;svg
+                          viewBox="-0 -0 7.681920000000002 5.815904231460741"
+                          style={{
+                            top: 0,
+                            left: 0,
+                            width: 8,
+                            height: 6,
+                            backgroundColor: "transparent",
+                            position: "absolute",
+                            borderColor: "transparent"
+                          }}
+                        &gt;
+                          &lt;path
+                            strokeWidth={0}
+                            fill="transparent"
+                            fillOpacity={1}
+                            strokeOpacity={1}
+                            d="M0.00 0.00 L7.68 0.00 L7.68 5.82 L0.00 5.82 Z"
+                          &gt;&lt;/path&gt;
+                        &lt;/svg&gt;
+                        &lt;svg
+                          viewBox="-0.4 -0.4 9.281920000000001 7.4159042314607415"
+                          style={{
+                            top: 0,
+                            left: 0,
+                            width: 8,
+                            height: 6,
+                            backgroundColor: "transparent",
+                            position: "absolute",
+                            borderColor: "transparent"
+                          }}
+                        &gt;
+                          &lt;defs&gt;
+                            &lt;mask id="JndTMf" x={0} y={0} width={9} height={7}&gt;
+                              &lt;path
+                                d="M0.00 0.00 L7.68 0.00 L7.68 5.82 L0.00 5.82 Z"
+                                fill="white"
+                              /&gt;
+                            &lt;/mask&gt;
+                          &lt;/defs&gt;
+                          &lt;path
+                            strokeWidth={0.8}
+                            fill="transparent"
+                            stroke="rgba(3,23,57,1)"
+                            fillOpacity={1}
+                            strokeOpacity={1}
+                            d="M7.58 5.86 C7.87 6.38 7.52 7.04 6.95 7.04 L0.73 7.04 C0.16 7.04 -0.19 6.38 0.11 5.86 L3.21 0.38 C3.50 -0.13 4.19 -0.13 4.47 0.38 L7.58 5.86 Z"
+                            mask="url(#JndTMf)"
+                          &gt;&lt;/path&gt;
+                        &lt;/svg&gt;
+                      &lt;/Clip27Stack&gt;
+                    &lt;/IconCarretClosed1&gt;
+                  &lt;/IconProcessRow&gt;
+                &lt;/Process&gt;
+                &lt;ConectorRow&gt;
+                  &lt;Conector&gt;
+                    &lt;IconConnectorRow&gt;
+                      &lt;IconConnector&gt;
+                        &lt;Fill17Stack&gt;
+                          &lt;svg
+                            viewBox="-0 -0 5.327615999999999 5.644443973509937"
+                            style={{
+                              top: 0,
+                              left: 2,
+                              width: 5,
+                              height: 6,
+                              backgroundColor: "transparent",
+                              position: "absolute",
+                              borderColor: "transparent"
+                            }}
+                          &gt;
+                            &lt;path
+                              strokeWidth={0}
+                              fill="rgba(3,23,57,1)"
+                              fillOpacity={1}
+                              strokeOpacity={1}
+                              d="M4.66 5.64 C4.28 5.64 3.98 5.33 3.98 4.93 L3.98 1.43 L0.67 1.42 C0.30 1.42 0.00 1.11 0.00 0.71 C0.00 0.32 0.30 0.00 0.67 0.00 L4.65 0.00 C5.03 0.00 5.33 0.32 5.33 0.71 L5.33 4.93 C5.33 5.33 5.03 5.64 4.66 5.64 "
+                            &gt;&lt;/path&gt;
+                          &lt;/svg&gt;
+                          &lt;Group5&gt;
+                            &lt;Clip4Stack&gt;
+                              &lt;svg
+                                viewBox="-0 -0 7.108584 7.531562384105968"
+                                style={{
+                                  top: 0,
+                                  left: 0,
+                                  width: 7,
+                                  height: 8,
+                                  backgroundColor: "transparent",
+                                  position: "absolute",
+                                  borderColor: "transparent"
+                                }}
+                              &gt;
+                                &lt;path
+                                  strokeWidth={0}
+                                  fill="transparent"
+                                  fillOpacity={1}
+                                  strokeOpacity={1}
+                                  d="M0.00 0.00 L7.11 0.00 L7.11 7.53 L0.00 7.53 Z"
+                                &gt;&lt;/path&gt;
+                              &lt;/svg&gt;
+                              &lt;svg
+                                viewBox="-0 -0 7.108584 7.531562384105968"
+                                style={{
+                                  top: 0,
+                                  left: 0,
+                                  width: 7,
+                                  height: 8,
+                                  backgroundColor: "transparent",
+                                  position: "absolute",
+                                  borderColor: "transparent"
+                                }}
+                              &gt;
+                                &lt;defs&gt;
+                                  &lt;mask
+                                    id="yifsU9"
+                                    x={0}
+                                    y={0}
+                                    width={7}
+                                    height={7}
+                                  &gt;
+                                    &lt;path
+                                      d="M0.00 0.00 L7.11 0.00 L7.11 7.53 L0.00 7.53 Z"
+                                      fill="white"
+                                    /&gt;
+                                  &lt;/mask&gt;
+                                &lt;/defs&gt;
+                                &lt;path
+                                  strokeWidth={0}
+                                  fill="rgba(3,23,57,1)"
+                                  fillOpacity={1}
+                                  strokeOpacity={1}
+                                  d="M0.67 7.53 C0.50 7.53 0.33 7.46 0.20 7.32 C-0.07 7.04 -0.07 6.59 0.20 6.32 L5.96 0.21 C6.22 -0.07 6.65 -0.07 6.91 0.21 C7.17 0.49 7.17 0.94 6.91 1.22 L1.15 7.32 C1.02 7.46 0.84 7.53 0.67 7.53 "
+                                  mask="url(#yifsU9)"
+                                &gt;&lt;/path&gt;
+                              &lt;/svg&gt;
+                            &lt;/Clip4Stack&gt;
+                          &lt;/Group5&gt;
+                        &lt;/Fill17Stack&gt;
+                        &lt;Fill61Stack&gt;
+                          &lt;svg
+                            viewBox="-0 -0 5.327616 5.644443973509935"
+                            style={{
+                              top: 2,
+                              left: 0,
+                              width: 5,
+                              height: 6,
+                              backgroundColor: "transparent",
+                              position: "absolute",
+                              borderColor: "transparent"
+                            }}
+                          &gt;
+                            &lt;path
+                              strokeWidth={0}
+                              fill="rgba(3,23,57,1)"
+                              fillOpacity={1}
+                              strokeOpacity={1}
+                              d="M4.66 5.64 L4.66 5.64 L0.67 5.64 C0.30 5.64 0.00 5.33 0.00 4.93 L0.00 0.71 C0.00 0.32 0.30 0.00 0.67 0.00 C1.04 0.00 1.34 0.32 1.34 0.71 L1.35 4.22 L4.66 4.22 C5.03 4.22 5.33 4.54 5.33 4.93 C5.33 5.33 5.03 5.64 4.66 5.64 "
+                            &gt;&lt;/path&gt;
+                          &lt;/svg&gt;
+                          &lt;svg
+                            viewBox="-0 -0 7.107408000000001 7.532274437086099"
+                            style={{
+                              top: 0,
+                              left: 0,
+                              width: 7,
+                              height: 8,
+                              backgroundColor: "transparent",
+                              position: "absolute",
+                              borderColor: "transparent"
+                            }}
+                          &gt;
+                            &lt;path
+                              strokeWidth={0}
+                              fill="rgba(3,23,57,1)"
+                              fillOpacity={1}
+                              strokeOpacity={1}
+                              d="M0.67 7.53 C0.50 7.53 0.33 7.46 0.20 7.32 C-0.07 7.05 -0.07 6.60 0.20 6.32 L5.96 0.21 C6.22 -0.07 6.65 -0.07 6.91 0.21 C7.17 0.49 7.17 0.94 6.91 1.22 L1.15 7.32 C1.02 7.46 0.84 7.53 0.67 7.53 "
+                            &gt;&lt;/path&gt;
+                          &lt;/svg&gt;
+                        &lt;/Fill61Stack&gt;
+                      &lt;/IconConnector&gt;
+                      &lt;Connector&gt;CONNECTOR&lt;/Connector&gt;
+                    &lt;/IconConnectorRow&gt;
+                  &lt;/Conector&gt;
+                  &lt;IconCarretClosed&gt;
+                    &lt;Clip25Stack&gt;
+                      &lt;svg
+                        viewBox="-0 -0 7.681920000000002 5.815904231460737"
+                        style={{
+                          top: 0,
+                          left: 0,
+                          width: 8,
+                          height: 6,
+                          backgroundColor: "transparent",
+                          position: "absolute",
+                          borderColor: "transparent"
+                        }}
+                      &gt;
+                        &lt;path
+                          strokeWidth={0}
+                          fill="transparent"
+                          fillOpacity={1}
+                          strokeOpacity={1}
+                          d="M0.00 0.00 L7.68 0.00 L7.68 5.82 L0.00 5.82 Z"
+                        &gt;&lt;/path&gt;
+                      &lt;/svg&gt;
+                      &lt;svg
+                        viewBox="-0.4 -0.4 9.281920000000001 7.415904231460738"
+                        style={{
+                          top: 0,
+                          left: 0,
+                          width: 8,
+                          height: 6,
+                          backgroundColor: "transparent",
+                          position: "absolute",
+                          borderColor: "transparent"
+                        }}
+                      &gt;
+                        &lt;defs&gt;
+                          &lt;mask id="XyslPA" x={0} y={0} width={9} height={7}&gt;
+                            &lt;path
+                              d="M0.00 0.00 L7.68 0.00 L7.68 5.82 L0.00 5.82 Z"
+                              fill="white"
+                            /&gt;
+                          &lt;/mask&gt;
+                        &lt;/defs&gt;
+                        &lt;path
+                          strokeWidth={0.8}
+                          fill="transparent"
+                          stroke="rgba(3,23,57,1)"
+                          fillOpacity={1}
+                          strokeOpacity={1}
+                          d="M7.58 5.86 C7.87 6.38 7.52 7.04 6.95 7.04 L0.73 7.04 C0.16 7.04 -0.19 6.38 0.11 5.86 L3.21 0.38 C3.50 -0.13 4.19 -0.13 4.47 0.38 L7.58 5.86 Z"
+                          mask="url(#XyslPA)"
+                        &gt;&lt;/path&gt;
+                      &lt;/svg&gt;
+                    &lt;/Clip25Stack&gt;
+                  &lt;/IconCarretClosed&gt;
+                &lt;/ConectorRow&gt;
+                &lt;Path3Row&gt;
+                  &lt;svg
+                    viewBox="-0 -0 11 12.71523178807948"
+                    style={{
+                      width: 11,
+                      height: 13,
+                      backgroundColor: "transparent",
+                      borderColor: "transparent",
+                      marginTop: 3
+                    }}
+                  &gt;
+                    &lt;path
+                      strokeWidth={0}
+                      fill="rgba(3,23,57,1)"
+                      fillOpacity={1}
+                      strokeOpacity={1}
+                      d="M11.00 0.00 L6.50 7.50 L6.50 11.59 L4.50 12.72 L4.50 7.50 L0.00 0.00 Z M5.00 11.84 L6.00 11.27 L6.00 7.34 L10.11 0.53 L0.88 0.53 L5.00 7.34 Z"
+                    &gt;&lt;/path&gt;
+                  &lt;/svg&gt;
+                  &lt;Filter&gt;Filter&lt;/Filter&gt;
+                &lt;/Path3Row&gt;
+                &lt;IconScriptRow&gt;
+                  &lt;IconScript&gt;
+                    &lt;Fill31Row&gt;
+                      &lt;svg
+                        viewBox="-0 -0 4.154062499999999 7.472384105960284"
+                        style={{
+                          width: 4,
+                          height: 7,
+                          backgroundColor: "transparent",
+                          borderColor: "transparent",
+                          marginTop: 4
+                        }}
+                      &gt;
+                        &lt;path
+                          strokeWidth={0}
+                          fill="rgba(3,23,57,1)"
+                          fillOpacity={1}
+                          strokeOpacity={1}
+                          d="M3.52 7.47 C3.36 7.47 3.20 7.41 3.08 7.28 L0.18 4.21 C-0.06 3.95 -0.06 3.53 0.18 3.27 L3.08 0.20 C3.32 -0.07 3.72 -0.06 3.97 0.20 C4.22 0.46 4.22 0.88 3.97 1.14 L1.52 3.74 L3.97 6.33 C4.22 6.59 4.22 7.02 3.97 7.28 C3.85 7.41 3.69 7.47 3.52 7.47 "
+                        &gt;&lt;/path&gt;
+                      &lt;/svg&gt;
+                      &lt;svg
+                        viewBox="-0 -0 5.981772654214072 14.79542907220825"
+                        style={{
+                          width: 6,
+                          height: 15,
+                          backgroundColor: "transparent",
+                          borderColor: "transparent",
+                          marginLeft: 1
+                        }}
+                      &gt;
+                        &lt;path
+                          strokeWidth={0}
+                          fill="rgba(3,23,57,1)"
+                          fillOpacity={1}
+                          strokeOpacity={1}
+                          d="M0.63 14.80 C0.56 14.80 0.48 14.78 0.41 14.75 C0.08 14.63 -0.08 14.24 0.04 13.89 L4.76 0.44 C4.88 0.09 5.24 -0.09 5.57 0.04 C5.90 0.17 6.06 0.55 5.94 0.90 L1.22 14.36 C1.13 14.63 0.89 14.80 0.63 14.80 "
+                        &gt;&lt;/path&gt;
+                      &lt;/svg&gt;
+                      &lt;svg
+                        viewBox="-0 -0 4.154062499999998 7.472384105960284"
+                        style={{
+                          width: 4,
+                          height: 7,
+                          backgroundColor: "transparent",
+                          borderColor: "transparent",
+                          marginTop: 4
+                        }}
+                      &gt;
+                        &lt;path
+                          strokeWidth={0}
+                          fill="rgba(3,23,57,1)"
+                          fillOpacity={1}
+                          strokeOpacity={1}
+                          d="M0.63 7.47 C0.47 7.47 0.31 7.41 0.18 7.28 C-0.06 7.02 -0.06 6.59 0.18 6.33 L2.63 3.74 L0.18 1.14 C-0.06 0.88 -0.06 0.46 0.18 0.20 C0.43 -0.06 0.83 -0.07 1.08 0.20 L3.97 3.27 C4.22 3.53 4.22 3.95 3.97 4.21 L1.08 7.28 C0.95 7.41 0.79 7.47 0.63 7.47 "
+                        &gt;&lt;/path&gt;
+                      &lt;/svg&gt;
+                    &lt;/Fill31Row&gt;
+                  &lt;/IconScript&gt;
+                  &lt;Script&gt;Script&lt;/Script&gt;
+                &lt;/IconScriptRow&gt;
+                &lt;IconSplitterColumnRow&gt;
+                  &lt;IconSplitterColumn&gt;
+                    &lt;IconSplitter&gt;
+                      &lt;PathStackStack&gt;
+                        &lt;PathStack&gt;
+                          &lt;svg
+                            viewBox="-0 -0 3.875 4.105960264900661"
+                            style={{
+                              top: 3,
+                              left: 0,
+                              width: 4,
+                              height: 4,
+                              backgroundColor: "transparent",
+                              position: "absolute",
+                              borderColor: "transparent"
+                            }}
+                          &gt;
+                            &lt;path
+                              strokeWidth={0}
+                              fill="rgba(3,23,57,1)"
+                              fillOpacity={1}
+                              strokeOpacity={1}
+                              d="M2.88 2.05 C2.88 2.60 2.46 3.05 1.94 3.05 C1.42 3.05 1.00 2.60 1.00 2.05 C1.00 1.51 1.42 1.06 1.94 1.06 M3.88 2.05 C3.88 0.92 3.01 0.00 1.94 0.00 C0.87 0.00 0.00 0.92 0.00 2.05 C0.00 3.19 0.87 4.11 1.94 4.11 "
+                            &gt;&lt;/path&gt;
+                          &lt;/svg&gt;
+                          &lt;svg
+                            viewBox="-0 -0 6.10418395656219 4.182378371095283"
+                            style={{
+                              top: 5,
+                              left: 3,
+                              width: 6,
+                              height: 4,
+                              backgroundColor: "transparent",
+                              position: "absolute",
+                              borderColor: "transparent"
+                            }}
+                          &gt;
+                            &lt;path
+                              strokeWidth={0}
+                              fill="rgba(3,23,57,1)"
+                              fillOpacity={1}
+                              strokeOpacity={1}
+                              d="M5.60 4.18 C5.52 4.18 5.43 4.16 5.35 4.11 L0.25 0.99 C0.01 0.84 -0.07 0.52 0.07 0.27 C0.21 0.01 0.51 -0.08 0.75 0.07 L5.85 3.19 C6.09 3.34 6.18 3.66 6.04 3.92 C5.94 4.09 5.78 4.18 5.60 4.18 "
+                            &gt;&lt;/path&gt;
+                          &lt;/svg&gt;
+                          &lt;svg
+                            viewBox="-0 -0 6.104074547266761 4.182378371095291"
+                            style={{
+                              top: 0,
+                              left: 3,
+                              width: 6,
+                              height: 4,
+                              backgroundColor: "transparent",
+                              position: "absolute",
+                              borderColor: "transparent"
+                            }}
+                          &gt;
+                            &lt;path
+                              strokeWidth={0}
+                              fill="rgba(3,23,57,1)"
+                              fillOpacity={1}
+                              strokeOpacity={1}
+                              d="M0.50 4.18 C0.33 4.18 0.16 4.09 0.07 3.92 C-0.07 3.66 0.01 3.34 0.25 3.19 L5.35 0.07 C5.59 -0.08 5.90 0.01 6.04 0.27 C6.18 0.52 6.09 0.84 5.85 0.99 L0.75 4.11 C0.67 4.16 0.59 4.18 0.50 4.18 "
+                            &gt;&lt;/path&gt;
+                          &lt;/svg&gt;
+                        &lt;/PathStack&gt;
+                        &lt;svg
+                          viewBox="-0 -0 3.875 4.105960264900661"
+                          style={{
+                            top: 0,
+                            left: 8,
+                            width: 4,
+                            height: 4,
+                            backgroundColor: "transparent",
+                            position: "absolute",
+                            borderColor: "transparent"
+                          }}
+                        &gt;
+                          &lt;path
+                            strokeWidth={0}
+                            fill="rgba(3,23,57,1)"
+                            fillOpacity={1}
+                            strokeOpacity={1}
+                            d="M2.88 2.05 C2.88 2.60 2.46 3.05 1.94 3.05 C1.42 3.05 1.00 2.60 1.00 2.05 C1.00 1.51 1.42 1.06 1.94 1.06 M3.88 2.05 C3.88 0.92 3.01 0.00 1.94 0.00 C0.87 0.00 0.00 0.92 0.00 2.05 C0.00 3.19 0.87 4.11 1.94 4.11 "
+                          &gt;&lt;/path&gt;
+                        &lt;/svg&gt;
+                        &lt;svg
+                          viewBox="-0 -0 3.875 4.105960264900654"
+                          style={{
+                            top: 9,
+                            left: 8,
+                            width: 4,
+                            height: 4,
+                            backgroundColor: "transparent",
+                            position: "absolute",
+                            borderColor: "transparent"
+                          }}
+                        &gt;
+                          &lt;path
+                            strokeWidth={0}
+                            fill="rgba(3,23,57,1)"
+                            fillOpacity={1}
+                            strokeOpacity={1}
+                            d="M2.88 2.05 C2.88 2.60 2.46 3.05 1.94 3.05 C1.42 3.05 1.00 2.60 1.00 2.05 C1.00 1.51 1.42 1.06 1.94 1.06 M3.88 2.05 C3.88 0.92 3.01 0.00 1.94 0.00 C0.87 0.00 0.00 0.92 0.00 2.05 C0.00 3.19 0.87 4.11 1.94 4.11 "
+                          &gt;&lt;/path&gt;
+                        &lt;/svg&gt;
+                      &lt;/PathStackStack&gt;
+                    &lt;/IconSplitter&gt;
+                    &lt;IconJoin&gt;
+                      &lt;Group3Stack&gt;
+                        &lt;Group3&gt;
+                          &lt;Clip2Stack&gt;
+                            &lt;svg
+                              viewBox="-0 -0 14.5587 5.624815894039753"
+                              style={{
+                                top: 0,
+                                left: 0,
+                                width: 15,
+                                height: 6,
+                                backgroundColor: "transparent",
+                                position: "absolute",
+                                borderColor: "transparent"
+                              }}
+                            &gt;
+                              &lt;path
+                                strokeWidth={0}
+                                fill="transparent"
+                                fillOpacity={1}
+                                strokeOpacity={1}
+                                d="M0.00 0.00 L14.56 0.00 L14.56 5.62 L0.00 5.62 Z"
+                              &gt;&lt;/path&gt;
+                            &lt;/svg&gt;
+                            &lt;svg
+                              viewBox="-0 -0 14.5587 5.624815894039753"
+                              style={{
+                                top: 0,
+                                left: 0,
+                                width: 15,
+                                height: 6,
+                                backgroundColor: "transparent",
+                                position: "absolute",
+                                borderColor: "transparent"
+                              }}
+                            &gt;
+                              &lt;defs&gt;
+                                &lt;mask
+                                  id="xm1oki"
+                                  x={0}
+                                  y={0}
+                                  width={14}
+                                  height={5}
+                                &gt;
+                                  &lt;path
+                                    d="M0.00 0.00 L14.56 0.00 L14.56 5.62 L0.00 5.62 Z"
+                                    fill="white"
+                                  /&gt;
+                                &lt;/mask&gt;
+                              &lt;/defs&gt;
+                              &lt;path
+                                strokeWidth={0}
+                                fill="rgba(3,23,57,1)"
+                                fillOpacity={1}
+                                strokeOpacity={1}
+                                d="M13.91 5.62 L9.27 5.62 C9.09 5.62 8.92 5.55 8.80 5.41 L5.20 1.38 L0.65 1.38 C0.29 1.38 0.00 1.07 0.00 0.69 C0.00 0.31 0.29 -0.00 0.65 -0.00 L5.48 -0.00 C5.66 -0.00 5.83 0.08 5.95 0.22 L9.55 4.25 L13.91 4.25 C14.27 4.25 14.56 4.56 14.56 4.94 C14.56 5.32 14.27 5.62 13.91 5.62 "
+                                mask="url(#xm1oki)"
+                              &gt;&lt;/path&gt;
+                            &lt;/svg&gt;
+                          &lt;/Clip2Stack&gt;
+                        &lt;/Group3&gt;
+                        &lt;Group6&gt;
+                          &lt;Clip5Stack&gt;
+                            &lt;svg
+                              viewBox="-0 -0 14.55909 5.624953642384125"
+                              style={{
+                                top: 0,
+                                left: 0,
+                                width: 15,
+                                height: 6,
+                                backgroundColor: "transparent",
+                                position: "absolute",
+                                borderColor: "transparent"
+                              }}
+                            &gt;
+                              &lt;path
+                                strokeWidth={0}
+                                fill="transparent"
+                                fillOpacity={1}
+                                strokeOpacity={1}
+                                d="M0.00 0.00 L14.56 0.00 L14.56 5.63 L0.00 5.63 Z"
+                              &gt;&lt;/path&gt;
+                            &lt;/svg&gt;
+                            &lt;svg
+                              viewBox="-0 -0 14.55909 5.624953642384125"
+                              style={{
+                                top: 0,
+                                left: 0,
+                                width: 15,
+                                height: 6,
+                                backgroundColor: "transparent",
+                                position: "absolute",
+                                borderColor: "transparent"
+                              }}
+                            &gt;
+                              &lt;defs&gt;
+                                &lt;mask
+                                  id="L338Xg"
+                                  x={0}
+                                  y={0}
+                                  width={14}
+                                  height={5}
+                                &gt;
+                                  &lt;path
+                                    d="M0.00 0.00 L14.56 0.00 L14.56 5.63 L0.00 5.63 Z"
+                                    fill="white"
+                                  /&gt;
+                                &lt;/mask&gt;
+                              &lt;/defs&gt;
+                              &lt;path
+                                strokeWidth={0}
+                                fill="rgba(3,23,57,1)"
+                                fillOpacity={1}
+                                strokeOpacity={1}
+                                d="M5.48 5.63 L0.65 5.63 C0.29 5.63 -0.00 5.32 -0.00 4.94 C-0.00 4.56 0.29 4.25 0.65 4.25 L5.20 4.25 L8.80 0.22 C8.92 0.08 9.10 0.00 9.27 0.00 L13.91 0.00 C14.27 0.00 14.56 0.31 14.56 0.69 C14.56 1.07 14.27 1.38 13.91 1.38 L9.55 1.38 L5.95 5.41 C5.83 5.55 5.66 5.63 5.48 5.63 "
+                                mask="url(#L338Xg)"
+                              &gt;&lt;/path&gt;
+                            &lt;/svg&gt;
+                          &lt;/Clip5Stack&gt;
+                        &lt;/Group6&gt;
+                        &lt;svg
+                          viewBox="-0 -0 3.813874999999999 6.709894039735115"
+                          style={{
+                            top: 2,
+                            left: 11,
+                            width: 4,
+                            height: 7,
+                            backgroundColor: "transparent",
+                            position: "absolute",
+                            borderColor: "transparent"
+                          }}
+                        &gt;
+                          &lt;path
+                            strokeWidth={0}
+                            fill="rgba(3,23,57,1)"
+                            fillOpacity={1}
+                            strokeOpacity={1}
+                            d="M0.65 6.71 C0.48 6.71 0.32 6.64 0.19 6.51 C-0.06 6.24 -0.06 5.80 0.19 5.53 L2.24 3.35 L0.19 1.18 C-0.06 0.91 -0.06 0.47 0.19 0.20 C0.44 -0.07 0.86 -0.07 1.11 0.20 L3.62 2.87 C3.88 3.14 3.88 3.57 3.62 3.84 L1.11 6.51 C0.98 6.64 0.82 6.71 0.65 6.71 "
+                          &gt;&lt;/path&gt;
+                        &lt;/svg&gt;
+                      &lt;/Group3Stack&gt;
+                    &lt;/IconJoin&gt;
+                    &lt;IconMulticast&gt;
+                      &lt;Fill1StackStack&gt;
+                        &lt;Fill1Stack&gt;
+                          &lt;svg
+                            viewBox="-0 -0 4.532640000000001 4.802203973509954"
+                            style={{
+                              top: 0,
+                              left: 0,
+                              width: 5,
+                              height: 5,
+                              backgroundColor: "transparent",
+                              position: "absolute",
+                              borderColor: "transparent"
+                            }}
+                          &gt;
+                            &lt;path
+                              strokeWidth={0}
+                              fill="rgba(3,23,57,1)"
+                              fillOpacity={1}
+                              strokeOpacity={1}
+                              d="M0.56 4.80 L0.56 4.80 C0.25 4.80 0.00 4.54 0.00 4.21 L0.00 0.59 C0.00 0.27 0.25 0.00 0.56 0.00 L3.97 0.00 C4.28 0.00 4.53 0.27 4.53 0.59 C4.53 0.92 4.28 1.19 3.97 1.19 L1.12 1.19 L1.12 4.21 C1.12 4.54 0.87 4.80 0.56 4.80 "
+                            &gt;&lt;/path&gt;
+                          &lt;/svg&gt;
+                          &lt;svg
+                            viewBox="-0 -0 6.898360000000001 7.308778807947053"
+                            style={{
+                              top: 0,
+                              left: 0,
+                              width: 7,
+                              height: 7,
+                              backgroundColor: "transparent",
+                              position: "absolute",
+                              borderColor: "transparent"
+                            }}
+                          &gt;
+                            &lt;path
+                              strokeWidth={0}
+                              fill="rgba(3,23,57,1)"
+                              fillOpacity={1}
+                              strokeOpacity={1}
+                              d="M6.34 7.31 C6.19 7.31 6.05 7.25 5.94 7.13 L0.16 1.01 C-0.05 0.78 -0.05 0.41 0.16 0.17 C0.38 -0.06 0.74 -0.06 0.96 0.17 L6.73 6.30 C6.95 6.53 6.95 6.90 6.73 7.13 C6.62 7.25 6.48 7.31 6.34 7.31 "
+                            &gt;&lt;/path&gt;
+                          &lt;/svg&gt;
+                          &lt;svg
+                            viewBox="-0 -0 6.88548 7.294537748344407"
+                            style={{
+                              top: 0,
+                              left: 6,
+                              width: 7,
+                              height: 7,
+                              backgroundColor: "transparent",
+                              position: "absolute",
+                              borderColor: "transparent"
+                            }}
+                          &gt;
+                            &lt;path
+                              strokeWidth={0}
+                              fill="rgba(3,23,57,1)"
+                              fillOpacity={1}
+                              strokeOpacity={1}
+                              d="M0.56 7.29 C0.42 7.29 0.27 7.24 0.16 7.12 C-0.05 6.89 -0.05 6.51 0.16 6.28 L5.93 0.17 C6.15 -0.06 6.50 -0.06 6.72 0.17 C6.94 0.41 6.94 0.78 6.72 1.01 L0.96 7.12 C0.85 7.24 0.70 7.29 0.56 7.29 "
+                            &gt;&lt;/path&gt;
+                          &lt;/svg&gt;
+                          &lt;svg
+                            viewBox="-0 -0 1.12 7.56496953642388"
+                            style={{
+                              top: 6,
+                              left: 6,
+                              width: 1,
+                              height: 8,
+                              backgroundColor: "transparent",
+                              position: "absolute",
+                              borderColor: "transparent"
+                            }}
+                          &gt;
+                            &lt;path
+                              strokeWidth={0}
+                              fill="rgba(3,23,57,1)"
+                              fillOpacity={1}
+                              strokeOpacity={1}
+                              d="M0.56 7.57 C0.25 7.57 0.00 7.30 0.00 6.97 L0.00 0.59 C0.00 0.27 0.25 0.00 0.56 0.00 C0.87 0.00 1.12 0.27 1.12 0.59 L1.12 6.97 C1.12 7.30 0.87 7.57 0.56 7.57 "
+                            &gt;&lt;/path&gt;
+                          &lt;/svg&gt;
+                        &lt;/Fill1Stack&gt;
+                        &lt;Group7&gt;
+                          &lt;Clip6Stack&gt;
+                            &lt;svg
+                              viewBox="-0 -0 4.53152 4.802144635761613"
+                              style={{
+                                top: 0,
+                                left: 0,
+                                width: 5,
+                                height: 5,
+                                backgroundColor: "transparent",
+                                position: "absolute",
+                                borderColor: "transparent"
+                              }}
+                            &gt;
+                              &lt;path
+                                strokeWidth={0}
+                                fill="transparent"
+                                fillOpacity={1}
+                                strokeOpacity={1}
+                                d="M0.00 0.00 L4.53 0.00 L4.53 4.80 L0.00 4.80 Z"
+                              &gt;&lt;/path&gt;
+                            &lt;/svg&gt;
+                            &lt;svg
+                              viewBox="-0 -0 4.53152 4.802144635761613"
+                              style={{
+                                top: 0,
+                                left: 0,
+                                width: 5,
+                                height: 5,
+                                backgroundColor: "transparent",
+                                position: "absolute",
+                                borderColor: "transparent"
+                              }}
+                            &gt;
+                              &lt;defs&gt;
+                                &lt;mask
+                                  id="AqRwST"
+                                  x={0}
+                                  y={0}
+                                  width={4}
+                                  height={4}
+                                &gt;
+                                  &lt;path
+                                    d="M0.00 0.00 L4.53 0.00 L4.53 4.80 L0.00 4.80 Z"
+                                    fill="white"
+                                  /&gt;
+                                &lt;/mask&gt;
+                              &lt;/defs&gt;
+                              &lt;path
+                                strokeWidth={0}
+                                fill="rgba(3,23,57,1)"
+                                fillOpacity={1}
+                                strokeOpacity={1}
+                                d="M3.97 4.80 C3.66 4.80 3.41 4.54 3.41 4.21 L3.41 1.19 L0.56 1.19 C0.25 1.19 0.00 0.92 0.00 0.59 C0.00 0.27 0.25 -0.00 0.56 -0.00 L3.97 0.00 C4.28 0.00 4.53 0.27 4.53 0.59 L4.53 4.21 C4.53 4.54 4.28 4.80 3.97 4.80 "
+                                mask="url(#AqRwST)"
+                              &gt;&lt;/path&gt;
+                            &lt;/svg&gt;
+                          &lt;/Clip6Stack&gt;
+                        &lt;/Group7&gt;
+                      &lt;/Fill1StackStack&gt;
+                    &lt;/IconMulticast&gt;
+                  &lt;/IconSplitterColumn&gt;
+                  &lt;SplitterJoinMultic&gt;
+                    Splitter{"\n"}
+                    {"\n"}Join{"\n"}
+                    {"\n"}Multicast
+                  &lt;/SplitterJoinMultic&gt;
+                &lt;/IconSplitterColumnRow&gt;
+              &lt;/Rectangle&gt;
+              &lt;svg
+                viewBox="-0.5 -0.5 166 3.059602649006706"
+                style={{
+                  top: 275,
+                  left: 2,
+                  width: 166,
+                  height: 3,
+                  backgroundColor: "transparent",
+                  position: "absolute",
+                  borderColor: "transparent"
+                }}
+              &gt;
+                &lt;path
+                  strokeWidth={1}
+                  fill="transparent"
+                  stroke="rgba(243,243,243,1)"
+                  fillOpacity={1}
+                  strokeOpacity={1}
+                  d="M0.50 0.53 L163.50 0.53 "
+                &gt;&lt;/path&gt;
+              &lt;/svg&gt;
+              &lt;Rectangle1&gt;
+                &lt;IconMEssageRoutingRow&gt;
+                  &lt;IconMEssageRouting&gt;
+                    &lt;Group31Stack&gt;
+                      &lt;Group31&gt;
+                        &lt;Clip22Stack&gt;
+                          &lt;svg
+                            viewBox="-0 -0 15.0520608 5.81533668874174"
+                            style={{
+                              top: 0,
+                              left: 0,
+                              width: 15,
+                              height: 6,
+                              backgroundColor: "transparent",
+                              position: "absolute",
+                              borderColor: "transparent"
+                            }}
+                          &gt;
+                            &lt;path
+                              strokeWidth={0}
+                              fill="transparent"
+                              fillOpacity={1}
+                              strokeOpacity={1}
+                              d="M0.00 0.00 L15.05 0.00 L15.05 5.82 L0.00 5.82 Z"
+                            &gt;&lt;/path&gt;
+                          &lt;/svg&gt;
+                          &lt;svg
+                            viewBox="-0 -0 15.0520608 5.81533668874174"
+                            style={{
+                              top: 0,
+                              left: 0,
+                              width: 15,
+                              height: 6,
+                              backgroundColor: "transparent",
+                              position: "absolute",
+                              borderColor: "transparent"
+                            }}
+                          &gt;
+                            &lt;defs&gt;
+                              &lt;mask
+                                id="ST7uUm"
+                                x={0}
+                                y={0}
+                                width={15}
+                                height={5}
+                              &gt;
+                                &lt;path
+                                  d="M0.00 0.00 L15.05 0.00 L15.05 5.82 L0.00 5.82 Z"
+                                  fill="white"
+                                /&gt;
+                              &lt;/mask&gt;
+                            &lt;/defs&gt;
+                            &lt;path
+                              strokeWidth={0}
+                              fill="rgba(216,216,216,1)"
+                              fillOpacity={1}
+                              strokeOpacity={1}
+                              d="M5.47 5.82 L0.67 5.82 C0.30 5.82 -0.00 5.50 -0.00 5.10 C-0.00 4.71 0.30 4.39 0.67 4.39 L5.17 4.39 L8.90 0.22 C9.02 0.08 9.20 0.00 9.39 0.00 L14.38 0.00 C14.75 0.00 15.05 0.32 15.05 0.71 C15.05 1.11 14.75 1.42 14.38 1.42 L9.67 1.42 L5.95 5.59 C5.83 5.73 5.65 5.82 5.47 5.82 "
+                              mask="url(#ST7uUm)"
+                            &gt;&lt;/path&gt;
+                          &lt;/svg&gt;
+                        &lt;/Clip22Stack&gt;
+                      &lt;/Group31&gt;
+                      &lt;svg
+                        viewBox="-0 -0 3.942959999999999 6.936998145695382"
+                        style={{
+                          top: 0,
+                          left: 11,
+                          width: 4,
+                          height: 7,
+                          backgroundColor: "transparent",
+                          position: "absolute",
+                          borderColor: "transparent"
+                        }}
+                      &gt;
+                        &lt;path
+                          strokeWidth={0}
+                          fill="rgba(255,255,255,1)"
+                          fillOpacity={1}
+                          strokeOpacity={1}
+                          d="M0.67 6.94 C0.50 6.94 0.33 6.87 0.20 6.73 C-0.07 6.45 -0.07 6.00 0.20 5.72 L2.32 3.47 L0.20 1.22 C-0.07 0.94 -0.07 0.49 0.20 0.21 C0.46 -0.07 0.88 -0.07 1.15 0.21 L3.75 2.97 C4.01 3.24 4.01 3.69 3.75 3.97 L1.15 6.73 C1.02 6.87 0.84 6.94 0.67 6.94 "
+                        &gt;&lt;/path&gt;
+                      &lt;/svg&gt;
+                      &lt;svg
+                        viewBox="-0 -0 15.051456 5.815336688741735"
+                        style={{
+                          top: 7,
+                          left: 0,
+                          width: 15,
+                          height: 6,
+                          backgroundColor: "transparent",
+                          position: "absolute",
+                          borderColor: "transparent"
+                        }}
+                      &gt;
+                        &lt;path
+                          strokeWidth={0}
+                          fill="rgba(255,255,255,1)"
+                          fillOpacity={1}
+                          strokeOpacity={1}
+                          d="M14.38 5.82 L9.39 5.82 C9.20 5.82 9.02 5.73 8.90 5.59 L5.18 1.42 L0.67 1.42 C0.30 1.42 0.00 1.11 0.00 0.71 C0.00 0.32 0.30 0.00 0.67 0.00 L5.46 0.00 C5.65 0.00 5.83 0.08 5.95 0.22 L9.67 4.39 L14.38 4.39 C14.75 4.39 15.05 4.71 15.05 5.10 C15.05 5.50 14.75 5.82 14.38 5.82 "
+                        &gt;&lt;/path&gt;
+                      &lt;/svg&gt;
+                      &lt;svg
+                        viewBox="-0 -0 3.942959999999999 6.936998145695384"
+                        style={{
+                          top: 9,
+                          left: 11,
+                          width: 4,
+                          height: 7,
+                          backgroundColor: "transparent",
+                          position: "absolute",
+                          borderColor: "transparent"
+                        }}
+                      &gt;
+                        &lt;path
+                          strokeWidth={0}
+                          fill="rgba(255,255,255,1)"
+                          fillOpacity={1}
+                          strokeOpacity={1}
+                          d="M0.67 6.94 C0.50 6.94 0.33 6.87 0.20 6.73 C-0.07 6.45 -0.07 6.00 0.20 5.72 L2.32 3.47 L0.20 1.22 C-0.07 0.94 -0.07 0.49 0.20 0.21 C0.46 -0.07 0.88 -0.07 1.15 0.21 L3.75 2.97 C4.01 3.24 4.01 3.69 3.75 3.97 L1.15 6.73 C1.02 6.87 0.84 6.94 0.67 6.94 "
+                        &gt;&lt;/path&gt;
+                      &lt;/svg&gt;
+                    &lt;/Group31Stack&gt;
+                  &lt;/IconMEssageRouting&gt;
+                  &lt;MessageRouting&gt;MESSAGE ROUTING&lt;/MessageRouting&gt;
+                  &lt;IconCarretOpen&gt;
+                    &lt;Clip21Stack&gt;
+                      &lt;svg
+                        viewBox="-0 -0 7.681920000000002 5.81590423146075"
+                        style={{
+                          top: 0,
+                          left: 0,
+                          width: 8,
+                          height: 6,
+                          backgroundColor: "transparent",
+                          position: "absolute",
+                          borderColor: "transparent"
+                        }}
+                      &gt;
+                        &lt;path
+                          strokeWidth={0}
+                          fill="transparent"
+                          fillOpacity={1}
+                          strokeOpacity={1}
+                          d="M0.00 0.00 L7.68 0.00 L7.68 5.82 L0.00 5.82 Z"
+                        &gt;&lt;/path&gt;
+                      &lt;/svg&gt;
+                      &lt;svg
+                        viewBox="-0.4 -0.4 9.281920000000001 7.41590423146075"
+                        style={{
+                          top: 0,
+                          left: 0,
+                          width: 8,
+                          height: 6,
+                          backgroundColor: "transparent",
+                          position: "absolute",
+                          borderColor: "transparent"
+                        }}
+                      &gt;
+                        &lt;defs&gt;
+                          &lt;mask id="hL5e7i" x={0} y={0} width={9} height={7}&gt;
+                            &lt;path
+                              d="M0.00 0.00 L7.68 0.00 L7.68 5.82 L0.00 5.82 Z"
+                              fill="white"
+                            /&gt;
+                          &lt;/mask&gt;
+                        &lt;/defs&gt;
+                        &lt;path
+                          strokeWidth={0.8}
+                          fill="transparent"
+                          stroke="rgba(255,255,255,1)"
+                          fillOpacity={1}
+                          strokeOpacity={1}
+                          d="M7.58 5.86 C7.87 6.38 7.52 7.04 6.95 7.04 L0.73 7.04 C0.16 7.04 -0.19 6.38 0.11 5.86 L3.21 0.38 C3.50 -0.13 4.19 -0.13 4.47 0.38 L7.58 5.86 Z"
+                          mask="url(#hL5e7i)"
+                        &gt;&lt;/path&gt;
+                      &lt;/svg&gt;
+                    &lt;/Clip21Stack&gt;
+                  &lt;/IconCarretOpen&gt;
+                &lt;/IconMEssageRoutingRow&gt;
+              &lt;/Rectangle1&gt;
+              &lt;Rectangle2&gt;
+                &lt;IconTransformationRow&gt;
+                  &lt;IconTransformation&gt;
+                    &lt;Clip24Stack&gt;
+                      &lt;svg
+                        viewBox="-0 -0 14.070252 14.35804100662254"
+                        style={{
+                          top: 0,
+                          left: 0,
+                          width: 14,
+                          height: 14,
+                          backgroundColor: "transparent",
+                          position: "absolute",
+                          borderColor: "transparent"
+                        }}
+                      &gt;
+                        &lt;path
+                          strokeWidth={0}
+                          fill="transparent"
+                          fillOpacity={1}
+                          strokeOpacity={1}
+                          d="M0.00 0.00 L14.07 0.00 L14.07 14.36 L0.00 14.36 Z"
+                        &gt;&lt;/path&gt;
+                      &lt;/svg&gt;
+                      &lt;svg
+                        viewBox="-0 -0 14.070252 14.35804100662254"
+                        style={{
+                          top: 0,
+                          left: 0,
+                          width: 14,
+                          height: 14,
+                          backgroundColor: "transparent",
+                          position: "absolute",
+                          borderColor: "transparent"
+                        }}
+                      &gt;
+                        &lt;defs&gt;
+                          &lt;mask id="dO3yO8" x={0} y={0} width={14} height={14}&gt;
+                            &lt;path
+                              d="M0.00 0.00 L14.07 0.00 L14.07 14.36 L0.00 14.36 Z"
+                              fill="white"
+                            /&gt;
+                          &lt;/mask&gt;
+                        &lt;/defs&gt;
+                        &lt;path
+                          strokeWidth={0}
+                          fill="rgba(255,255,255,1)"
+                          fillOpacity={1}
+                          strokeOpacity={1}
+                          d="M4.80 7.18 C3.85 7.45 2.81 7.19 2.09 6.48 C1.49 5.89 1.18 4.24 1.18 4.24 L2.37 5.42 L3.78 5.36 L5.05 3.92 L5.00 2.42 L3.81 1.25 C3.81 1.25 5.40 1.47 5.98 2.04 C6.71 2.76 7.03 3.81 6.84 4.85 C6.80 5.07 6.87 5.29 7.02 5.44 C8.45 6.80 11.32 9.54 11.32 9.54 L12.78 10.93 C12.78 10.93 12.90 11.17 12.89 11.24 C12.79 12.13 11.25 13.11 11.25 13.11 L11.23 13.11 L10.95 13.01 L10.33 12.38 C10.33 12.38 7.02 9.02 5.36 7.33 C5.25 7.22 5.10 7.16 4.95 7.16 M11.47 14.33 C12.81 14.06 13.90 12.82 14.06 11.38 C14.12 10.85 13.57 10.01 13.57 10.01 L12.11 8.61 C12.11 8.61 9.40 6.03 8.04 4.74 C8.18 3.39 7.73 2.06 6.78 1.13 C5.61 -0.02 3.83 -0.32 2.38 0.36 C2.20 0.45 2.07 0.63 2.04 0.83 C2.01 1.04 2.22 1.39 2.22 1.39 L4.07 3.20 L3.04 4.38 L1.20 2.56 C1.20 2.56 0.85 2.36 0.66 2.41 C0.47 2.46 0.31 2.61 0.24 2.81 C-0.31 4.42 0.10 6.23 1.29 7.40 C2.22 8.31 3.53 8.71 4.77 8.46 C6.36 10.07 9.52 13.28 9.52 13.28 L10.14 13.91 C10.14 13.91 10.84 14.36 11.23 14.36 "
+                          mask="url(#dO3yO8)"
+                        &gt;&lt;/path&gt;
+                      &lt;/svg&gt;
+                    &lt;/Clip24Stack&gt;
+                  &lt;/IconTransformation&gt;
+                  &lt;Transformation&gt;TRANSFORMATION&lt;/Transformation&gt;
+                  &lt;IconCarretOpen1&gt;
+                    &lt;Clip23Stack&gt;
+                      &lt;svg
+                        viewBox="-0 -0 7.681920000000002 5.815904231460724"
+                        style={{
+                          top: 0,
+                          left: 0,
+                          width: 8,
+                          height: 6,
+                          backgroundColor: "transparent",
+                          position: "absolute",
+                          borderColor: "transparent"
+                        }}
+                      &gt;
+                        &lt;path
+                          strokeWidth={0}
+                          fill="transparent"
+                          fillOpacity={1}
+                          strokeOpacity={1}
+                          d="M0.00 0.00 L7.68 0.00 L7.68 5.82 L0.00 5.82 Z"
+                        &gt;&lt;/path&gt;
+                      &lt;/svg&gt;
+                      &lt;svg
+                        viewBox="-0.4 -0.4 9.281920000000001 7.415904231460724"
+                        style={{
+                          top: 0,
+                          left: 0,
+                          width: 8,
+                          height: 6,
+                          backgroundColor: "transparent",
+                          position: "absolute",
+                          borderColor: "transparent"
+                        }}
+                      &gt;
+                        &lt;defs&gt;
+                          &lt;mask id="k8v08g" x={0} y={0} width={9} height={7}&gt;
+                            &lt;path
+                              d="M0.00 0.00 L7.68 0.00 L7.68 5.82 L0.00 5.82 Z"
+                              fill="white"
+                            /&gt;
+                          &lt;/mask&gt;
+                        &lt;/defs&gt;
+                        &lt;path
+                          strokeWidth={0.8}
+                          fill="transparent"
+                          stroke="rgba(255,255,255,1)"
+                          fillOpacity={1}
+                          strokeOpacity={1}
+                          d="M7.58 5.86 C7.87 6.38 7.52 7.04 6.95 7.04 L0.73 7.04 C0.16 7.04 -0.19 6.38 0.11 5.86 L3.21 0.38 C3.50 -0.13 4.19 -0.13 4.47 0.38 L7.58 5.86 Z"
+                          mask="url(#k8v08g)"
+                        &gt;&lt;/path&gt;
+                      &lt;/svg&gt;
+                    &lt;/Clip23Stack&gt;
+                  &lt;/IconCarretOpen1&gt;
+                &lt;/IconTransformationRow&gt;
+              &lt;/Rectangle2&gt;
+              &lt;svg
+                viewBox="-0.5 -0.5 166 3.059602649006621"
+                style={{
+                  top: 60,
+                  left: 2,
+                  width: 166,
+                  height: 3,
+                  backgroundColor: "transparent",
+                  position: "absolute",
+                  borderColor: "transparent"
+                }}
+              &gt;
+                &lt;path
+                  strokeWidth={1}
+                  fill="transparent"
+                  stroke="rgba(243,243,243,1)"
+                  fillOpacity={1}
+                  strokeOpacity={1}
+                  d="M0.50 0.53 L163.50 0.53 "
+                &gt;&lt;/path&gt;
+              &lt;/svg&gt;
+            &lt;/RectangleStack&gt;
+          &lt;/IntegrationLogicOnClickTaskCondition1&gt;
+        &lt;/Rect&gt;
+        &lt;Mapping&gt;MAPPING&lt;/Mapping&gt;
+        &lt;IconCarretClosed2&gt;
+          &lt;Clip28Stack&gt;
+            &lt;svg
+              viewBox="-0 -0 7.681920000000002 5.488759618441065"
+              style={{
+                top: 0,
+                left: 0,
+                width: 8,
+                height: 5,
+                backgroundColor: "transparent",
+                position: "absolute",
+                borderColor: "transparent"
+              }}
+            &gt;
+              &lt;path
+                strokeWidth={0}
+                fill="transparent"
+                fillOpacity={1}
+                strokeOpacity={1}
+                d="M0.00 0.00 L7.68 0.00 L7.68 5.49 L0.00 5.49 Z"
+              &gt;&lt;/path&gt;
+            &lt;/svg&gt;
+            &lt;svg
+              viewBox="-0.4 -0.4 9.281920000000001 7.088759618441065"
+              style={{
+                top: 0,
+                left: 0,
+                width: 8,
+                height: 5,
+                backgroundColor: "transparent",
+                position: "absolute",
+                borderColor: "transparent"
+              }}
+            &gt;
+              &lt;defs&gt;
+                &lt;mask id="Y3ckcT" x={0} y={0} width={9} height={7}&gt;
+                  &lt;path
+                    d="M0.00 0.00 L7.68 0.00 L7.68 5.49 L0.00 5.49 Z"
+                    fill="white"
+                  /&gt;
+                &lt;/mask&gt;
+              &lt;/defs&gt;
+              &lt;path
+                strokeWidth={0.8}
+                fill="transparent"
+                stroke="rgba(3,23,57,1)"
+                fillOpacity={1}
+                strokeOpacity={1}
+                d="M7.58 5.53 C7.87 6.02 7.52 6.64 6.95 6.64 L0.73 6.64 C0.16 6.64 -0.19 6.02 0.11 5.53 L3.21 0.36 C3.50 -0.12 4.19 -0.12 4.47 0.36 L7.58 5.53 Z"
+                mask="url(#Y3ckcT)"
+              &gt;&lt;/path&gt;
+            &lt;/svg&gt;
+          &lt;/Clip28Stack&gt;
+        &lt;/IconCarretClosed2&gt;
+        &lt;IconMapping&gt;
+          &lt;Fill110StackStack&gt;
+            &lt;Fill110Stack&gt;
+              &lt;svg
+                viewBox="-0 -0 5.67504 6.834239999999999"
+                style={{
+                  top: 2,
+                  left: 10,
+                  width: 6,
+                  height: 7,
+                  backgroundColor: "transparent",
+                  position: "absolute",
+                  borderColor: "transparent"
+                }}
+              &gt;
+                &lt;path
+                  strokeWidth={0}
+                  fill="rgba(26,44,75,1)"
+                  fillOpacity={1}
+                  strokeOpacity={1}
+                  d="M5.67 6.83 L4.33 6.83 C4.33 4.20 2.55 1.93 0.00 1.30 L0.32 0.00 C3.47 0.77 5.67 3.58 5.67 6.83 "
+                &gt;&lt;/path&gt;
+              &lt;/svg&gt;
+              &lt;svg
+                viewBox="-0 -0 16.881312 11.594688"
+                style={{
+                  top: 0,
+                  left: 0,
+                  width: 17,
+                  height: 12,
+                  backgroundColor: "transparent",
+                  position: "absolute",
+                  borderColor: "transparent"
+                }}
+              &gt;
+                &lt;path
+                  strokeWidth={0}
+                  fill="transparent"
+                  fillOpacity={1}
+                  strokeOpacity={1}
+                  d="M0.00 11.59 L16.88 11.59 L16.88 0.00 L0.00 0.00 Z"
+                &gt;&lt;/path&gt;
+              &lt;/svg&gt;
+              &lt;svg
+                viewBox="-0 -0 16.881312 11.594688"
+                style={{
+                  top: 0,
+                  left: 0,
+                  width: 17,
+                  height: 12,
+                  backgroundColor: "transparent",
+                  position: "absolute",
+                  borderColor: "transparent"
+                }}
+              &gt;
+                &lt;defs&gt;
+                  &lt;mask id="NgP1K6" x={0} y={0} width={16} height={11}&gt;
+                    &lt;path
+                      d="M0.00 11.59 L16.88 11.59 L16.88 0.00 L0.00 0.00 Z"
+                      fill="white"
+                    /&gt;
+                  &lt;/mask&gt;
+                &lt;/defs&gt;
+                &lt;path
+                  strokeWidth={0}
+                  fill="rgba(3,23,57,1)"
+                  fillOpacity={1}
+                  strokeOpacity={1}
+                  d="M1.34 1.34 L2.91 1.34 L2.91 2.91 L1.34 2.91 Z M0.00 4.26 L4.26 4.26 L4.26 0.00 L0.00 0.00 Z"
+                  mask="url(#NgP1K6)"
+                &gt;&lt;/path&gt;
+              &lt;/svg&gt;
+              &lt;svg
+                viewBox="-0 -0 16.881312 11.594688"
+                style={{
+                  top: 0,
+                  left: 0,
+                  width: 17,
+                  height: 12,
+                  backgroundColor: "transparent",
+                  position: "absolute",
+                  borderColor: "transparent"
+                }}
+              &gt;
+                &lt;defs&gt;
+                  &lt;mask id="HQ9cw5" x={0} y={0} width={16} height={11}&gt;
+                    &lt;path
+                      d="M0.00 11.59 L16.88 11.59 L16.88 0.00 L0.00 0.00 Z"
+                      fill="white"
+                    /&gt;
+                  &lt;/mask&gt;
+                &lt;/defs&gt;
+                &lt;path
+                  strokeWidth={0}
+                  fill="rgba(3,23,57,1)"
+                  fillOpacity={1}
+                  strokeOpacity={1}
+                  d="M1.34 1.34 L2.91 1.34 L2.91 2.91 L1.34 2.91 Z M0.00 4.26 L4.26 4.26 L4.26 0.00 L0.00 0.00 Z"
+                  mask="url(#HQ9cw5)"
+                &gt;&lt;/path&gt;
+              &lt;/svg&gt;
+              &lt;svg
+                viewBox="-0 -0 16.881312 11.594688"
+                style={{
+                  top: 0,
+                  left: 0,
+                  width: 17,
+                  height: 12,
+                  backgroundColor: "transparent",
+                  position: "absolute",
+                  borderColor: "transparent"
+                }}
+              &gt;
+                &lt;defs&gt;
+                  &lt;mask id="a8MNOD" x={0} y={0} width={16} height={11}&gt;
+                    &lt;path
+                      d="M0.00 11.59 L16.88 11.59 L16.88 0.00 L0.00 0.00 Z"
+                      fill="white"
+                    /&gt;
+                  &lt;/mask&gt;
+                &lt;/defs&gt;
+                &lt;path
+                  strokeWidth={0}
+                  fill="rgba(3,23,57,1)"
+                  fillOpacity={1}
+                  strokeOpacity={1}
+                  d="M1.34 1.34 L2.91 1.34 L2.91 2.91 L1.34 2.91 Z M0.00 4.26 L4.26 4.26 L4.26 0.00 L0.00 0.00 Z"
+                  mask="url(#a8MNOD)"
+                &gt;&lt;/path&gt;
+              &lt;/svg&gt;
+              &lt;svg
+                viewBox="-0 -0 16.881312 11.594688"
+                style={{
+                  top: 0,
+                  left: 0,
+                  width: 17,
+                  height: 12,
+                  backgroundColor: "transparent",
+                  position: "absolute",
+                  borderColor: "transparent"
+                }}
+              &gt;
+                &lt;defs&gt;
+                  &lt;mask id="Me14Up" x={0} y={0} width={16} height={11}&gt;
+                    &lt;path
+                      d="M0.00 11.59 L16.88 11.59 L16.88 0.00 L0.00 0.00 Z"
+                      fill="white"
+                    /&gt;
+                  &lt;/mask&gt;
+                &lt;/defs&gt;
+                &lt;path
+                  strokeWidth={0}
+                  fill="rgba(3,23,57,1)"
+                  fillOpacity={1}
+                  strokeOpacity={1}
+                  d="M1.56 2.04 L6.77 2.04 L6.77 1.37 L1.56 1.37 Z"
+                  mask="url(#Me14Up)"
+                &gt;&lt;/path&gt;
+              &lt;/svg&gt;
+              &lt;svg
+                viewBox="-0 -0 16.881312 11.594688"
+                style={{
+                  top: 0,
+                  left: 0,
+                  width: 17,
+                  height: 12,
+                  backgroundColor: "transparent",
+                  position: "absolute",
+                  borderColor: "transparent"
+                }}
+              &gt;
+                &lt;defs&gt;
+                  &lt;mask id="lx4WCJ" x={0} y={0} width={16} height={11}&gt;
+                    &lt;path
+                      d="M0.00 11.59 L16.88 11.59 L16.88 0.00 L0.00 0.00 Z"
+                      fill="white"
+                    /&gt;
+                  &lt;/mask&gt;
+                &lt;/defs&gt;
+                &lt;path
+                  strokeWidth={0}
+                  fill="rgba(3,23,57,1)"
+                  fillOpacity={1}
+                  strokeOpacity={1}
+                  d="M1.41 0.97 C1.00 0.97 0.67 1.30 0.67 1.71 C0.67 2.11 1.00 2.44 1.41 2.44 C1.81 2.44 2.14 2.11 2.14 1.71 C2.14 1.30 1.81 0.97 1.41 0.97 "
+                  mask="url(#lx4WCJ)"
+                &gt;&lt;/path&gt;
+              &lt;/svg&gt;
+              &lt;svg
+                viewBox="-0 -0 16.881312 11.594688"
+                style={{
+                  top: 0,
+                  left: 0,
+                  width: 17,
+                  height: 12,
+                  backgroundColor: "transparent",
+                  position: "absolute",
+                  borderColor: "transparent"
+                }}
+              &gt;
+                &lt;defs&gt;
+                  &lt;mask id="iRfMgO" x={0} y={0} width={16} height={11}&gt;
+                    &lt;path
+                      d="M0.00 11.59 L16.88 11.59 L16.88 0.00 L0.00 0.00 Z"
+                      fill="white"
+                    /&gt;
+                  &lt;/mask&gt;
+                &lt;/defs&gt;
+                &lt;path
+                  strokeWidth={0}
+                  fill="rgba(3,23,57,1)"
+                  fillOpacity={1}
+                  strokeOpacity={1}
+                  d="M10.30 2.04 L15.51 2.04 L15.51 1.37 L10.30 1.37 Z"
+                  mask="url(#iRfMgO)"
+                &gt;&lt;/path&gt;
+              &lt;/svg&gt;
+              &lt;svg
+                viewBox="-0 -0 16.881312 11.594688"
+                style={{
+                  top: 0,
+                  left: 0,
+                  width: 17,
+                  height: 12,
+                  backgroundColor: "transparent",
+                  position: "absolute",
+                  borderColor: "transparent"
+                }}
+              &gt;
+                &lt;defs&gt;
+                  &lt;mask id="Ojvl0T" x={0} y={0} width={16} height={11}&gt;
+                    &lt;path
+                      d="M0.00 11.59 L16.88 11.59 L16.88 0.00 L0.00 0.00 Z"
+                      fill="white"
+                    /&gt;
+                  &lt;/mask&gt;
+                &lt;/defs&gt;
+                &lt;path
+                  strokeWidth={0}
+                  fill="rgba(3,23,57,1)"
+                  fillOpacity={1}
+                  strokeOpacity={1}
+                  d="M15.47 0.97 C15.07 0.97 14.74 1.30 14.74 1.71 C14.74 2.11 15.07 2.44 15.47 2.44 C15.88 2.44 16.21 2.11 16.21 1.71 C16.21 1.30 15.88 0.97 15.47 0.97 "
+                  mask="url(#Ojvl0T)"
+                &gt;&lt;/path&gt;
+              &lt;/svg&gt;
+            &lt;/Fill110Stack&gt;
+            &lt;svg
+              viewBox="-0 -0 5.503008 6.779136000000001"
+              style={{
+                top: 2,
+                left: 1,
+                width: 6,
+                height: 7,
+                backgroundColor: "transparent",
+                position: "absolute",
+                borderColor: "transparent"
+              }}
+            &gt;
+              &lt;path
+                strokeWidth={0}
+                fill="rgba(26,44,75,1)"
+                fillOpacity={1}
+                strokeOpacity={1}
+                d="M1.34 6.78 L0.00 6.78 C0.00 3.63 2.11 0.84 5.14 0.00 L5.50 1.29 C3.05 1.98 1.34 4.23 1.34 6.78 "
+              &gt;&lt;/path&gt;
+            &lt;/svg&gt;
+          &lt;/Fill110StackStack&gt;
+        &lt;/IconMapping&gt;
+      &lt;/RectStack&gt;
+    &lt;/Root&gt;
+  );
+}
+
+const Root = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
+const Rect = styled.div`
+  top: 0px;
+  left: 0px;
+  width: 168px;
+  height: 320px;
+  position: absolute;
+  opacity: 1;
+  flex-direction: column;
+  display: flex;
+`;
+
+const IntegrationLogicOnClickTaskCondition1 = styled.div`
+  width: 168px;
+  height: 320px;
+  opacity: 1;
+  flex-direction: column;
+  display: flex;
+`;
+
+const Rectangle = styled.div`
+  top: 0px;
+  left: 1px;
+  width: 166px;
+  height: 319px;
+  background-color: rgba(255,255,255,1);
+  position: absolute;
+  border-color: rgba(216,216,216,1);
+  border-width: 0.5px;
+  flex-direction: column;
+  display: flex;
+  border-style: solid;
+  box-shadow: 2px 2px 12px  1px rgba(216,216,216,0.661795236013986) ;
+`;
+
+const Rectangle3 = styled.div`
+  width: 166px;
+  height: 30px;
+  background-color: rgba(216,216,216,1);
+  border-color: rgba(216,216,216,1);
+  border-width: 0.5px;
+  flex-direction: column;
+  display: flex;
+  border-style: solid;
+`;
+
+const AddObject = styled.span`
+  font-family: Raleway;
+  width: 102px;
+  height: 19px;
+  background-color: transparent;
+  color: rgba(255,255,255,1);
+  opacity: 1;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0.29px;
+  text-align: center;
+  margin-top: 7px;
+  margin-left: 14px;
+`;
+
+const Process = styled.div`
+  width: 142px;
+  height: 17px;
+  opacity: 1;
+  flex-direction: row;
+  display: flex;
+  margin-top: 6px;
+  margin-left: 11px;
+`;
+
+const IconProcess = styled.div`
+  width: 15px;
+  height: 16px;
+  opacity: 1;
+  flex-direction: column;
+  display: flex;
+`;
+
+const Clip26Stack = styled.div`
+  width: 15px;
+  height: 16px;
+  position: relative;
+`;
+
+const Process1 = styled.span`
+  font-family: Raleway;
+  width: 51px;
+  height: 13px;
+  background-color: transparent;
+  color: rgba(3,23,57,1);
+  opacity: 1;
+  font-size: 11px;
+  font-weight: 600;
+  font-style: normal;
+  letter-spacing: 0.19px;
+  margin-left: 6px;
+  margin-top: 3px;
+`;
+
+const IconCarretClosed1 = styled.div`
+  width: 8px;
+  height: 6px;
+  opacity: 1;
+  transform: [
+      {
+      rotate: "90deg",
+      
+    },
+      
+    ];
+  flex-direction: column;
+  display: flex;
+  margin-left: 62px;
+  margin-top: 5px;
+`;
+
+const Clip27Stack = styled.div`
+  width: 8px;
+  height: 6px;
+  position: relative;
+`;
+
+const IconProcessRow = styled.div`
+  height: 16px;
+  flex-direction: row;
+  display: flex;
+  flex: 1 1 0%;
+  margin-right: -1px;
+  margin-left: 1px;
+`;
+
+const Conector = styled.div`
+  width: 90px;
+  height: 18px;
+  opacity: 1;
+  flex-direction: row;
+  display: flex;
+`;
+
+const IconConnector = styled.div`
+  width: 16px;
+  height: 18px;
+  opacity: 1;
+  flex-direction: column;
+  display: flex;
+`;
+
+const Group5 = styled.div`
+  top: 1px;
+  left: 0px;
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  opacity: 1;
+  flex-direction: column;
+  display: flex;
+`;
+
+const Clip4Stack = styled.div`
+  width: 7px;
+  height: 8px;
+  position: relative;
+`;
+
+const Fill17Stack = styled.div`
+  width: 8px;
+  height: 9px;
+  margin-top: 8px;
+  position: relative;
+`;
+
+const Fill61Stack = styled.div`
+  width: 7px;
+  height: 8px;
+  margin-top: -17px;
+  margin-left: 8px;
+  position: relative;
+`;
+
+const Connector = styled.span`
+  font-family: Raleway;
+  width: 69px;
+  height: 13px;
+  background-color: transparent;
+  color: rgba(3,23,57,1);
+  opacity: 1;
+  font-size: 11px;
+  font-weight: 600;
+  font-style: normal;
+  letter-spacing: 0.19px;
+  margin-left: 4px;
+  margin-top: 2px;
+`;
+
+const IconConnectorRow = styled.div`
+  height: 18px;
+  flex-direction: row;
+  display: flex;
+  flex: 1 1 0%;
+  margin-right: 1px;
+`;
+
+const IconCarretClosed = styled.div`
+  width: 8px;
+  height: 6px;
+  opacity: 1;
+  transform: [
+      {
+      rotate: "90deg",
+      
+    },
+      
+    ];
+  flex-direction: column;
+  display: flex;
+  margin-left: 44px;
+  margin-top: 4px;
+`;
+
+const Clip25Stack = styled.div`
+  width: 8px;
+  height: 6px;
+  position: relative;
+`;
+
+const ConectorRow = styled.div`
+  height: 18px;
+  flex-direction: row;
+  display: flex;
+  margin-top: 18px;
+  margin-left: 12px;
+  margin-right: 12px;
+`;
+
+const Filter = styled.span`
+  font-family: Raleway;
+  width: 30px;
+  height: 14px;
+  background-color: transparent;
+  color: rgba(3,23,57,1);
+  opacity: 1;
+  font-size: 11px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 14px;
+  letter-spacing: 0.19px;
+  margin-left: 6px;
+`;
+
+const Path3Row = styled.div`
+  height: 16px;
+  flex-direction: row;
+  display: flex;
+  margin-top: 44px;
+  margin-left: 40px;
+  margin-right: 79px;
+`;
+
+const IconScript = styled.div`
+  width: 16px;
+  height: 15px;
+  opacity: 1;
+  flex-direction: row;
+  display: flex;
+  margin-top: 2px;
+`;
+
+const Fill31Row = styled.div`
+  height: 15px;
+  flex-direction: row;
+  display: flex;
+  flex: 1 1 0%;
+  margin-right: 1px;
+`;
+
+const Script = styled.span`
+  font-family: Raleway;
+  width: 30px;
+  height: 14px;
+  background-color: transparent;
+  color: rgba(3,23,57,1);
+  opacity: 1;
+  font-size: 11px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 14px;
+  letter-spacing: 0.19px;
+  margin-left: 3px;
+`;
+
+const IconScriptRow = styled.div`
+  height: 17px;
+  flex-direction: row;
+  display: flex;
+  margin-top: 3px;
+  margin-left: 38px;
+  margin-right: 79px;
+`;
+
+const IconSplitter = styled.div`
+  width: 12px;
+  height: 14px;
+  opacity: 1;
+  flex-direction: column;
+  display: flex;
+  margin-left: 1px;
+`;
+
+const PathStack = styled.div`
+  top: 2px;
+  left: 0px;
+  width: 9px;
+  height: 9px;
+  position: absolute;
+`;
+
+const PathStackStack = styled.div`
+  width: 12px;
+  height: 13px;
+  position: relative;
+`;
+
+const IconJoin = styled.div`
+  width: 15px;
+  height: 12px;
+  opacity: 1;
+  flex-direction: column;
+  display: flex;
+  margin-top: 7px;
+`;
+
+const Group3 = styled.div`
+  top: 0px;
+  left: 0px;
+  width: 15px;
+  height: 6px;
+  position: absolute;
+  opacity: 1;
+  flex-direction: column;
+  display: flex;
+`;
+
+const Clip2Stack = styled.div`
+  width: 15px;
+  height: 6px;
+  position: relative;
+`;
+
+const Group6 = styled.div`
+  top: 4px;
+  left: 0px;
+  width: 15px;
+  height: 6px;
+  position: absolute;
+  opacity: 1;
+  flex-direction: column;
+  display: flex;
+`;
+
+const Clip5Stack = styled.div`
+  width: 15px;
+  height: 6px;
+  margin-top: 1px;
+  position: relative;
+`;
+
+const Group3Stack = styled.div`
+  width: 15px;
+  height: 10px;
+  position: relative;
+`;
+
+const IconMulticast = styled.div`
+  width: 14px;
+  height: 15px;
+  opacity: 1;
+  flex-direction: column;
+  display: flex;
+  margin-top: 7px;
+  margin-left: 1px;
+`;
+
+const Fill1Stack = styled.div`
+  top: 0px;
+  left: 0px;
+  width: 13px;
+  height: 14px;
+  position: absolute;
+`;
+
+const Group7 = styled.div`
+  top: 0px;
+  left: 9px;
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  opacity: 1;
+  flex-direction: column;
+  display: flex;
+`;
+
+const Clip6Stack = styled.div`
+  width: 5px;
+  height: 5px;
+  position: relative;
+`;
+
+const Fill1StackStack = styled.div`
+  width: 14px;
+  height: 14px;
+  margin-top: 1px;
+  position: relative;
+`;
+
+const IconSplitterColumn = styled.div`
+  width: 15px;
+  flex-direction: column;
+  display: flex;
+  margin-top: 4px;
+`;
+
+const SplitterJoinMultic = styled.span`
+  font-family: Raleway;
+  width: 48px;
+  height: 54px;
+  background-color: transparent;
+  color: rgba(3,23,57,1);
+  opacity: 1;
+  font-size: 11px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 14px;
+  letter-spacing: 0.19px;
+  margin-left: 8px;
+`;
+
+const IconSplitterColumnRow = styled.div`
+  height: 59px;
+  flex-direction: row;
+  display: flex;
+  margin-top: 38px;
+  margin-left: 34px;
+  margin-right: 61px;
+`;
+
+const Rectangle1 = styled.div`
+  top: 176px;
+  left: 0px;
+  width: 167px;
+  height: 27px;
+  background-color: rgba(34,194,174,1);
+  position: absolute;
+  flex-direction: row;
+  display: flex;
+`;
+
+const IconMEssageRouting = styled.div`
+  width: 16px;
+  height: 16px;
+  opacity: 1;
+  flex-direction: column;
+  display: flex;
+`;
+
+const Group31 = styled.div`
+  top: 2px;
+  left: 0px;
+  width: 16px;
+  height: 7px;
+  position: absolute;
+  opacity: 1;
+  flex-direction: column;
+  display: flex;
+`;
+
+const Clip22Stack = styled.div`
+  width: 15px;
+  height: 6px;
+  margin-top: 1px;
+  position: relative;
+`;
+
+const Group31Stack = styled.div`
+  width: 16px;
+  height: 16px;
+  position: relative;
+`;
+
+const MessageRouting = styled.span`
+  font-family: Raleway;
+  width: 105px;
+  height: 13px;
+  background-color: transparent;
+  color: rgba(255,255,255,1);
+  opacity: 1;
+  font-size: 11px;
+  font-weight: 600;
+  font-style: normal;
+  letter-spacing: 0.19px;
+  margin-left: 6px;
+  margin-top: 1px;
+`;
+
+const IconCarretOpen = styled.div`
+  width: 8px;
+  height: 6px;
+  opacity: 1;
+  transform: [
+      {
+      rotate: "178deg",
+      
+    },
+      
+    ];
+  flex-direction: column;
+  display: flex;
+  margin-left: 8px;
+  margin-top: 6px;
+`;
+
+const Clip21Stack = styled.div`
+  width: 8px;
+  height: 6px;
+  position: relative;
+`;
+
+const IconMEssageRoutingRow = styled.div`
+  height: 16px;
+  flex-direction: row;
+  display: flex;
+  flex: 1 1 0%;
+  margin-right: 12px;
+  margin-left: 12px;
+  margin-top: 6px;
+`;
+
+const Rectangle2 = styled.div`
+  top: 100px;
+  left: 0px;
+  width: 167px;
+  height: 27px;
+  background-color: rgba(34,194,174,1);
+  position: absolute;
+  flex-direction: row;
+  display: flex;
+`;
+
+const IconTransformation = styled.div`
+  width: 15px;
+  height: 15px;
+  opacity: 1;
+  flex-direction: column;
+  display: flex;
+`;
+
+const Clip24Stack = styled.div`
+  width: 14px;
+  height: 14px;
+  position: relative;
+`;
+
+const Transformation = styled.span`
+  font-family: Raleway;
+  width: 102px;
+  height: 13px;
+  background-color: transparent;
+  color: rgba(255,255,255,1);
+  opacity: 1;
+  font-size: 11px;
+  font-weight: 600;
+  font-style: normal;
+  letter-spacing: 0.19px;
+  margin-left: 6px;
+`;
+
+const IconCarretOpen1 = styled.div`
+  width: 8px;
+  height: 6px;
+  opacity: 1;
+  transform: [
+      {
+      rotate: "178deg",
+      
+    },
+      
+    ];
+  flex-direction: column;
+  display: flex;
+  margin-left: 11px;
+  margin-top: 3px;
+`;
+
+const Clip23Stack = styled.div`
+  width: 8px;
+  height: 6px;
+  position: relative;
+`;
+
+const IconTransformationRow = styled.div`
+  height: 15px;
+  flex-direction: row;
+  display: flex;
+  flex: 1 1 0%;
+  margin-right: 12px;
+  margin-left: 13px;
+  margin-top: 7px;
+`;
+
+const RectangleStack = styled.div`
+  width: 168px;
+  height: 319px;
+  position: relative;
+`;
+
+const Mapping = styled.span`
+  font-family: Raleway;
+  top: 290px;
+  left: 34px;
+  background-color: transparent;
+  color: rgba(3,23,57,1);
+  position: absolute;
+  opacity: 1;
+  font-size: 11px;
+  font-weight: 600;
+  font-style: normal;
+  letter-spacing: 0.19px;
+`;
+
+const IconCarretClosed2 = styled.div`
+  top: 294px;
+  left: 147px;
+  width: 8px;
+  height: 6px;
+  position: absolute;
+  opacity: 1;
+  transform: [
+      {
+      rotate: "90deg",
+      
+    },
+      
+    ];
+  flex-direction: column;
+  display: flex;
+`;
+
+const Clip28Stack = styled.div`
+  width: 8px;
+  height: 5px;
+  position: relative;
+`;
+
+const IconMapping = styled.div`
+  top: 289px;
+  left: 13px;
+  width: 17px;
+  height: 12px;
+  position: absolute;
+  opacity: 1;
+  flex-direction: column;
+  display: flex;
+`;
+
+const Fill110Stack = styled.div`
+  top: 0px;
+  left: 0px;
+  width: 17px;
+  height: 12px;
+  position: absolute;
+`;
+
+const Fill110StackStack = styled.div`
+  width: 17px;
+  height: 12px;
+  position: relative;
+`;
+
+const RectStack = styled.div`
+  width: 168px;
+  height: 320px;
+  position: relative;
+`;
+
+export default IntegrationLogicOnClickTaskCondition;
+
+
+  
+</code>
+
+
+</pre>
+</fieldset>
+</div>
+Please add the extracted component folder in your project and import the component folder.
+(Eg import Component from [folder path])
+<a href="https://github.com/Robespra/sp_ipaas_unifieddesign/react_component_transformation_engine_action_menu.zip">download react_component_transformation_engine_action_menu.zip</a>
+</div>
+
+
+
 
 
     </div>
@@ -756,6 +4365,15 @@ Usability & User Experience Community</a>
       <video controls width="100%">
     
         <source src="img/20200325_IxD_transformation_mapping.mp4"
+                type="video/mp4">
+    
+        Sorry, your browser doesn't support embedded videos.
+    </video>
+
+    <h4 class="mtxl">Action menu display</h4>
+      <video controls width="100%">
+    
+        <source src="img/20200331_IxD_transformation_action_menu.mp4"
                 type="video/mp4">
     
         Sorry, your browser doesn't support embedded videos.

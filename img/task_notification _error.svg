@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="416px" height="106px" viewBox="0 0 416 106" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>Task notification - error</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="1" y="0" width="415" height="105" rx="8"></rect>
+        <filter x="-1.7%" y="-4.8%" width="103.4%" height="113.4%" filterUnits="objectBoundingBox" id="filter-2">
+            <feMorphology radius="0.05" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.898522418   0 0 0 0 0.898522418   0 0 0 0 0.898522418  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <polygon id="path-3" points="0 0.0268799979 14.6735389 0.0268799979 14.6735389 14.6995789 0 14.6995789"></polygon>
+        <polygon id="path-5" points="0.000251999981 0.0272999979 14.6739589 0.0272999979 14.6739589 14.6999989 0.000251999981 14.6999989"></polygon>
+        <polygon id="path-7" points="0.000556249991 0.803224987 59.109349 0.803224987 59.109349 52.5099992 0.000556249991 52.5099992"></polygon>
+    </defs>
+    <g id="Task-notification---error" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g>
+            <g id="Rectangle">
+                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                <use stroke="#979797" stroke-width="0.1" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+            </g>
+            <text id="ERROR-MESSAGE-HERE" font-family="Raleway-Bold, Raleway" font-size="18" font-weight="bold" letter-spacing="0.450000007" fill="#FAB284">
+                <tspan x="117" y="41">ERROR MESSAGE HERE</tspan>
+            </text>
+            <text id="Description-of-error" font-family="Raleway-Regular, Raleway" font-size="10" font-weight="normal" letter-spacing="0.250000004" fill="#D8D8D8">
+                <tspan x="119" y="58">Description of error in task execution here. this</tspan>
+                <tspan x="119" y="69">notification is displayed 5 seconds, disapears automatically </tspan>
+                <tspan x="119" y="80">if user doesn’t  click on close</tspan>
+            </text>
+            <g id="icon-resp-menu---close-resp-menu" transform="translate(388.000000, 10.000000)">
+                <g id="Group-3" transform="translate(0.000000, 0.078288)">
+                    <mask id="mask-4" fill="white">
+                        <use xlink:href="#path-3"></use>
+                    </mask>
+                    <g id="Clip-2"></g>
+                    <path d="M0.246119981,14.4534589 C-0.0823199937,14.1250189 -0.0823199937,13.594139 0.246119981,13.265699 L13.240079,0.272579979 C13.567679,-0.0550199958 14.0993989,-0.0550199958 14.4278389,0.272579979 C14.7554389,0.601019954 14.7554389,1.13273991 14.4278389,1.46033989 L1.43387989,14.4534589 C1.2700799,14.6172589 1.05503992,14.6995789 0.839999936,14.6995789 C0.624959952,14.6995789 0.409919969,14.6172589 0.246119981,14.4534589 Z" id="Fill-1" fill="#F2F3F6" mask="url(#mask-4)"></path>
+                </g>
+                <g id="Group-6" transform="translate(0.000000, 0.078288)">
+                    <mask id="mask-6" fill="white">
+                        <use xlink:href="#path-5"></use>
+                    </mask>
+                    <g id="Clip-5"></g>
+                    <path d="M13.239911,14.4538789 L0.245951981,1.46075989 C-0.0816479937,1.13315991 -0.0816479937,0.601439954 0.245951981,0.272999979 C0.574391956,-0.0545999958 1.10611192,-0.0545999958 1.43371189,0.272999979 L14.4276709,13.266119 C14.7561109,13.594559 14.7561109,14.1254389 14.4276709,14.4538789 C14.2638709,14.6176789 14.0488309,14.6999989 13.8337909,14.6999989 C13.618751,14.6999989 13.403711,14.6176789 13.239911,14.4538789 Z" id="Fill-4" fill="#F2F3F6" mask="url(#mask-6)"></path>
+                </g>
+            </g>
+            <path d="M8,6.48014975e-12 L16,6.48014975e-12 L16,105.232422 L8,105.232422 C3.581722,105.232422 0,101.709868 0,97.3645772 L0,7.86784463 C0,3.52255403 3.581722,6.48014975e-12 8,6.48014975e-12 Z" id="Rectangle" fill="#FAB284"></path>
+            <g id="icon---notif-error" transform="translate(31.000000, 23.000000)">
+                <path d="M29.290122,42.6866243 C28.673797,42.6866243 28.133122,42.4863743 27.6680971,42.0836493 C27.2075221,41.6853743 26.9783471,41.1246743 26.9783471,40.4059994 C26.9783471,39.7763244 27.2008471,39.2423244 27.6391721,38.7995494 C28.081947,38.3612244 28.620397,38.1387244 29.258972,38.1387244 C29.897547,38.1387244 30.447122,38.3612244 30.894347,38.7995494 C31.346022,39.2423244 31.570747,39.7763244 31.570747,40.4059994 C31.570747,41.1157743 31.346022,41.6720243 30.889897,42.0791993 C30.433772,42.4841493 29.897547,42.6866243 29.290122,42.6866243 M27.6035721,32.6785745 L27.1162971,25.3939246 C27.0250721,23.9743746 26.9783471,22.9553246 26.9783471,22.3367746 C26.9783471,21.4957247 27.2008471,20.8393497 27.6391721,20.3654247 C28.081947,19.8959497 28.664897,19.6578747 29.381347,19.6578747 C30.255772,19.6578747 30.836497,19.9604747 31.132422,20.5656747 C31.423897,21.1664247 31.570747,22.0363996 31.570747,23.1711496 C31.570747,23.8408746 31.537372,24.5217246 31.468397,25.2114746 L30.812022,32.7097245 C30.740822,33.6019495 30.589522,34.2872494 30.355897,34.7611744 C30.124497,35.2373244 29.737347,35.4776244 29.198897,35.4776244 C28.651547,35.4776244 28.273297,35.2462244 28.059697,34.7834244 C27.8483221,34.3228494 27.6947971,33.6219745 27.6035721,32.6785745" id="Fill-1" fill="#F2EEE8"></path>
+                <g id="Group-5" transform="translate(0.000000, 0.531330)">
+                    <mask id="mask-8" fill="white">
+                        <use xlink:href="#path-7"></use>
+                    </mask>
+                    <g id="Clip-4"></g>
+                    <path d="M6.0798124,48.0599992 L53.0317616,48.0599992 L29.555787,7.40034988 L6.0798124,48.0599992 Z M56.8854616,52.5099992 L2.22611246,52.5099992 C1.42956248,52.5099992 0.695312489,52.0872492 0.299262495,51.3974992 C-0.0990124984,50.7077492 -0.0990124984,49.8622492 0.299262495,49.1724992 L27.6267121,1.83784997 C28.421037,0.458349993 30.686087,0.458349993 31.480412,1.83784997 L58.8100866,49.1724992 C59.2105865,49.8622492 59.2105865,50.7077492 58.8100866,51.3974992 C58.4140366,52.0872492 57.6797866,52.5099992 56.8854616,52.5099992 L56.8854616,52.5099992 Z" id="Fill-3" fill="#F2EEE8" mask="url(#mask-8)"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -484,9 +484,52 @@ select::-ms-expand {
   outline: none; 
 }
 
+.showHide {
+  border-bottom: 1px solid #072863;
+}
+.fieldsetContainerContextNotifInfo, .fieldsetContainerContextNotifInfo1, .fieldsetContainerContextNotifInfo2, .fieldsetContainerContextNotifInfo3, .fieldsetContainerContextNotifInfo4 {
+    opacity:0;
+    height:0;
+    overflow: hidden;
+    transition: opacity 200ms linear;
+}
+
+#toggleContextNotifInfo, #toggleContextNotifInfo1, #toggleContextNotifInfo2, #toggleContextNotifInfo3, #toggleContextNotifInfo4 {
+    display: none;
+}
+
+#toggleContextNotifInfo:checked ~ .fieldsetContainerContextNotifInfo, #toggleContextNotifInfo1:checked ~ .fieldsetContainerContextNotifInfo1, #toggleContextNotifInfo2:checked ~ .fieldsetContainerContextNotifInfo2, #toggleContextNotifInfo3:checked ~ .fieldsetContainerContextNotifInfo3, #toggleContextNotifInfo4:checked ~ .fieldsetContainerContextNotifInfo4     {
+  opacity:100;
+  height:auto;
+}
+
+label .arrow-dnContextNotifInfo, label .arrow-dnContextNotifInfo1, label .arrow-dnContextNotifInfo2, label .arrow-dnContextNotifInfo3, label .arrow-dnContextNotifInfo4 { display: inline-block; }
+label .arrow-upContextNotifInfo, label .arrow-upContextNotifInfo1, label .arrow-upContextNotifInfo2, label .arrow-upContextNotifInfo3, label .arrow-upContextNotifInfo4 { display: none; }
+
+#toggleContextNotifInfo:checked ~ label .arrow-dnContextNotifInfo, #toggleContextNotifInfo1:checked ~ label .arrow-dnContextNotifInfo1, #toggleContextNotifInfo2:checked ~ label .arrow-dnContextNotifInfo2, #toggleContextNotifInfo3:checked ~ label .arrow-dnContextNotifInfo3, #toggleContextNotifInfo4:checked ~ label .arrow-dnContextNotifInfo4 { display: none; }
+#toggleContextNotifInfo:checked ~ label .arrow-upContextNotifInfo, #toggleContextNotifInfo1:checked ~ label .arrow-upContextNotifInfo1, #toggleContextNotifInfo2:checked ~ label .arrow-upContextNotifInfo2, #toggleContextNotifInfo3:checked ~ label .arrow-upContextNotifInfo3, #toggleContextNotifInfo4:checked ~ label .arrow-upContextNotifInfo4 { display: inline-block; }
 
 
 
 
+.fieldsetContainerCodeNotifInfo, .fieldsetContainerCodeNotifInfo1, .fieldsetContainerCodeNotifInfo2, .fieldsetContainerCodeNotifInfo3, .fieldsetContainerCodeNotifInfo4 {
+  opacity:0;
+  height:0;
+  overflow: hidden;
+  transition: opacity 200ms linear;
+}
 
+#toggleCodeNotifInfo, #toggleCodeNotifInfo1, #toggleCodeNotifInfo2, #toggleCodeNotifInfo3, #toggleCodeNotifInfo4 {
+  display: none;
+}
 
+#toggleCodeNotifInfo:checked ~ .fieldsetContainerCodeNotifInfo, #toggleCodeNotifInfo1:checked ~ .fieldsetContainerCodeNotifInfo1, #toggleCodeNotifInfo2:checked ~ .fieldsetContainerCodeNotifInfo2, #toggleCodeNotifInfo3:checked ~ .fieldsetContainerCodeNotifInfo3, #toggleCodeNotifInfo4:checked ~ .fieldsetContainerCodeNotifInfo4 {
+  opacity:100;
+  height:auto;
+}
+
+label .arrow-dnCodeNotifInfo, label .arrow-dnCodeNotifInfo1, label .arrow-dnCodeNotifInfo2, label .arrow-dnCodeNotifInfo3, label .arrow-dnCodeNotifInfo4 { display: inline-block; }
+label .arrow-upCodeNotifInfo, label .arrow-upCodeNotifInfo1, label .arrow-upCodeNotifInfo2, label .arrow-upCodeNotifInfo3, label .arrow-upCodeNotifInfo4 { display: none; }
+
+#toggleCodeNotifInfo:checked ~ label .arrow-dnCodeNotifInfo, #toggleCodeNotifInfo1:checked ~ label .arrow-dnCodeNotifInfo1, #toggleCodeNotifInfo2:checked ~ label .arrow-dnCodeNotifInfo2, #toggleCodeNotifInfo3:checked ~ label .arrow-dnCodeNotifInfo3, #toggleCodeNotifInfo4:checked ~ label .arrow-dnCodeNotifInfo4 { display: none; }
+#toggleCodeNotifInfo:checked ~ label .arrow-upCodeNotifInfo, #toggleCodeNotifInfo1:checked ~ label .arrow-upCodeNotifInfo1, #toggleCodeNotifInfo2:checked ~ label .arrow-upCodeNotifInfo2, #toggleCodeNotifInfo3:checked ~ label .arrow-upCodeNotifInfo3, #toggleCodeNotifInfo4:checked ~ label .arrow-upCodeNotifInfo4 { display: inline-block; }

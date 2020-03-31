@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="416px" height="106px" viewBox="0 0 416 106" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>Task notification - success</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="1" y="0" width="415" height="105" rx="8"></rect>
+        <filter x="-1.7%" y="-4.8%" width="103.4%" height="113.4%" filterUnits="objectBoundingBox" id="filter-2">
+            <feMorphology radius="0.05" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.898522418   0 0 0 0 0.898522418   0 0 0 0 0.898522418  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <polygon id="path-3" points="0 0.0268799979 14.6735389 0.0268799979 14.6735389 14.6995789 0 14.6995789"></polygon>
+        <polygon id="path-5" points="0.000251999981 0.0272999979 14.6739589 0.0272999979 14.6739589 14.6999989 0.000251999981 14.6999989"></polygon>
+        <polygon id="path-7" points="0 0.288960011 59.3233224 0.288960011 59.3233224 59.6392464 0 59.6392464"></polygon>
+    </defs>
+    <g id="Task-notification---success" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g>
+            <g id="Rectangle">
+                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                <use stroke="#979797" stroke-width="0.1" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+            </g>
+            <text id="SUCCESS-MESSAGE-HERE" font-family="Raleway-Bold, Raleway" font-size="18" font-weight="bold" letter-spacing="0.450000007" fill="#6AD5CA">
+                <tspan x="117" y="41">SUCCESS MESSAGE HERE</tspan>
+            </text>
+            <text id="Description-of-succe" font-family="Raleway-Regular, Raleway" font-size="10" font-weight="normal" letter-spacing="0.250000004" fill="#D8D8D8">
+                <tspan x="119" y="58">Description of successfuly excecuted task here. this</tspan>
+                <tspan x="119" y="69">notification is displayed 5 seconds, disapears automatically </tspan>
+                <tspan x="119" y="80">if user doesn’t  click on close</tspan>
+            </text>
+            <g id="icon-resp-menu---close-resp-menu" transform="translate(388.000000, 10.000000)">
+                <g id="Group-3" transform="translate(0.000000, 0.078288)">
+                    <mask id="mask-4" fill="white">
+                        <use xlink:href="#path-3"></use>
+                    </mask>
+                    <g id="Clip-2"></g>
+                    <path d="M0.246119981,14.4534589 C-0.0823199937,14.1250189 -0.0823199937,13.594139 0.246119981,13.265699 L13.240079,0.272579979 C13.567679,-0.0550199958 14.0993989,-0.0550199958 14.4278389,0.272579979 C14.7554389,0.601019954 14.7554389,1.13273991 14.4278389,1.46033989 L1.43387989,14.4534589 C1.2700799,14.6172589 1.05503992,14.6995789 0.839999936,14.6995789 C0.624959952,14.6995789 0.409919969,14.6172589 0.246119981,14.4534589 Z" id="Fill-1" fill="#F2F3F6" mask="url(#mask-4)"></path>
+                </g>
+                <g id="Group-6" transform="translate(0.000000, 0.078288)">
+                    <mask id="mask-6" fill="white">
+                        <use xlink:href="#path-5"></use>
+                    </mask>
+                    <g id="Clip-5"></g>
+                    <path d="M13.239911,14.4538789 L0.245951981,1.46075989 C-0.0816479937,1.13315991 -0.0816479937,0.601439954 0.245951981,0.272999979 C0.574391956,-0.0545999958 1.10611192,-0.0545999958 1.43371189,0.272999979 L14.4276709,13.266119 C14.7561109,13.594559 14.7561109,14.1254389 14.4276709,14.4538789 C14.2638709,14.6176789 14.0488309,14.6999989 13.8337909,14.6999989 C13.618751,14.6999989 13.403711,14.6176789 13.239911,14.4538789 Z" id="Fill-4" fill="#F2F3F6" mask="url(#mask-6)"></path>
+                </g>
+            </g>
+            <path d="M8,6.48014975e-12 L16,6.48014975e-12 L16,105.232422 L8,105.232422 C3.581722,105.232422 0,101.709868 0,97.3645772 L0,7.86784463 C0,3.52255403 3.581722,6.48014975e-12 8,6.48014975e-12 Z" id="Rectangle" fill="#6AD5CA"></path>
+            <g id="icon---notif-success" opacity="0.30187407" transform="translate(31.000000, 23.000000)">
+                <path d="M26.6507651,40.6494496 C25.962805,40.6494496 25.302565,40.3672096 24.823765,39.8657296 L18.2894047,33.0037693 C17.3292847,31.9957693 17.3670847,30.4006092 18.3776047,29.4404892 C19.3805648,28.4803691 20.9757248,28.5181691 21.9408849,29.5286892 L26.5121651,34.3267694 L39.1272856,18.9421688 C40.0092856,17.8711687 41.5994057,17.7073687 42.6754457,18.5918887 C43.7540057,19.4764088 43.9077257,21.0640088 43.0257257,22.1400489 L28.5987251,39.7271296 C28.1426051,40.2865696 27.4672451,40.6217296 26.7440051,40.6494496 C26.7137651,40.6494496 26.6860451,40.6494496 26.6507651,40.6494496" id="Fill-1" fill="#6AD5CA"></path>
+                <g id="Group-5" transform="translate(0.000000, 0.551796)">
+                    <mask id="mask-8" fill="white">
+                        <use xlink:href="#path-7"></use>
+                    </mask>
+                    <g id="Clip-4"></g>
+                    <path d="M29.6629212,5.32820421 C23.0832009,5.32820421 16.8966007,7.89104431 12.2446805,12.5404445 C2.6359201,22.1466849 2.6359201,37.7782455 12.2396405,47.3870059 C16.8915607,52.0389261 23.0781609,54.5992462 29.6578812,54.5992462 C36.2426414,54.5992462 42.4292417,52.0364061 47.0862019,47.3819659 C56.6899223,37.7757255 56.6899223,22.1466849 47.0811619,12.5404445 C42.4292417,7.89104431 36.2426414,5.32820421 29.6629212,5.32820421 M29.6578812,59.6392464 C21.7299609,59.6392464 14.2783206,56.5547662 8.67636034,50.950286 C-2.89548012,39.3784456 -2.89044011,20.5490048 8.68140034,8.97716436 C14.2858806,3.37520413 21.7375209,0.288204011 29.6629212,0.288204011 C37.5908415,0.288204011 45.0450018,3.37520413 50.644442,8.97716436 C62.2162825,20.5464848 62.2162825,39.3734056 50.649482,50.947766 C45.0450018,56.5522462 37.5883215,59.6392464 29.6578812,59.6392464" id="Fill-3" fill="#6AD5CA" mask="url(#mask-8)"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
